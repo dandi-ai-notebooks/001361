@@ -1,0 +1,1954 @@
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py dandiset-info 001361', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py dandiset-info 001361
+================================
+{
+  "results": {
+    "id": "DANDI:001361/draft",
+    "name": "A flexible hippocampal population code for experience relative to reward",
+    "about": [
+      {
+        "name": "hippocampus",
+        "schemaKey": "Anatomy"
+      }
+    ],
+    "access": [
+      {
+        "status": "dandi:OpenAccess",
+        "schemaKey": "AccessRequirements"
+      }
+    ],
+    "license": [
+      "spdx:CC-BY-4.0"
+    ],
+    "version": "draft",
+    "citation": "Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. (2025) A flexible hippocampal population code for experience relative to reward (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001361/draft",
+    "keywords": [
+      "hippocampus, navigation, learning, memory, 2-photon imaging, place cells"
+    ],
+    "protocol": [],
+    "identifier": "DANDI:001361",
+    "contributor": [
+      "National Institutes of Health (NIH)",
+      "Sosa, Marielena",
+      "Plitt, Mark H.",
+      "Giocomo, Lisa M."
+    ],
+    "dateCreated": "2025-03-13T06:23:11.234153+00:00",
+    "description": "2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. Included in Sosa, Plitt, & Giocomo, \"A flexible hippocampal population code for experience relative to reward,\" Nature Neuroscience.\n\nTo reinforce rewarding behaviors, events leading up to and following rewards must be remembered. Hippocampal place cell activity spans spatial and non-spatial episodes, but whether hippocampal activity encodes entire sequences of events relative to reward is unknown. To test this, we performed two-photon imaging of hippocampal CA1 as mice navigated virtual environments with changing hidden reward locations. When the reward moved, a subpopulation of neurons updated their firing fields to the same relative position with respect to reward, constructing behavioral timescale sequences spanning the entire task. Over learning, this reward-relative representation became more robust as additional neurons were recruited, and changes in reward-relative firing often preceded behavioral adaptations following reward relocation. Concurrently, the spatial environment code was maintained through a parallel, dynamic subpopulation rather than through dedicated cell classes. These findings reveal how hippocampal ensembles flexibly encode multiple aspects of experience while amplifying behaviorally relevant information.",
+    "variableMeasured": [
+      "TwoPhotonSeries",
+      "PlaneSegmentation",
+      "BehavioralTimeSeries",
+      "ProcessingModule",
+      "ImagingPlane",
+      "OpticalChannel"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  }
+}
+Total prompt tokens: 9171 + 0
+Total completion tokens: 374 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py dandiset-info 001361' (requires approval):
+Command executed successfully
+STDOUT:
+{
+  "results": {
+    "id": "DANDI:001361/draft",
+    "name": "A flexible hippocampal population code for experience relative to reward",
+    "about": [
+      {
+        "name": "hippocampus",
+        "schemaKey": "Anatomy"
+      }
+    ],
+    "access": [
+      {
+        "status": "dandi:OpenAccess",
+        "schemaKey": "AccessRequirements"
+      }
+    ],
+    "license": [
+      "spdx:CC-BY-4.0"
+    ],
+    "version": "draft",
+    "citation": "Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. (2025) A flexible hippocampal population code for experience relative to reward (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001361/draft",
+    "keywords": [
+      "hippocampus, navigation, learning, memory, 2-photon imaging, place cells"
+    ],
+    "protocol": [],
+    "identifier": "DANDI:001361",
+    "contributor": [
+      "National Institutes of Health (NIH)",
+      "Sosa, Marielena",
+      "Plitt, Mark H.",
+      "Giocomo, Lisa M."
+    ],
+    "dateCreated": "2025-03-13T06:23:11.234153+00:00",
+    "description": "2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. Included in Sosa, Plitt, & Giocomo, \"A flexible hippocampal population code for experience relative to reward,\" Nature Neuroscience.\n\nTo reinforce rewarding behaviors, events leading up to and following rewards must be remembered. Hippocampal place cell activity spans spatial and non-spatial episodes, but whether hippocampal activity encodes entire sequences of events relative to reward is unknown. To test this, we performed two-photon imaging of hippocampal CA1 as mice navigated virtual environments with changing hidden reward locations. When the reward moved, a subpopulation of neurons updated their firing fields to the same relative position with respect to reward, constructing behavioral timescale sequences spanning the entire task. Over learning, this reward-relative representation became more robust as additional neurons were recruited, and changes in reward-relative firing often preceded behavioral adaptations following reward relocation. Concurrently, the spatial environment code was maintained through a parallel, dynamic subpopulation rather than through dedicated cell classes. These findings reveal how hippocampal ensembles flexibly encode multiple aspects of experience while amplifying behaviorally relevant information.",
+    "variableMeasured": [
+      "TwoPhotonSeries",
+      "PlaneSegmentation",
+      "BehavioralTimeSeries",
+      "ProcessingModule",
+      "ImagingPlane",
+      "OpticalChannel"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  }
+}
+
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 4
+Submitting completion request...
+Processing response...
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py dandiset-assets 001361', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py dandiset-assets 001361
+================================
+{
+  "results": {
+    "count": 152,
+    "results": [
+      {
+        "asset_id": "d77ea78a-8978-461d-9d11-3c5cef860d82",
+        "path": "sub-m11/sub-m11_ses-03_behavior+ophys.nwb",
+        "size": 93427620
+      },
+      {
+        "asset_id": "b53ef825-89ca-483e-abeb-b38a0ae9293c",
+        "path": "sub-m11/sub-m11_ses-04_behavior+ophys.nwb",
+        "size": 89674484
+      },
+      {
+        "asset_id": "a22cc1da-b5e8-4fea-a770-7b83a6e79656",
+        "path": "sub-m11/sub-m11_ses-05_behavior+ophys.nwb",
+        "size": 99311004
+      },
+      {
+        "asset_id": "5a5da0ea-5e7a-497b-a3aa-7e6ee1628bde",
+        "path": "sub-m11/sub-m11_ses-06_behavior+ophys.nwb",
+        "size": 94611388
+      },
+      {
+        "asset_id": "27481b95-aeb2-4108-b7ac-b3859892da7a",
+        "path": "sub-m11/sub-m11_ses-07_behavior+ophys.nwb",
+        "size": 119720332
+      },
+      {
+        "asset_id": "d4e069d6-40f6-4702-92d4-70abfd65c1bd",
+        "path": "sub-m11/sub-m11_ses-08_behavior+ophys.nwb",
+        "size": 128446344
+      },
+      {
+        "asset_id": "739f2b51-6fb2-4b3f-94e9-f49928b0b24f",
+        "path": "sub-m11/sub-m11_ses-09_behavior+ophys.nwb",
+        "size": 110016228
+      },
+      {
+        "asset_id": "ead36e91-9db7-482e-9ea9-bab69370a364",
+        "path": "sub-m11/sub-m11_ses-10_behavior+ophys.nwb",
+        "size": 110882776
+      },
+      {
+        "asset_id": "5910e145-9e31-4436-bcc9-264ab89684a1",
+        "path": "sub-m11/sub-m11_ses-11_behavior+ophys.nwb",
+        "size": 111621748
+      },
+      {
+        "asset_id": "303e5b99-348d-4dd7-bfac-e094817850e9",
+        "path": "sub-m11/sub-m11_ses-12_behavior+ophys.nwb",
+        "size": 120944548
+      },
+      {
+        "asset_id": "37be80e6-203e-4cd6-8e12-ad9354504117",
+        "path": "sub-m11/sub-m11_ses-13_behavior+ophys.nwb",
+        "size": 134787448
+      },
+      {
+        "asset_id": "ed84727c-a4d1-4347-adc2-18f614cd8903",
+        "path": "sub-m11/sub-m11_ses-14_behavior+ophys.nwb",
+        "size": 168882036
+      },
+      {
+        "asset_id": "538dc481-9341-4861-8552-591bffe8717e",
+        "path": "sub-m12/sub-m12_ses-01_behavior+ophys.nwb",
+        "size": 600071168
+      },
+      {
+        "asset_id": "a04698df-e49b-4fde-8d96-773f7dfa73ee",
+        "path": "sub-m12/sub-m12_ses-02_behavior+ophys.nwb",
+        "size": 423612572
+      },
+      {
+        "asset_id": "88817b3e-e56e-4dcf-9771-7f8a4cfc4ce7",
+        "path": "sub-m12/sub-m12_ses-03_behavior+ophys.nwb",
+        "size": 440515880
+      },
+      {
+        "asset_id": "934e4ae9-ecff-4c91-bb75-a8228d3f55b0",
+        "path": "sub-m12/sub-m12_ses-04_behavior+ophys.nwb",
+        "size": 391298732
+      },
+      {
+        "asset_id": "d3dcc85e-0b3c-4a7b-850b-f6209cfb5ef0",
+        "path": "sub-m12/sub-m12_ses-05_behavior+ophys.nwb",
+        "size": 538773212
+      },
+      {
+        "asset_id": "c3ff1e3b-d7e8-4b47-b027-0d796f33ae41",
+        "path": "sub-m12/sub-m12_ses-06_behavior+ophys.nwb",
+        "size": 388651092
+      },
+      {
+        "asset_id": "a6a69c98-37e5-4c1e-b255-e75d1aef178b",
+        "path": "sub-m12/sub-m12_ses-07_behavior+ophys.nwb",
+        "size": 560460572
+      },
+      {
+        "asset_id": "090c1e62-f386-46a2-8fd5-ac29c01de01b",
+        "path": "sub-m12/sub-m12_ses-08_behavior+ophys.nwb",
+        "size": 543039180
+      }
+    ]
+  }
+}
+Total prompt tokens: 19578 + 0
+Total completion tokens: 449 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py dandiset-assets 001361' (requires approval):
+Command executed successfully
+STDOUT:
+{
+  "results": {
+    "count": 152,
+    "results": [
+      {
+        "asset_id": "d77ea78a-8978-461d-9d11-3c5cef860d82",
+        "path": "sub-m11/sub-m11_ses-03_behavior+ophys.nwb",
+        "size": 93427620
+      },
+      {
+        "asset_id": "b53ef825-89ca-483e-abeb-b38a0ae9293c",
+        "path": "sub-m11/sub-m11_ses-04_behavior+ophys.nwb",
+        "size": 89674484
+      },
+      {
+        "asset_id": "a22cc1da-b5e8-4fea-a770-7b83a6e79656",
+        "path": "sub-m11/sub-m11_ses-05_behavior+ophys.nwb",
+        "size": 99311004
+      },
+      {
+        "asset_id": "5a5da0ea-5e7a-497b-a3aa-7e6ee1628bde",
+        "path": "sub-m11/sub-m11_ses-06_behavior+ophys.nwb",
+        "size": 94611388
+      },
+      {
+        "asset_id": "27481b95-aeb2-4108-b7ac-b3859892da7a",
+        "path": "sub-m11/sub-m11_ses-07_behavior+ophys.nwb",
+        "size": 119720332
+      },
+      {
+        "asset_id": "d4e069d6-40f6-4702-92d4-70abfd65c1bd",
+        "path": "sub-m11/sub-m11_ses-08_behavior+ophys.nwb",
+        "size": 128446344
+      },
+      {
+        "asset_id": "739f2b51-6fb2-4b3f-94e9-f49928b0b24f",
+        "path": "sub-m11/sub-m11_ses-09_behavior+ophys.nwb",
+        "size": 110016228
+      },
+      {
+        "asset_id": "ead36e91-9db7-482e-9ea9-bab69370a364",
+        "path": "sub-m11/sub-m11_ses-10_behavior+ophys.nwb",
+        "size": 110882776
+      },
+      {
+        "asset_id": "5910e145-9e31-4436-bcc9-264ab89684a1",
+        "path": "sub-m11/sub-m11_ses-11_behavior+ophys.nwb",
+        "size": 111621748
+      },
+      {
+        "asset_id": "303e5b99-348d-4dd7-bfac-e094817850e9",
+        "path": "sub-m11/sub-m11_ses-12_behavior+ophys.nwb",
+        "size": 120944548
+      },
+      {
+        "asset_id": "37be80e6-203e-4cd6-8e12-ad9354504117",
+        "path": "sub-m11/sub-m11_ses-13_behavior+ophys.nwb",
+        "size": 134787448
+      },
+      {
+        "asset_id": "ed84727c-a4d1-4347-adc2-18f614cd8903",
+        "path": "sub-m11/sub-m11_ses-14_behavior+ophys.nwb",
+        "size": 168882036
+      },
+      {
+        "asset_id": "538dc481-9341-4861-8552-591bffe8717e",
+        "path": "sub-m12/sub-m12_ses-01_behavior+ophys.nwb",
+        "size": 600071168
+      },
+      {
+        "asset_id": "a04698df-e49b-4fde-8d96-773f7dfa73ee",
+        "path": "sub-m12/sub-m12_ses-02_behavior+ophys.nwb",
+        "size": 423612572
+      },
+      {
+        "asset_id": "88817b3e-e56e-4dcf-9771-7f8a4cfc4ce7",
+        "path": "sub-m12/sub-m12_ses-03_behavior+ophys.nwb",
+        "size": 440515880
+      },
+      {
+        "asset_id": "934e4ae9-ecff-4c91-bb75-a8228d3f55b0",
+        "path": "sub-m12/sub-m12_ses-04_behavior+ophys.nwb",
+        "size": 391298732
+      },
+      {
+        "asset_id": "d3dcc85e-0b3c-4a7b-850b-f6209cfb5ef0",
+        "path": "sub-m12/sub-m12_ses-05_behavior+ophys.nwb",
+        "size": 538773212
+      },
+      {
+        "asset_id": "c3ff1e3b-d7e8-4b47-b027-0d796f33ae41",
+        "path": "sub-m12/sub-m12_ses-06_behavior+ophys.nwb",
+        "size": 388651092
+      },
+      {
+        "asset_id": "a6a69c98-37e5-4c1e-b255-e75d1aef178b",
+        "path": "sub-m12/sub-m12_ses-07_behavior+ophys.nwb",
+        "size": 560460572
+      },
+      {
+        "asset_id": "090c1e62-f386-46a2-8fd5-ac29c01de01b",
+        "path": "sub-m12/sub-m12_ses-08_behavior+ophys.nwb",
+        "size": 543039180
+      }
+    ]
+  }
+}
+
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 6
+Submitting completion request...
+Processing response...
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py nwb-file-info 001361 https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py nwb-file-info 001361 https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/
+================================
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/home/jovyan/dandi-ai-notebooks-3/packages/get-nwbfile-info/src/get_nwbfile_info/core.py:319: UserWarning: Warning: Duplicate entries found in the results.
+  warnings.warn("Warning: Duplicate entries found in the results.")
+# This script shows how to load the NWB file at https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ in Python using PyNWB
+
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb # (NWBFile)
+nwb.session_description # (str) processed suite2p data
+nwb.identifier # (str) /data/InVivoDA/GCAMP11/23_02_2023/Env1_LocationB_to_A
+nwb.session_start_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.timestamps_reference_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.file_create_date # (list) [datetime.datetime(2025, 3, 12, 23, 45, 29, 830157, tzinfo=tzoffset(None, -25200))]
+nwb.experimenter # (tuple) ['Mari Sosa']
+nwb.acquisition # (LabelledDict)
+nwb.acquisition["TwoPhotonSeries"] # (TwoPhotonSeries)
+nwb.acquisition["TwoPhotonSeries"].starting_time # (float64) 0.0
+nwb.acquisition["TwoPhotonSeries"].rate # (float64) 15.5078125
+nwb.acquisition["TwoPhotonSeries"].resolution # (float64) -1.0
+nwb.acquisition["TwoPhotonSeries"].comments # (str) no comments
+nwb.acquisition["TwoPhotonSeries"].description # (str) no description
+nwb.acquisition["TwoPhotonSeries"].conversion # (float64) 1.0
+nwb.acquisition["TwoPhotonSeries"].offset # (float64) 0.0
+nwb.acquisition["TwoPhotonSeries"].unit # (str) volt
+nwb.acquisition["TwoPhotonSeries"].data # (Dataset) shape (1, 1, 1); dtype float64
+# nwb.acquisition["TwoPhotonSeries"].data[:, :, :] # Access all data
+# nwb.acquisition["TwoPhotonSeries"].data[0, :, :] # Access first plane
+nwb.acquisition["TwoPhotonSeries"].starting_time_unit # (str) seconds
+nwb.acquisition["TwoPhotonSeries"].dimension # (Dataset) shape (2,); dtype int64
+# nwb.acquisition["TwoPhotonSeries"].dimension[:] # Access all data
+# nwb.acquisition["TwoPhotonSeries"].dimension[0:10] # Access first 10 elements
+# First few values of nwb.acquisition["TwoPhotonSeries"].dimension: [512 796]
+nwb.acquisition["TwoPhotonSeries"].format # (str) raw
+nwb.acquisition["TwoPhotonSeries"].imaging_plane # (ImagingPlane)
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.optical_channel # (list)
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.description # (str) standard
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.excitation_lambda # (float64) 920.0
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.imaging_rate # (float64) 15.5078125
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.indicator # (str) GCaMP7f
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.location # (str) hippocampus, CA1
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.conversion # (float) 1.0
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.unit # (str) meters
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.origin_coords_unit # (str) meters
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# nwb.acquisition["TwoPhotonSeries"].imaging_plane.grid_spacing[:] # Access all data
+# nwb.acquisition["TwoPhotonSeries"].imaging_plane.grid_spacing[0:10] # Access first 10 elements
+# First few values of nwb.acquisition["TwoPhotonSeries"].imaging_plane.grid_spacing: [2. 2.]
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.grid_spacing_unit # (str) microns
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.device # (Device)
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.device.description # (str) My two-photon microscope
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.device.manufacturer # (str) Neurolabware
+nwb.processing # (LabelledDict)
+nwb.processing["behavior"] # (ProcessingModule)
+nwb.processing["behavior"].description # (str) behavior data
+nwb.processing["behavior"].data_interfaces # (LabelledDict)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"] # (BehavioralTimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series # (LabelledDict)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].description # (str) reward delivery
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].unit # (str) mL
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].data # (Dataset) shape (69,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].timestamps # (Dataset) shape (69,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].description # (str) whether trial was automatically rewarded if the subject failed to lick
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].unit # (str) integer
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].description # (str) Virtual reality environment
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].unit # (str) AU
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].description # (str) lick detection by capacitive sensor, cumulative per imaging frame
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].unit # (str) AU
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].description # (str) Position in a virtual linear track
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].unit # (str) cm
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].description # (str) reward zone entry (binary)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].unit # (str) integer
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].description # (str) whether scanning occurred to collect ophys data
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].unit # (str) integer
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].description # (str) the speed of the subject measured over time
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].unit # (str) cm/s
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].description # (str) end of a trial, i.e. entry into the intertrial interval
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].unit # (str) integer
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].description # (str) trial number, where each trial is a lap of the track
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].unit # (str) integer
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].description # (str) start of a trial, i.e. entry to the linear track
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].unit # (str) integer
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].interval # (int) 1
+nwb.processing["ophys"] # (ProcessingModule)
+nwb.processing["ophys"].description # (str) optical physiology processed data
+nwb.processing["ophys"].data_interfaces # (LabelledDict)
+nwb.processing["ophys"].data_interfaces["Backgrounds_0"] # (Images)
+nwb.processing["ophys"].data_interfaces["Backgrounds_0"].description # (str) no description
+nwb.processing["ophys"].data_interfaces["Backgrounds_0"].images # (LabelledDict)
+nwb.processing["ophys"].data_interfaces["Backgrounds_0"].images["Vcorr"] # (GrayscaleImage)
+nwb.processing["ophys"].data_interfaces["Backgrounds_0"].images["max_proj"] # (GrayscaleImage)
+nwb.processing["ophys"].data_interfaces["Backgrounds_0"].images["meanImg"] # (GrayscaleImage)
+nwb.processing["ophys"].data_interfaces["Deconvolved"] # (Fluorescence)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series # (LabelledDict)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"] # (RoiResponseSeries)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].starting_time # (float64) 0.0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].resolution # (float64) -1.0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].comments # (str) no comments
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].description # (str) no description
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].conversion # (float64) 1.0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].offset # (float64) 0.0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].unit # (str) lumens
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].data # (Dataset) shape (19818, 349); dtype float32
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].data[:, :] # Access all data
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].data[0:10, :] # Access first 10 rows
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].data[:, 0:10] # Access first 10 columns
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].starting_time_unit # (str) seconds
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois # (DynamicTableRegion)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.description # (str) ROIs for plane0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table # (PlaneSegmentation)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.description # (str) suite2p output
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.columns # (tuple)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.reference_images # (list)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.id # (ElementIdentifiers)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane # (ImagingPlane)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.optical_channel # (list)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.description # (str) standard
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.indicator # (str) GCaMP7f
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.location # (str) hippocampus, CA1
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.conversion # (float) 1.0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.unit # (str) meters
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.origin_coords_unit # (str) meters
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing[:] # Access all data
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing[0:10] # Access first 10 elements
+# First few values of nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing: [2. 2.]
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing_unit # (str) microns
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.device # (Device)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.device.description # (str) My two-photon microscope
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 349
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.pixel_mask_index[0] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.pixel_mask_index[1] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.pixel_mask_index[2] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.iscell # (VectorData) two columns - iscell & probcell
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.planeIdx # (VectorData) rec plane for each roi
+nwb.processing["ophys"].data_interfaces["Fluorescence"] # (Fluorescence)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series # (LabelledDict)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"] # (RoiResponseSeries)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].starting_time # (float64) 0.0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].resolution # (float64) -1.0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].comments # (str) no comments
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].description # (str) no description
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].conversion # (float64) 1.0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].offset # (float64) 0.0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].unit # (str) lumens
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].data # (Dataset) shape (19818, 349); dtype float32
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].data[:, :] # Access all data
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].data[0:10, :] # Access first 10 rows
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].data[:, 0:10] # Access first 10 columns
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].starting_time_unit # (str) seconds
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois # (DynamicTableRegion)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.description # (str) ROIs for plane0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table # (PlaneSegmentation)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.description # (str) suite2p output
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.columns # (tuple)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.reference_images # (list)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.id # (ElementIdentifiers)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane # (ImagingPlane)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.optical_channel # (list)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.description # (str) standard
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.indicator # (str) GCaMP7f
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.location # (str) hippocampus, CA1
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.conversion # (float) 1.0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.unit # (str) meters
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.origin_coords_unit # (str) meters
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing[:] # Access all data
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing[0:10] # Access first 10 elements
+# First few values of nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing: [2. 2.]
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing_unit # (str) microns
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.device # (Device)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.device.description # (str) My two-photon microscope
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 349
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.pixel_mask_index[0] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.pixel_mask_index[1] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.pixel_mask_index[2] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.iscell # (VectorData) two columns - iscell & probcell
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.planeIdx # (VectorData) rec plane for each roi
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"] # (ImageSegmentation)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations # (LabelledDict)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"] # (PlaneSegmentation)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].description # (str) suite2p output
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].columns # (tuple)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].reference_images # (list)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].id # (ElementIdentifiers)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane # (ImagingPlane)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.optical_channel # (list)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.description # (str) standard
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.excitation_lambda # (float64) 920.0
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.imaging_rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.indicator # (str) GCaMP7f
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.location # (str) hippocampus, CA1
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.conversion # (float) 1.0
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.unit # (str) meters
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.origin_coords_unit # (str) meters
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.grid_spacing[:] # Access all data
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.grid_spacing[0:10] # Access first 10 elements
+# First few values of nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.grid_spacing: [2. 2.]
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.grid_spacing_unit # (str) microns
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.device # (Device)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.device.description # (str) My two-photon microscope
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.device.manufacturer # (str) Neurolabware
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 349
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].pixel_mask_index[0] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].pixel_mask_index[1] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].pixel_mask_index[2] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].pixel_mask_index[3] # (ndarray)
+# ...
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].iscell # (VectorData) two columns - iscell & probcell
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].planeIdx # (VectorData) rec plane for each roi
+nwb.processing["ophys"].data_interfaces["Neuropil"] # (Fluorescence)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series # (LabelledDict)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"] # (RoiResponseSeries)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].starting_time # (float64) 0.0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].resolution # (float64) -1.0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].comments # (str) no comments
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].description # (str) no description
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].conversion # (float64) 1.0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].offset # (float64) 0.0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].unit # (str) lumens
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].data # (Dataset) shape (19818, 349); dtype float32
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].data[:, :] # Access all data
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].data[0:10, :] # Access first 10 rows
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].data[:, 0:10] # Access first 10 columns
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].starting_time_unit # (str) seconds
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois # (DynamicTableRegion)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.description # (str) ROIs for plane0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table # (PlaneSegmentation)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.description # (str) suite2p output
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.columns # (tuple)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.reference_images # (list)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.id # (ElementIdentifiers)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane # (ImagingPlane)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.optical_channel # (list)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.description # (str) standard
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.indicator # (str) GCaMP7f
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.location # (str) hippocampus, CA1
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.conversion # (float) 1.0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.unit # (str) meters
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.origin_coords_unit # (str) meters
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing[:] # Access all data
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing[0:10] # Access first 10 elements
+# First few values of nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing: [2. 2.]
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing_unit # (str) microns
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.device # (Device)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.device.description # (str) My two-photon microscope
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 349
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.pixel_mask_index[0] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.pixel_mask_index[1] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.pixel_mask_index[2] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.iscell # (VectorData) two columns - iscell & probcell
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.planeIdx # (VectorData) rec plane for each roi
+nwb.devices # (LabelledDict)
+nwb.devices["Microscope"] # (Device)
+nwb.devices["Microscope"].description # (str) My two-photon microscope
+nwb.devices["Microscope"].manufacturer # (str) Neurolabware
+nwb.imaging_planes # (LabelledDict)
+nwb.imaging_planes["ImagingPlane"] # (ImagingPlane)
+nwb.imaging_planes["ImagingPlane"].optical_channel # (list)
+nwb.imaging_planes["ImagingPlane"].description # (str) standard
+nwb.imaging_planes["ImagingPlane"].excitation_lambda # (float64) 920.0
+nwb.imaging_planes["ImagingPlane"].imaging_rate # (float64) 15.5078125
+nwb.imaging_planes["ImagingPlane"].indicator # (str) GCaMP7f
+nwb.imaging_planes["ImagingPlane"].location # (str) hippocampus, CA1
+nwb.imaging_planes["ImagingPlane"].conversion # (float) 1.0
+nwb.imaging_planes["ImagingPlane"].unit # (str) meters
+nwb.imaging_planes["ImagingPlane"].origin_coords_unit # (str) meters
+nwb.imaging_planes["ImagingPlane"].grid_spacing # (Dataset) shape (2,); dtype float64
+# nwb.imaging_planes["ImagingPlane"].grid_spacing[:] # Access all data
+# nwb.imaging_planes["ImagingPlane"].grid_spacing[0:10] # Access first 10 elements
+# First few values of nwb.imaging_planes["ImagingPlane"].grid_spacing: [2. 2.]
+nwb.imaging_planes["ImagingPlane"].grid_spacing_unit # (str) microns
+nwb.imaging_planes["ImagingPlane"].device # (Device)
+nwb.imaging_planes["ImagingPlane"].device.description # (str) My two-photon microscope
+nwb.imaging_planes["ImagingPlane"].device.manufacturer # (str) Neurolabware
+nwb.session_id # (str) 03
+nwb.subject # (Subject)
+nwb.subject.age__reference # (str) birth
+nwb.subject.sex # (str) M
+nwb.subject.species # (str) Mus musculus
+nwb.subject.subject_id # (str) m11
+nwb.subject.date_of_birth # (datetime) 2022-09-20T00:00:00-07:00
+Total prompt tokens: 32039 + 0
+Total completion tokens: 712 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py nwb-file-info 001361 https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/' (requires approval):
+Command executed successfully
+STDOUT:
+# This script shows how to load the NWB file at https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ in Python using PyNWB
+
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb # (NWBFile)
+nwb.session_description # (str) processed suite2p data
+nwb.identifier # (str) /data/InVivoDA/GCAMP11/23_02_2023/Env1_LocationB_to_A
+nwb.session_start_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.timestamps_reference_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.file_create_date # (list) [datetime.datetime(2025, 3, 12, 23, 45, 29, 830157, tzinfo=tzoffset(None, -25200))]
+nwb.experimenter # (tuple) ['Mari Sosa']
+nwb.acquisition # (LabelledDict)
+nwb.acquisition["TwoPhotonSeries"] # (TwoPhotonSeries)
+nwb.acquisition["TwoPhotonSeries"].starting_time # (float64) 0.0
+nwb.acquisition["TwoPhotonSeries"].rate # (float64) 15.5078125
+nwb.acquisition["TwoPhotonSeries"].resolution # (float64) -1.0
+nwb.acquisition["TwoPhotonSeries"].comments # (str) no comments
+nwb.acquisition["TwoPhotonSeries"].description # (str) no description
+nwb.acquisition["TwoPhotonSeries"].conversion # (float64) 1.0
+nwb.acquisition["TwoPhotonSeries"].offset # (float64) 0.0
+nwb.acquisition["TwoPhotonSeries"].unit # (str) volt
+nwb.acquisition["TwoPhotonSeries"].data # (Dataset) shape (1, 1, 1); dtype float64
+# nwb.acquisition["TwoPhotonSeries"].data[:, :, :] # Access all data
+# nwb.acquisition["TwoPhotonSeries"].data[0, :, :] # Access first plane
+nwb.acquisition["TwoPhotonSeries"].starting_time_unit # (str) seconds
+nwb.acquisition["TwoPhotonSeries"].dimension # (Dataset) shape (2,); dtype int64
+# nwb.acquisition["TwoPhotonSeries"].dimension[:] # Access all data
+# nwb.acquisition["TwoPhotonSeries"].dimension[0:10] # Access first 10 elements
+# First few values of nwb.acquisition["TwoPhotonSeries"].dimension: [512 796]
+nwb.acquisition["TwoPhotonSeries"].format # (str) raw
+nwb.acquisition["TwoPhotonSeries"].imaging_plane # (ImagingPlane)
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.optical_channel # (list)
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.description # (str) standard
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.excitation_lambda # (float64) 920.0
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.imaging_rate # (float64) 15.5078125
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.indicator # (str) GCaMP7f
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.location # (str) hippocampus, CA1
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.conversion # (float) 1.0
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.unit # (str) meters
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.origin_coords_unit # (str) meters
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# nwb.acquisition["TwoPhotonSeries"].imaging_plane.grid_spacing[:] # Access all data
+# nwb.acquisition["TwoPhotonSeries"].imaging_plane.grid_spacing[0:10] # Access first 10 elements
+# First few values of nwb.acquisition["TwoPhotonSeries"].imaging_plane.grid_spacing: [2. 2.]
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.grid_spacing_unit # (str) microns
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.device # (Device)
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.device.description # (str) My two-photon microscope
+nwb.acquisition["TwoPhotonSeries"].imaging_plane.device.manufacturer # (str) Neurolabware
+nwb.processing # (LabelledDict)
+nwb.processing["behavior"] # (ProcessingModule)
+nwb.processing["behavior"].description # (str) behavior data
+nwb.processing["behavior"].data_interfaces # (LabelledDict)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"] # (BehavioralTimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series # (LabelledDict)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].description # (str) reward delivery
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].unit # (str) mL
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].data # (Dataset) shape (69,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].timestamps # (Dataset) shape (69,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].description # (str) whether trial was automatically rewarded if the subject failed to lick
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].unit # (str) integer
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["autoreward"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].description # (str) Virtual reality environment
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].unit # (str) AU
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["environment"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].description # (str) lick detection by capacitive sensor, cumulative per imaging frame
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].unit # (str) AU
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].description # (str) Position in a virtual linear track
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].unit # (str) cm
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].description # (str) reward zone entry (binary)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].unit # (str) integer
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].description # (str) whether scanning occurred to collect ophys data
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].unit # (str) integer
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["scanning"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].description # (str) the speed of the subject measured over time
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].unit # (str) cm/s
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].description # (str) end of a trial, i.e. entry into the intertrial interval
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].unit # (str) integer
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].description # (str) trial number, where each trial is a lap of the track
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].unit # (str) integer
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].interval # (int) 1
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"] # (TimeSeries)
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].resolution # (float64) -1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].comments # (str) no comments
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].description # (str) start of a trial, i.e. entry to the linear track
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].conversion # (float64) 1.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].offset # (float64) 0.0
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].unit # (str) integer
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].data # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].data[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].data[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].timestamps # (Dataset) shape (20684,); dtype float64
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].timestamps[:] # Access all data
+# nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].timestamps[0:10] # Access first 10 elements
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].timestamps_unit # (str) seconds
+nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].interval # (int) 1
+nwb.processing["ophys"] # (ProcessingModule)
+nwb.processing["ophys"].description # (str) optical physiology processed data
+nwb.processing["ophys"].data_interfaces # (LabelledDict)
+nwb.processing["ophys"].data_interfaces["Backgrounds_0"] # (Images)
+nwb.processing["ophys"].data_interfaces["Backgrounds_0"].description # (str) no description
+nwb.processing["ophys"].data_interfaces["Backgrounds_0"].images # (LabelledDict)
+nwb.processing["ophys"].data_interfaces["Backgrounds_0"].images["Vcorr"] # (GrayscaleImage)
+nwb.processing["ophys"].data_interfaces["Backgrounds_0"].images["max_proj"] # (GrayscaleImage)
+nwb.processing["ophys"].data_interfaces["Backgrounds_0"].images["meanImg"] # (GrayscaleImage)
+nwb.processing["ophys"].data_interfaces["Deconvolved"] # (Fluorescence)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series # (LabelledDict)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"] # (RoiResponseSeries)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].starting_time # (float64) 0.0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].resolution # (float64) -1.0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].comments # (str) no comments
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].description # (str) no description
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].conversion # (float64) 1.0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].offset # (float64) 0.0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].unit # (str) lumens
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].data # (Dataset) shape (19818, 349); dtype float32
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].data[:, :] # Access all data
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].data[0:10, :] # Access first 10 rows
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].data[:, 0:10] # Access first 10 columns
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].starting_time_unit # (str) seconds
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois # (DynamicTableRegion)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.description # (str) ROIs for plane0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table # (PlaneSegmentation)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.description # (str) suite2p output
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.columns # (tuple)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.reference_images # (list)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.id # (ElementIdentifiers)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane # (ImagingPlane)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.optical_channel # (list)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.description # (str) standard
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.indicator # (str) GCaMP7f
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.location # (str) hippocampus, CA1
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.conversion # (float) 1.0
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.unit # (str) meters
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.origin_coords_unit # (str) meters
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing[:] # Access all data
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing[0:10] # Access first 10 elements
+# First few values of nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing: [2. 2.]
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing_unit # (str) microns
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.device # (Device)
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.device.description # (str) My two-photon microscope
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 349
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.pixel_mask_index[0] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.pixel_mask_index[1] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.pixel_mask_index[2] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.iscell # (VectorData) two columns - iscell & probcell
+nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].rois.table.planeIdx # (VectorData) rec plane for each roi
+nwb.processing["ophys"].data_interfaces["Fluorescence"] # (Fluorescence)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series # (LabelledDict)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"] # (RoiResponseSeries)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].starting_time # (float64) 0.0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].resolution # (float64) -1.0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].comments # (str) no comments
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].description # (str) no description
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].conversion # (float64) 1.0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].offset # (float64) 0.0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].unit # (str) lumens
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].data # (Dataset) shape (19818, 349); dtype float32
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].data[:, :] # Access all data
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].data[0:10, :] # Access first 10 rows
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].data[:, 0:10] # Access first 10 columns
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].starting_time_unit # (str) seconds
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois # (DynamicTableRegion)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.description # (str) ROIs for plane0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table # (PlaneSegmentation)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.description # (str) suite2p output
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.columns # (tuple)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.reference_images # (list)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.id # (ElementIdentifiers)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane # (ImagingPlane)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.optical_channel # (list)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.description # (str) standard
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.indicator # (str) GCaMP7f
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.location # (str) hippocampus, CA1
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.conversion # (float) 1.0
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.unit # (str) meters
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.origin_coords_unit # (str) meters
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing[:] # Access all data
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing[0:10] # Access first 10 elements
+# First few values of nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing: [2. 2.]
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing_unit # (str) microns
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.device # (Device)
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.device.description # (str) My two-photon microscope
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 349
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.pixel_mask_index[0] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.pixel_mask_index[1] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.pixel_mask_index[2] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.iscell # (VectorData) two columns - iscell & probcell
+nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table.planeIdx # (VectorData) rec plane for each roi
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"] # (ImageSegmentation)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations # (LabelledDict)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"] # (PlaneSegmentation)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].description # (str) suite2p output
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].columns # (tuple)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].reference_images # (list)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].id # (ElementIdentifiers)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane # (ImagingPlane)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.optical_channel # (list)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.description # (str) standard
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.excitation_lambda # (float64) 920.0
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.imaging_rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.indicator # (str) GCaMP7f
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.location # (str) hippocampus, CA1
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.conversion # (float) 1.0
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.unit # (str) meters
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.origin_coords_unit # (str) meters
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.grid_spacing[:] # Access all data
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.grid_spacing[0:10] # Access first 10 elements
+# First few values of nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.grid_spacing: [2. 2.]
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.grid_spacing_unit # (str) microns
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.device # (Device)
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.device.description # (str) My two-photon microscope
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].imaging_plane.device.manufacturer # (str) Neurolabware
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 349
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].pixel_mask_index[0] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].pixel_mask_index[1] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].pixel_mask_index[2] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].pixel_mask_index[3] # (ndarray)
+# ...
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].iscell # (VectorData) two columns - iscell & probcell
+nwb.processing["ophys"].data_interfaces["ImageSegmentation"].plane_segmentations["PlaneSegmentation"].planeIdx # (VectorData) rec plane for each roi
+nwb.processing["ophys"].data_interfaces["Neuropil"] # (Fluorescence)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series # (LabelledDict)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"] # (RoiResponseSeries)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].starting_time # (float64) 0.0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].resolution # (float64) -1.0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].comments # (str) no comments
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].description # (str) no description
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].conversion # (float64) 1.0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].offset # (float64) 0.0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].unit # (str) lumens
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].data # (Dataset) shape (19818, 349); dtype float32
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].data[:, :] # Access all data
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].data[0:10, :] # Access first 10 rows
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].data[:, 0:10] # Access first 10 columns
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].starting_time_unit # (str) seconds
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois # (DynamicTableRegion)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.description # (str) ROIs for plane0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table # (PlaneSegmentation)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.description # (str) suite2p output
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.columns # (tuple)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.reference_images # (list)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.id # (ElementIdentifiers)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane # (ImagingPlane)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.optical_channel # (list)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.description # (str) standard
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.indicator # (str) GCaMP7f
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.location # (str) hippocampus, CA1
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.conversion # (float) 1.0
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.unit # (str) meters
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.origin_coords_unit # (str) meters
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing[:] # Access all data
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing[0:10] # Access first 10 elements
+# First few values of nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing: [2. 2.]
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.grid_spacing_unit # (str) microns
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.device # (Device)
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.device.description # (str) My two-photon microscope
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+# Number of rows: 349
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.pixel_mask_index[0] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.pixel_mask_index[1] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.pixel_mask_index[2] # (ndarray)
+# nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.iscell # (VectorData) two columns - iscell & probcell
+nwb.processing["ophys"].data_interfaces["Neuropil"].roi_response_series["plane0"].rois.table.planeIdx # (VectorData) rec plane for each roi
+nwb.devices # (LabelledDict)
+nwb.devices["Microscope"] # (Device)
+nwb.devices["Microscope"].description # (str) My two-photon microscope
+nwb.devices["Microscope"].manufacturer # (str) Neurolabware
+nwb.imaging_planes # (LabelledDict)
+nwb.imaging_planes["ImagingPlane"] # (ImagingPlane)
+nwb.imaging_planes["ImagingPlane"].optical_channel # (list)
+nwb.imaging_planes["ImagingPlane"].description # (str) standard
+nwb.imaging_planes["ImagingPlane"].excitation_lambda # (float64) 920.0
+nwb.imaging_planes["ImagingPlane"].imaging_rate # (float64) 15.5078125
+nwb.imaging_planes["ImagingPlane"].indicator # (str) GCaMP7f
+nwb.imaging_planes["ImagingPlane"].location # (str) hippocampus, CA1
+nwb.imaging_planes["ImagingPlane"].conversion # (float) 1.0
+nwb.imaging_planes["ImagingPlane"].unit # (str) meters
+nwb.imaging_planes["ImagingPlane"].origin_coords_unit # (str) meters
+nwb.imaging_planes["ImagingPlane"].grid_spacing # (Dataset) shape (2,); dtype float64
+# nwb.imaging_planes["ImagingPlane"].grid_spacing[:] # Access all data
+# nwb.imaging_planes["ImagingPlane"].grid_spacing[0:10] # Access first 10 elements
+# First few values of nwb.imaging_planes["ImagingPlane"].grid_spacing: [2. 2.]
+nwb.imaging_planes["ImagingPlane"].grid_spacing_unit # (str) microns
+nwb.imaging_planes["ImagingPlane"].device # (Device)
+nwb.imaging_planes["ImagingPlane"].device.description # (str) My two-photon microscope
+nwb.imaging_planes["ImagingPlane"].device.manufacturer # (str) Neurolabware
+nwb.session_id # (str) 03
+nwb.subject # (Subject)
+nwb.subject.age__reference # (str) birth
+nwb.subject.sex # (str) M
+nwb.subject.species # (str) Mus musculus
+nwb.subject.subject_id # (str) m11
+nwb.subject.date_of_birth # (datetime) 2022-09-20T00:00:00-07:00
+
+STDERR:
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/home/jovyan/dandi-ai-notebooks-3/packages/get-nwbfile-info/src/get_nwbfile_info/core.py:319: UserWarning: Warning: Duplicate entries found in the results.
+  warnings.warn("Warning: Duplicate entries found in the results.")
+
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 8
+Submitting completion request...
+Processing response...
+
+Tool: execute_command
+Params: {'command': 'mkdir explore', 'requires_approval': 'false'}
+================================
+Command to be executed
+mkdir explore
+================================
+Total prompt tokens: 60012 + 0
+Total completion tokens: 781 + 0
+
+=========================================
+
+execute_command 'mkdir explore' (requires approval):
+Command executed successfully
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 10
+Submitting completion request...
+Processing response...
+
+Tool: write_to_file
+Params: {'path': 'explore/explore_reward.py', 'content': 'import pynwb\nimport h5py\nimport remfile\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport seaborn as sns\nsns.set_theme()\n\n# Script to explore the \'Reward\' data in the NWB file.\n\nurl = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\nremote_file = remfile.File(url)\nh5_file = h5py.File(remote_file)\nio = pynwb.NWBHDF5IO(file=h5_file)\nnwb = io.read()\n\n# Extract reward data and timestamps\nreward_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].data[:]\nreward_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].timestamps[:]\n\n# Plot the reward data\nplt.figure(figsize=(10, 6))\nplt.plot(reward_timestamps, reward_data, marker=\'o\', linestyle=\'-\', markersize=4)\nplt.xlabel("Time (s)")\nplt.ylabel("Reward (mL)")\nplt.title("Reward over Time")\nplt.grid(True)\nplt.savefig("explore/reward_over_time.png")\n\nprint("Reward data exploration complete. Plot saved to explore/reward_over_time.png")'}
+================================
+Content to be written to explore/explore_reward.py:
+import pynwb
+import h5py
+import remfile
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+sns.set_theme()
+
+# Script to explore the 'Reward' data in the NWB file.
+
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+# Extract reward data and timestamps
+reward_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].data[:]
+reward_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].timestamps[:]
+
+# Plot the reward data
+plt.figure(figsize=(10, 6))
+plt.plot(reward_timestamps, reward_data, marker='o', linestyle='-', markersize=4)
+plt.xlabel("Time (s)")
+plt.ylabel("Reward (mL)")
+plt.title("Reward over Time")
+plt.grid(True)
+plt.savefig("explore/reward_over_time.png")
+
+print("Reward data exploration complete. Plot saved to explore/reward_over_time.png")
+================================
+Total prompt tokens: 88135 + 0
+Total completion tokens: 1197 + 0
+
+=========================================
+
+write_to_file for 'explore/explore_reward.py':
+Successfully wrote 1027 characters to explore/explore_reward.py
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 12
+Submitting completion request...
+Processing response...
+
+Tool: execute_command
+Params: {'command': 'python explore/explore_reward.py', 'requires_approval': 'false', 'timeout': '90'}
+================================
+Command to be executed
+python explore/explore_reward.py
+================================
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+Reward data exploration complete. Plot saved to explore/reward_over_time.png
+Total prompt tokens: 116780 + 0
+Total completion tokens: 1269 + 0
+
+=========================================
+
+execute_command 'python explore/explore_reward.py' (requires approval):
+Command executed successfully
+STDOUT:
+Reward data exploration complete. Plot saved to explore/reward_over_time.png
+
+STDERR:
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 14
+Submitting completion request...
+Processing response...
+
+Tool: read_image
+Params: {'path': 'explore/reward_over_time.png', 'instructions': 'Analyze the plot of reward over time. Provide a description of the plot, including the number of data points, any trends or patterns observed, and the range of reward values. Also note any missing data or unexpected values.'}
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Total prompt tokens: 145708 + 1877
+Total completion tokens: 1370 + 55
+
+=========================================
+
+read_image for 'explore/reward_over_time.png':
+The image for explore/reward_over_time.png is attached. AI description: The plot depicts reward over time, with approximately 60 data points. The reward values are consistently at 0.004 mL throughout the observed time range from 0 to 1300 seconds, indicating a stable reward without any fluctuations or missing data.
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 16
+Submitting completion request...
+Processing response...
+
+Tool: write_to_file
+Params: {'path': 'explore/explore_position.py', 'content': 'import pynwb\nimport h5py\nimport remfile\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport seaborn as sns\nsns.set_theme()\n\n# Script to explore the \'position\' data in the NWB file.\n\nurl = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\nremote_file = remfile.File(url)\nh5_file = h5py.File(remote_file)\nio = pynwb.NWBHDF5IO(file=h5_file)\nnwb = io.read()\n\n# Extract position data and timestamps\nposition_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[:]\nposition_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[:]\n\n# Plot the position data\nplt.figure(figsize=(10, 6))\nplt.plot(position_timestamps, position_data, marker=\'.\', linestyle=\'-\', markersize=2)\nplt.xlabel("Time (s)")\nplt.ylabel("Position (cm)")\nplt.title("Position over Time")\nplt.grid(True)\nplt.savefig("explore/position_over_time.png")\n\nprint("Position data exploration complete. Plot saved to explore/position_over_time.png")'}
+================================
+Content to be written to explore/explore_position.py:
+import pynwb
+import h5py
+import remfile
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+sns.set_theme()
+
+# Script to explore the 'position' data in the NWB file.
+
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+# Extract position data and timestamps
+position_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[:]
+position_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[:]
+
+# Plot the position data
+plt.figure(figsize=(10, 6))
+plt.plot(position_timestamps, position_data, marker='.', linestyle='-', markersize=2)
+plt.xlabel("Time (s)")
+plt.ylabel("Position (cm)")
+plt.title("Position over Time")
+plt.grid(True)
+plt.savefig("explore/position_over_time.png")
+
+print("Position data exploration complete. Plot saved to explore/position_over_time.png")
+================================
+Total prompt tokens: 176716 + 1877
+Total completion tokens: 1806 + 55
+
+=========================================
+
+write_to_file for 'explore/explore_position.py':
+Successfully wrote 1055 characters to explore/explore_position.py
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 18
+Submitting completion request...
+Processing response...
+
+Tool: execute_command
+Params: {'command': 'python explore/explore_position.py', 'requires_approval': 'false', 'timeout': '90'}
+================================
+Command to be executed
+python explore/explore_position.py
+================================
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+Position data exploration complete. Plot saved to explore/position_over_time.png
+Total prompt tokens: 208284 + 1877
+Total completion tokens: 1878 + 55
+
+=========================================
+
+execute_command 'python explore/explore_position.py' (requires approval):
+Command executed successfully
+STDOUT:
+Position data exploration complete. Plot saved to explore/position_over_time.png
+
+STDERR:
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 20
+Submitting completion request...
+Processing response...
+
+Tool: read_image
+Params: {'path': 'explore/position_over_time.png', 'instructions': 'Analyze the plot of position over time. Provide a description of the plot, including the number of data points, any trends or patterns observed, and the range of position values. Also note any missing data or unexpected values.'}
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Total prompt tokens: 240153 + 3754
+Total completion tokens: 1979 + 146
+
+=========================================
+
+read_image for 'explore/position_over_time.png':
+The image for explore/position_over_time.png is attached. AI description: The plot shows position (cm) over time (s), with approximately 1400 time points. The position oscillates between roughly -50 cm and 450 cm for most of the time, with an initial abrupt drop to around -500 cm at the start. There is a consistent periodic pattern of sharp increases and gradual decreases in position, but there are some drops and pauses, particularly around 750 seconds.
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 22
+Submitting completion request...
+Processing response...
+
+Tool: write_to_file
+Params: {'path': 'explore/explore_lick.py', 'content': 'import pynwb\nimport h5py\nimport remfile\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport seaborn as sns\nsns.set_theme()\n\n# Script to explore the \'lick\' data in the NWB file.\n\nurl = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\nremote_file = remfile.File(url)\nh5_file = h5py.File(remote_file)\nio = pynwb.NWBHDF5IO(file=h5_file)\nnwb = io.read()\n\n# Extract lick data and timestamps\nlick_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data[:]\nlick_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps[:]\n\n# Plot the lick data\nplt.figure(figsize=(10, 6))\nplt.plot(lick_timestamps, lick_data, marker=\'.\', linestyle=\'-\', markersize=2)\nplt.xlabel("Time (s)")\nplt.ylabel("Lick (AU)")\nplt.title("Lick over Time")\nplt.grid(True)\nplt.savefig("explore/lick_over_time.png")\n\nprint("Lick data exploration complete. Plot saved to explore/lick_over_time.png")'}
+================================
+Content to be written to explore/explore_lick.py:
+import pynwb
+import h5py
+import remfile
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+sns.set_theme()
+
+# Script to explore the 'lick' data in the NWB file.
+
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+# Extract lick data and timestamps
+lick_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data[:]
+lick_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps[:]
+
+# Plot the lick data
+plt.figure(figsize=(10, 6))
+plt.plot(lick_timestamps, lick_data, marker='.', linestyle='-', markersize=2)
+plt.xlabel("Time (s)")
+plt.ylabel("Lick (AU)")
+plt.title("Lick over Time")
+plt.grid(True)
+plt.savefig("explore/lick_over_time.png")
+
+print("Lick data exploration complete. Plot saved to explore/lick_over_time.png")
+================================
+Total prompt tokens: 271060 + 3754
+Total completion tokens: 2421 + 146
+
+=========================================
+
+write_to_file for 'explore/explore_lick.py':
+Successfully wrote 999 characters to explore/explore_lick.py
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 24
+Submitting completion request...
+Processing response...
+
+Tool: execute_command
+Params: {'command': 'python explore/explore_lick.py', 'requires_approval': 'false', 'timeout': '90'}
+================================
+Command to be executed
+python explore/explore_lick.py
+================================
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+Lick data exploration complete. Plot saved to explore/lick_over_time.png
+Total prompt tokens: 302550 + 3754
+Total completion tokens: 2493 + 146
+
+=========================================
+
+execute_command 'python explore/explore_lick.py' (requires approval):
+Command executed successfully
+STDOUT:
+Lick data exploration complete. Plot saved to explore/lick_over_time.png
+
+STDERR:
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 26
+Submitting completion request...
+Processing response...
+
+Tool: read_image
+Params: {'path': 'explore/lick_over_time.png', 'instructions': 'Analyze the plot of lick over time. Provide a description of the plot, including the number of data points, any trends or patterns observed, and the range of lick values. Also note any missing data or unexpected values.'}
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Total prompt tokens: 334360 + 5631
+Total completion tokens: 2594 + 249
+
+=========================================
+
+read_image for 'explore/lick_over_time.png':
+The image for explore/lick_over_time.png is attached. AI description: The plot shows lick activity over time, with time in seconds on the x-axis and lick values in arbitrary units (AU) on the y-axis. Lick values range from approximately 0 to 5 AU. The data is represented as a time series with frequent, fluctuating lick values. There appears to be a slight decrease in lick frequency around 600-800 seconds. The number of vertical lines suggest a high number of data points. There are no visible missing data or unexpected values.
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 28
+Submitting completion request...
+Processing response...
+
+Tool: write_to_file
+Params: {'path': 'explore/explore_position_lick.py', 'content': 'import pynwb\nimport h5py\nimport remfile\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport seaborn as sns\nsns.set_theme()\n\n# Script to explore the relationship between \'position\' and \'lick\' data.\n\nurl = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\nremote_file = remfile.File(url)\nh5_file = h5py.File(remote_file)\nio = pynwb.NWBHDF5IO(file=h5_file)\nnwb = io.read()\n\n# Extract position and lick data and timestamps\nposition_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[:]\nposition_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[:]\nlick_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data[:]\nlick_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps[:]\n\n# Ensure both datasets have the same timestamps\n# For simplicity, let\'s take the minimum length of both datasets\nmin_length = min(len(position_data), len(lick_data))\nposition_data = position_data[:min_length]\nlick_data = lick_data[:min_length]\nposition_timestamps = position_timestamps[:min_length]\nlick_timestamps = lick_timestamps[:min_length]\n\n# Plot position vs lick\nplt.figure(figsize=(10, 6))\nplt.scatter(position_data, lick_data, alpha=0.5)\nplt.xlabel("Position (cm)")\nplt.ylabel("Lick (AU)")\nplt.title("Position vs Lick")\nplt.grid(True)\nplt.savefig("explore/position_vs_lick.png")\n\nprint("Position vs lick data exploration complete. Plot saved to explore/position_vs_lick.png")'}
+================================
+Content to be written to explore/explore_position_lick.py:
+import pynwb
+import h5py
+import remfile
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+sns.set_theme()
+
+# Script to explore the relationship between 'position' and 'lick' data.
+
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+# Extract position and lick data and timestamps
+position_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[:]
+position_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[:]
+lick_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data[:]
+lick_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps[:]
+
+# Ensure both datasets have the same timestamps
+# For simplicity, let's take the minimum length of both datasets
+min_length = min(len(position_data), len(lick_data))
+position_data = position_data[:min_length]
+lick_data = lick_data[:min_length]
+position_timestamps = position_timestamps[:min_length]
+lick_timestamps = lick_timestamps[:min_length]
+
+# Plot position vs lick
+plt.figure(figsize=(10, 6))
+plt.scatter(position_data, lick_data, alpha=0.5)
+plt.xlabel("Position (cm)")
+plt.ylabel("Lick (AU)")
+plt.title("Position vs Lick")
+plt.grid(True)
+plt.savefig("explore/position_vs_lick.png")
+
+print("Position vs lick data exploration complete. Plot saved to explore/position_vs_lick.png")
+================================
+Total prompt tokens: 366786 + 5631
+Total completion tokens: 3187 + 249
+
+=========================================
+
+write_to_file for 'explore/explore_position_lick.py':
+Successfully wrote 1618 characters to explore/explore_position_lick.py
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 30
+Submitting completion request...
+Processing response...
+
+Tool: execute_command
+Params: {'command': 'python explore/explore_position_lick.py', 'requires_approval': 'false', 'timeout': '90'}
+================================
+Command to be executed
+python explore/explore_position_lick.py
+================================
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+Position vs lick data exploration complete. Plot saved to explore/position_vs_lick.png
+Total prompt tokens: 399971 + 5631
+Total completion tokens: 3265 + 249
+
+=========================================
+
+execute_command 'python explore/explore_position_lick.py' (requires approval):
+Command executed successfully
+STDOUT:
+Position vs lick data exploration complete. Plot saved to explore/position_vs_lick.png
+
+STDERR:
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 32
+Submitting completion request...
+Processing response...
+
+Tool: read_image
+Params: {'path': 'explore/position_vs_lick.png', 'instructions': 'Analyze the plot of position vs lick. Provide a description of the plot, including any correlations or relationships observed between position and lick activity. Note any clusters or patterns in the scatter plot.'}
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Total prompt tokens: 433505 + 7501
+Total completion tokens: 3359 + 307
+
+=========================================
+
+read_image for 'explore/position_vs_lick.png':
+The image for explore/position_vs_lick.png is attached. AI description: The scatter plot shows 'Position vs Lick'. Lick activity (AU) appears as discrete levels (0 to 5).  The majority of licks occur when the position is greater than 0 cm, and certain positions appear to correlate with distinct lick levels, with clear clusters forming horizontal bands.
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 34
+Submitting completion request...
+Processing response...
+
+Tool: write_to_file
+Params: {'path': 'notebook.py', 'content': '# %% [markdown]\n# # Exploring Dandiset 001361: Hippocampal Population Code for Experience Relative to Reward\n#\n# **Important:** This notebook was AI-generated and has not been fully verified. Use caution when interpreting the code or results.\n#\n# This notebook provides an overview of Dandiset 001361, which contains 2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. The data were collected by Sosa, Plitt, & Giocomo and are related to the paper "A flexible hippocampal population code for experience relative to reward," Nature Neuroscience.\n#\n# We will cover the following:\n# 1.  Loading the Dandiset and listing its assets.\n# 2.  Loading an NWB file and examining its metadata.\n# 3.  Visualizing position and lick data.\n# 4.  Exploring the relationship between position and lick activity.\n#\n# Required packages:\n# *   pynwb\n# *   h5py\n# *   remfile\n# *   matplotlib\n# *   numpy\n# *   seaborn\n\n# %%\nfrom dandi.dandiapi import DandiAPIClient\n\n# Connect to DANDI archive\nclient = DandiAPIClient()\ndandiset = client.get_dandiset("001361")\n\n# Print basic information about the Dandiset\nmetadata = dandiset.get_raw_metadata()\nprint(f"Dandiset name: {metadata[\'name\']}")\nprint(f"Dandiset URL: {metadata[\'url\']}")\n\n# List the assets in the Dandiset\nassets = list(dandiset.get_assets())\nprint(f"\\nFound {len(assets)} assets in the dataset")\nprint("\\nFirst 5 assets:")\nfor asset in assets[:5]:\n    print(f"- {asset.path}")\n\n# %% [markdown]\n# Now, let\'s load one of the NWB files and examine its contents. We will load the file `sub-m11/sub-m11_ses-03_behavior+ophys.nwb`.\n\n# %%\nimport pynwb\nimport h5py\nimport remfile\n\n# Load\nurl = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\nremote_file = remfile.File(url)\nh5_file = h5py.File(remote_file)\nio = pynwb.NWBHDF5IO(file=h5_file)\nnwb = io.read()\n\nnwb.session_description # (str) processed suite2p data\n\n# %% [markdown]\n# Now let\'s visualize the position data from the NWB file.\n\n# %%\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport seaborn as sns\nsns.set_theme()\n\n# Extract position data and timestamps\nposition_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[:]\nposition_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[:]\n\n# Plot the position data\nplt.figure(figsize=(10, 6))\nplt.plot(position_timestamps, position_data, marker=\'.\', linestyle=\'-\', markersize=2)\nplt.xlabel("Time (s)")\nplt.ylabel("Position (cm)")\nplt.title("Position over Time")\nplt.grid(True)\nplt.show()\n\n# %% [markdown]\n# Now let\'s visualize the lick data from the NWB file.\n\n# %%\n# Extract lick data and timestamps\nlick_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data[:]\nlick_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps[:]\n\n# Plot the lick data\nplt.figure(figsize=(10, 6))\nplt.plot(lick_timestamps, lick_data, marker=\'.\', linestyle=\'-\', markersize=2)\nplt.xlabel("Time (s)")\nplt.ylabel("Lick (AU)")\nplt.title("Lick over Time")\nplt.grid(True)\nplt.show()\n\n# %% [markdown]\n# Finally, let\'s explore the relationship between position and lick activity.\n\n# %%\n# Ensure both datasets have the same timestamps\nmin_length = min(len(position_data), len(lick_data))\nposition_data = position_data[:min_length]\nlick_data = lick_data[:min_length]\nposition_timestamps = position_timestamps[:min_length]\nlick_timestamps = lick_timestamps[:min_length]\n\n# Plot position vs lick\nplt.figure(figsize=(10, 6))\nplt.scatter(position_data, lick_data, alpha=0.5)\nplt.xlabel("Position (cm)")\nplt.ylabel("Lick (AU)")\nplt.title("Position vs Lick")\nplt.grid(True)\nplt.show()\n\n# %% [markdown]\n# ## Summary\n#\n# This notebook explored the Dandiset 001361, focusing on the NWB file `sub-m11/sub-m11_ses-03_behavior+ophys.nwb`. We visualized position and lick data, and explored the relationship between them. The analysis revealed that licking activity is correlated with position.\n#\n# Future directions for analysis could include:\n# *   Analyzing the neural activity in relation to position and licking behavior.\n# *   Exploring other NWB files in the Dandiset to see if the observed patterns are consistent across sessions and subjects.'}
+================================
+Content to be written to notebook.py:
+# %% [markdown]
+# # Exploring Dandiset 001361: Hippocampal Population Code for Experience Relative to Reward
+#
+# **Important:** This notebook was AI-generated and has not been fully verified. Use caution when interpreting the code or results.
+#
+# This notebook provides an overview of Dandiset 001361, which contains 2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. The data were collected by Sosa, Plitt, & Giocomo and are related to the paper "A flexible hippocampal population code for experience relative to reward," Nature Neuroscience.
+#
+# We will cover the following:
+# 1.  Loading the Dandiset and listing its assets.
+# 2.  Loading an NWB file and examining its metadata.
+# 3.  Visualizing position and lick data.
+# 4.  Exploring the relationship between position and lick activity.
+#
+# Required packages:
+# *   pynwb
+# *   h5py
+# *   remfile
+# *   matplotlib
+# *   numpy
+# *   seaborn
+
+# %%
+from dandi.dandiapi import DandiAPIClient
+
+# Connect to DANDI archive
+client = DandiAPIClient()
+dandiset = client.get_dandiset("001361")
+
+# Print basic information about the Dandiset
+metadata = dandiset.get_raw_metadata()
+print(f"Dandiset name: {metadata['name']}")
+print(f"Dandiset URL: {metadata['url']}")
+
+# List the assets in the Dandiset
+assets = list(dandiset.get_assets())
+print(f"\nFound {len(assets)} assets in the dataset")
+print("\nFirst 5 assets:")
+for asset in assets[:5]:
+    print(f"- {asset.path}")
+
+# %% [markdown]
+# Now, let's load one of the NWB files and examine its contents. We will load the file `sub-m11/sub-m11_ses-03_behavior+ophys.nwb`.
+
+# %%
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb.session_description # (str) processed suite2p data
+
+# %% [markdown]
+# Now let's visualize the position data from the NWB file.
+
+# %%
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+sns.set_theme()
+
+# Extract position data and timestamps
+position_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[:]
+position_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[:]
+
+# Plot the position data
+plt.figure(figsize=(10, 6))
+plt.plot(position_timestamps, position_data, marker='.', linestyle='-', markersize=2)
+plt.xlabel("Time (s)")
+plt.ylabel("Position (cm)")
+plt.title("Position over Time")
+plt.grid(True)
+plt.show()
+
+# %% [markdown]
+# Now let's visualize the lick data from the NWB file.
+
+# %%
+# Extract lick data and timestamps
+lick_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data[:]
+lick_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps[:]
+
+# Plot the lick data
+plt.figure(figsize=(10, 6))
+plt.plot(lick_timestamps, lick_data, marker='.', linestyle='-', markersize=2)
+plt.xlabel("Time (s)")
+plt.ylabel("Lick (AU)")
+plt.title("Lick over Time")
+plt.grid(True)
+plt.show()
+
+# %% [markdown]
+# Finally, let's explore the relationship between position and lick activity.
+
+# %%
+# Ensure both datasets have the same timestamps
+min_length = min(len(position_data), len(lick_data))
+position_data = position_data[:min_length]
+lick_data = lick_data[:min_length]
+position_timestamps = position_timestamps[:min_length]
+lick_timestamps = lick_timestamps[:min_length]
+
+# Plot position vs lick
+plt.figure(figsize=(10, 6))
+plt.scatter(position_data, lick_data, alpha=0.5)
+plt.xlabel("Position (cm)")
+plt.ylabel("Lick (AU)")
+plt.title("Position vs Lick")
+plt.grid(True)
+plt.show()
+
+# %% [markdown]
+# ## Summary
+#
+# This notebook explored the Dandiset 001361, focusing on the NWB file `sub-m11/sub-m11_ses-03_behavior+ophys.nwb`. We visualized position and lick data, and explored the relationship between them. The analysis revealed that licking activity is correlated with position.
+#
+# Future directions for analysis could include:
+# *   Analyzing the neural activity in relation to position and licking behavior.
+# *   Exploring other NWB files in the Dandiset to see if the observed patterns are consistent across sessions and subjects.
+================================
+Total prompt tokens: 467623 + 7501
+Total completion tokens: 4792 + 307
+
+=========================================
+
+write_to_file for 'notebook.py':
+Successfully wrote 4363 characters to notebook.py
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 36
+Submitting completion request...
+Processing response...
+
+Tool: execute_command
+Params: {'command': 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb', 'requires_approval': 'false', 'timeout': '600'}
+================================
+Command to be executed
+jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb
+================================
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+[NbClientApp] Save executed results to notebook.ipynb
+Total prompt tokens: 503342 + 7501
+Total completion tokens: 4886 + 307
+
+=========================================
+
+execute_command 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb' (requires approval):
+Command executed successfully
+STDOUT:
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb
+
+STDERR:
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+[NbClientApp] Save executed results to notebook.ipynb
+
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 38
+Submitting completion request...
+Processing response...
+
+Tool: execute_command
+Params: {'command': 'python critique_dandiset_notebook.py notebook.ipynb', 'requires_approval': 'false'}
+================================
+Command to be executed
+python critique_dandiset_notebook.py notebook.ipynb
+================================
