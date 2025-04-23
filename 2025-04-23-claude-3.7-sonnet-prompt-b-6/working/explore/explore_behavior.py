@@ -1,135 +1,139 @@
 """
-Explore behavioral data from the NWB file.
-This script extracts and visualizes behavioral data from the Dandiset,
-including position, speed, licks, rewards, and trial structure.
+This script explores the behavioral data in the NWB file.
+We'll look at position, speed, reward, and trial information to understand 
+the behavioral components of the experiment.
 """
 
-import pynwb
+import matplotlib.pyplot as plt
+import numpy as np
 import h5py
 import remfile
-import numpy as np
-import matplotlib.pyplot as plt
-import os
+import pynwb
 
-# Create directory for plots if it doesn't exist
-os.makedirs('explore', exist_ok=True)
+# Set up matplotlib defaults
+plt.rcParams['figure.figsize'] = (12, 8)
 
-# Set up matplotlib style
-plt.rcParams.update({'font.size': 12, 'figure.figsize': (12, 8)})
-
-# Load the NWB file
+# Load the remote NWB file
 url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
 remote_file = remfile.File(url)
 h5_file = h5py.File(remote_file)
 io = pynwb.NWBHDF5IO(file=h5_file)
 nwb = io.read()
 
-print(f"Subject: {nwb.subject.subject_id}")
-print(f"Session: {nwb.session_id}")
-print(f"Identifier: {nwb.identifier}")
-print(f"Session start time: {nwb.session_start_time}")
+print("Loaded NWB file:", nwb.identifier)
+print("Session:", nwb.session_id)
+print("Subject:", nwb.subject.subject_id)
+print("Species:", nwb.subject.species)
+print("Sex:", nwb.subject.sex)
 
-# Extract behavioral data - use a subset to reduce data size
-# Get time data for a subset of the data (first 5000 samples)
-sample_size = 5000
-timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[:sample_size]
+# Access behavioral data
+behavior = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"]
 
-# Extract position data
-position = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[:sample_size]
+# Get a list of all behavioral timeseries
+time_series_names = list(behavior.time_series.keys())
+print("\nAvailable behavioral time series:")
+for name in time_series_names:
+    print(f"- {name}")
 
-# Extract speed data
-speed = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["speed"].data[:sample_size]
+# Let's extract a subset of timestamps and position data to avoid loading too much data at once
+# We'll use a slice of 5000 data points, which should be enough to see patterns
+start_idx = 0
+num_samples = 5000
+position_data = behavior.time_series["position"].data[start_idx:start_idx+num_samples]
+position_timestamps = behavior.time_series["position"].timestamps[start_idx:start_idx+num_samples]
+speed_data = behavior.time_series["speed"].data[start_idx:start_idx+num_samples]
+reward_zone_data = behavior.time_series["reward_zone"].data[start_idx:start_idx+num_samples]
+trial_number_data = behavior.time_series["trial number"].data[start_idx:start_idx+num_samples]
+trial_start_data = behavior.time_series["trial_start"].data[start_idx:start_idx+num_samples]
+teleport_data = behavior.time_series["teleport"].data[start_idx:start_idx+num_samples]
 
-# Extract lick data
-lick = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data[:sample_size]
+# Create a figure with multiple subplots
+fig, axes = plt.subplots(4, 1, sharex=True)
 
-# Extract reward zone data
-reward_zone = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["reward_zone"].data[:sample_size]
+# Position plot
+axes[0].plot(position_timestamps, position_data, 'b-')
+axes[0].set_ylabel('Position (cm)')
+axes[0].set_title('Animal Position Over Time')
 
-# Extract trial number data
-trial_num = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial number"].data[:sample_size]
+# Speed plot
+axes[1].plot(position_timestamps, speed_data, 'g-')
+axes[1].set_ylabel('Speed (cm/s)')
+axes[1].set_title('Animal Speed')
 
-# Extract trial start and teleport data
-trial_start = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["trial_start"].data[:sample_size]
-teleport = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["teleport"].data[:sample_size]
+# Reward zone entry
+axes[2].plot(position_timestamps, reward_zone_data, 'r-')
+axes[2].set_ylabel('Reward Zone')
+axes[2].set_title('Reward Zone Entry (Binary)')
 
-# Get reward timestamps
-reward_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].timestamps[:]
-reward_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["Reward"].data[:]
+# Trial number
+axes[3].plot(position_timestamps, trial_number_data, 'k-')
+axes[3].set_ylabel('Trial Number')
+axes[3].set_xlabel('Time (s)')
+axes[3].set_title('Trial Number Over Time')
 
-print(f"Position data shape: {position.shape}")
-print(f"Speed data shape: {speed.shape}")
-print(f"Lick data shape: {lick.shape}")
-print(f"Reward zone data shape: {reward_zone.shape}")
-print(f"Trial number data shape: {trial_num.shape}")
-print(f"Number of rewards: {len(reward_timestamps)}")
-
-# Create plots
-# Fig 1: Position vs Time
-plt.figure()
-plt.plot(timestamps, position)
-plt.xlabel('Time (s)')
-plt.ylabel('Position (cm)')
-plt.title('Mouse Position in Virtual Track')
-plt.grid(True)
-plt.savefig('explore/position_vs_time.png', dpi=150)
+plt.tight_layout()
+plt.savefig("explore/behavior_timeseries.png")
 plt.close()
 
-# Fig 2: Speed vs Time
-plt.figure()
-plt.plot(timestamps, speed)
-plt.xlabel('Time (s)')
-plt.ylabel('Speed (cm/s)')
-plt.title('Mouse Speed')
-plt.grid(True)
-plt.savefig('explore/speed_vs_time.png', dpi=150)
+# Let's also look at the relationship between position and trial starts
+fig, ax = plt.subplots(1, 1)
+# Plot position data
+ax.plot(position_timestamps, position_data, 'b-', alpha=0.5)
+# Overlay trial start events
+trial_start_events = np.where(trial_start_data > 0)[0]
+if len(trial_start_events) > 0:
+    ax.scatter(position_timestamps[trial_start_events], position_data[trial_start_events], 
+               color='green', marker='^', s=100, label='Trial Start')
+
+# Overlay teleport events
+teleport_events = np.where(teleport_data > 0)[0]
+if len(teleport_events) > 0:
+    ax.scatter(position_timestamps[teleport_events], position_data[teleport_events], 
+               color='red', marker='v', s=100, label='Teleport/Trial End')
+
+ax.set_xlabel('Time (s)')
+ax.set_ylabel('Position (cm)')
+ax.set_title('Position with Trial Start and End Events')
+ax.legend()
+plt.tight_layout()
+plt.savefig("explore/trial_events.png")
 plt.close()
 
-# Fig 3: Lick and Reward Zone
-plt.figure()
-plt.plot(timestamps, lick, 'b', label='Lick')
-plt.plot(timestamps, reward_zone, 'r', label='Reward Zone')
-# Mark rewards on the plot
-reward_in_range = [t for t in reward_timestamps if t <= timestamps[-1]]
-if reward_in_range:
-    plt.vlines(reward_in_range, 0, max(lick), 'g', label='Reward')
-plt.xlabel('Time (s)')
-plt.ylabel('Value')
-plt.title('Licking Behavior and Reward Zone')
-plt.legend()
-plt.grid(True)
-plt.savefig('explore/lick_reward.png', dpi=150)
+# Let's also look at a simple histogram of positions to see where the animal spends most time
+fig, ax = plt.subplots(1, 1)
+ax.hist(position_data, bins=50, alpha=0.7)
+ax.set_xlabel('Position (cm)')
+ax.set_ylabel('Count')
+ax.set_title('Histogram of Animal Positions')
+plt.tight_layout()
+plt.savefig("explore/position_histogram.png")
 plt.close()
 
-# Fig 4: Trial structure
-plt.figure()
-plt.plot(timestamps, trial_num, label='Trial Number')
-plt.plot(timestamps, trial_start, 'r', label='Trial Start')
-plt.plot(timestamps, teleport, 'g', label='Teleport')
-plt.xlabel('Time (s)')
-plt.ylabel('Value')
-plt.title('Trial Structure')
-plt.legend()
-plt.grid(True)
-plt.savefig('explore/trial_structure.png', dpi=150)
-plt.close()
+# Extract reward information
+# Reward events have their own time series with fewer data points
+reward_data = behavior.time_series["Reward"].data[:]
+reward_timestamps = behavior.time_series["Reward"].timestamps[:]
 
-# Fig 5: Position vs Trial Number
-# Create a 2D histogram of position vs trial number
-plt.figure()
-trial_nums = np.unique(trial_num)
-valid_trials = trial_nums[~np.isnan(trial_nums)]
-if len(valid_trials) > 1:  # Ensure we have at least 2 trials
-    # Create bins for position and trial number
-    pos_bins = np.linspace(min(position), max(position), 50)
-    trial_bins = np.linspace(min(valid_trials), max(valid_trials), len(valid_trials)+1)
-    
-    plt.hist2d(position, trial_num, bins=[pos_bins, trial_bins], cmap='viridis')
-    plt.colorbar(label='Counts')
-    plt.xlabel('Position (cm)')
-    plt.ylabel('Trial Number')
-    plt.title('Position vs Trial Number')
-    plt.savefig('explore/position_vs_trial.png', dpi=150)
+print(f"\nNumber of reward events: {len(reward_data)}")
+print(f"First 5 reward timestamps: {reward_timestamps[:5]}")
+
+# Let's summarize reward locations by finding the position at each reward time
+reward_positions = []
+
+# This is a naive approach and might not be exact, but gives an approximation of reward positions
+for reward_time in reward_timestamps:
+    # Find the closest timestamp in the position data
+    idx = np.abs(position_timestamps - reward_time).argmin()
+    if idx < len(position_data):
+        reward_positions.append(position_data[idx])
+
+# Plot histogram of reward positions if we found any
+if reward_positions:
+    fig, ax = plt.subplots(1, 1)
+    ax.hist(reward_positions, bins=20, alpha=0.7)
+    ax.set_xlabel('Position (cm)')
+    ax.set_ylabel('Count')
+    ax.set_title('Histogram of Reward Positions')
+    plt.tight_layout()
+    plt.savefig("explore/reward_position_histogram.png")
     plt.close()
-
-print("Plots saved in the 'explore' directory.")
