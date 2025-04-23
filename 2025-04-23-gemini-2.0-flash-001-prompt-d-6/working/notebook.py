@@ -48,6 +48,7 @@ import remfile
 
 # Load
 url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+#Using remfile to load data from remote source
 remote_file = remfile.File(url)
 h5_file = h5py.File(remote_file)
 io = pynwb.NWBHDF5IO(file=h5_file)
@@ -65,8 +66,9 @@ import seaborn as sns
 sns.set_theme()
 
 # Extract position data and timestamps
-position_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[:]
-position_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[:]
+position_ts = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series
+position_data = position_ts.get('position').data[:]
+position_timestamps = position_ts.get('position').timestamps[:]
 
 # Plot the position data
 plt.figure(figsize=(10, 6))
@@ -74,6 +76,7 @@ plt.plot(position_timestamps, position_data, marker='.', linestyle='-', markersi
 plt.xlabel("Time (s)")
 plt.ylabel("Position (cm)")
 plt.title("Position over Time")
+plt.ylim([0, 450])  # Adjust y-axis to focus on relevant position range
 plt.grid(True)
 plt.show()
 
@@ -82,14 +85,15 @@ plt.show()
 
 # %%
 # Extract lick data and timestamps
-lick_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].data[:]
-lick_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["lick"].timestamps[:]
+position_ts = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series
+lick_data = position_ts.get('lick').data[:]
+lick_timestamps = position_ts.get('lick').timestamps[:]
 
 # Plot the lick data
 plt.figure(figsize=(10, 6))
 plt.plot(lick_timestamps, lick_data, marker='.', linestyle='-', markersize=2)
 plt.xlabel("Time (s)")
-plt.ylabel("Lick (AU)")
+plt.ylabel("Lick (Cumulative Capacitance Sensor Units)")
 plt.title("Lick over Time")
 plt.grid(True)
 plt.show()
@@ -105,19 +109,27 @@ lick_data = lick_data[:min_length]
 position_timestamps = position_timestamps[:min_length]
 lick_timestamps = lick_timestamps[:min_length]
 
+# Find indices where position is greater than 0
+valid_indices = np.where(position_data > 0)[0]
+
+# Filter both position and lick data using the valid indices
+position_data = position_data[valid_indices]
+lick_data = lick_data[valid_indices]
+
 # Plot position vs lick
 plt.figure(figsize=(10, 6))
 plt.scatter(position_data, lick_data, alpha=0.5)
 plt.xlabel("Position (cm)")
-plt.ylabel("Lick (AU)")
+plt.ylabel("Lick (Cumulative Capacitance Sensor Units)")
 plt.title("Position vs Lick")
+plt.xlim([0, 450])
 plt.grid(True)
 plt.show()
 
 # %% [markdown]
 # ## Summary
 #
-# This notebook explored the Dandiset 001361, focusing on the NWB file `sub-m11/sub-m11_ses-03_behavior+ophys.nwb`. We visualized position and lick data, and explored the relationship between them. The analysis revealed that licking activity is correlated with position.
+# This notebook explored the Dandiset 001361, focusing on the NWB file `sub-m11/sub-m11_ses-03_behavior+ophys.nwb`. We visualized position and lick data, and investigated the relationship between them. The analysis revealed that licking activity appears to occur preferentially at certain positions. 
 #
 # Future directions for analysis could include:
 # *   Analyzing the neural activity in relation to position and licking behavior.
