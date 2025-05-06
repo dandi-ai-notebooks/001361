@@ -1,0 +1,1908 @@
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Okay, I will create a Jupytext notebook `notebook.py` to explore and analyze Dandiset 001361 version 0.250406.0045, convert it to `notebook.ipynb`, and ensure it runs without errors. I'll follow the structure outlined in the task, including a title, disclaimer, Dandiset overview, package list, data loading examples, visualizations, and a summary. I'll use the provided command-line tools to gather Dandiset metadata, assets, and NWB file information before writing the notebook content. I will make sure that the notebook strictly conforms to the command usage provided by `tools_cli.py nwb-file-info` including the hard-coded url. I will use `# %% [markdown]` for markdown cells and `# %%` delimiters for the code cells. Finally, I will execute the converted Jupyter notebook to make sure it runs without errors.
+
+First, I need to get the Dandiset metadata using the `dandiset-info` command.
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py dandiset-info 001361 --version 0.250406.0045', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py dandiset-info 001361 --version 0.250406.0045
+================================
+{
+  "results": {
+    "id": "DANDI:001361/0.250406.0045",
+    "name": "A flexible hippocampal population code for experience relative to reward",
+    "about": [
+      {
+        "name": "hippocampus",
+        "schemaKey": "Anatomy"
+      }
+    ],
+    "access": [
+      {
+        "status": "dandi:OpenAccess",
+        "schemaKey": "AccessRequirements"
+      }
+    ],
+    "license": [
+      "spdx:CC-BY-4.0"
+    ],
+    "version": "0.250406.0045",
+    "citation": "Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. (2025) A flexible hippocampal population code for experience relative to reward (Version 0.250406.0045) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001361/0.250406.0045",
+    "keywords": [
+      "hippocampus, navigation, learning, memory, 2-photon imaging, place cells"
+    ],
+    "protocol": [],
+    "identifier": "DANDI:001361",
+    "contributor": [
+      "National Institutes of Health (NIH)",
+      "Sosa, Marielena",
+      "Plitt, Mark H.",
+      "Giocomo, Lisa M."
+    ],
+    "dateCreated": "2025-03-13T06:23:11.234153+00:00",
+    "description": "2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. Included in Sosa, Plitt, & Giocomo, \"A flexible hippocampal population code for experience relative to reward,\" Nature Neuroscience.\n\nTo reinforce rewarding behaviors, events leading up to and following rewards must be remembered. Hippocampal place cell activity spans spatial and non-spatial episodes, but whether hippocampal activity encodes entire sequences of events relative to reward is unknown. To test this, we performed two-photon imaging of hippocampal CA1 as mice navigated virtual environments with changing hidden reward locations. When the reward moved, a subpopulation of neurons updated their firing fields to the same relative position with respect to reward, constructing behavioral timescale sequences spanning the entire task. Over learning, this reward-relative representation became more robust as additional neurons were recruited, and changes in reward-relative firing often preceded behavioral adaptations following reward relocation. Concurrently, the spatial environment code was maintained through a parallel, dynamic subpopulation rather than through dedicated cell classes. These findings reveal how hippocampal ensembles flexibly encode multiple aspects of experience while amplifying behaviorally relevant information.",
+    "variableMeasured": [
+      "TwoPhotonSeries",
+      "PlaneSegmentation",
+      "BehavioralTimeSeries",
+      "ProcessingModule",
+      "ImagingPlane",
+      "OpticalChannel"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  }
+}
+Total prompt tokens: 8934 + 0
+Total completion tokens: 299 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py dandiset-info 001361 --version 0.250406.0045' (requires approval):
+Command executed successfully
+STDOUT:
+{
+  "results": {
+    "id": "DANDI:001361/0.250406.0045",
+    "name": "A flexible hippocampal population code for experience relative to reward",
+    "about": [
+      {
+        "name": "hippocampus",
+        "schemaKey": "Anatomy"
+      }
+    ],
+    "access": [
+      {
+        "status": "dandi:OpenAccess",
+        "schemaKey": "AccessRequirements"
+      }
+    ],
+    "license": [
+      "spdx:CC-BY-4.0"
+    ],
+    "version": "0.250406.0045",
+    "citation": "Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. (2025) A flexible hippocampal population code for experience relative to reward (Version 0.250406.0045) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001361/0.250406.0045",
+    "keywords": [
+      "hippocampus, navigation, learning, memory, 2-photon imaging, place cells"
+    ],
+    "protocol": [],
+    "identifier": "DANDI:001361",
+    "contributor": [
+      "National Institutes of Health (NIH)",
+      "Sosa, Marielena",
+      "Plitt, Mark H.",
+      "Giocomo, Lisa M."
+    ],
+    "dateCreated": "2025-03-13T06:23:11.234153+00:00",
+    "description": "2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. Included in Sosa, Plitt, & Giocomo, \"A flexible hippocampal population code for experience relative to reward,\" Nature Neuroscience.\n\nTo reinforce rewarding behaviors, events leading up to and following rewards must be remembered. Hippocampal place cell activity spans spatial and non-spatial episodes, but whether hippocampal activity encodes entire sequences of events relative to reward is unknown. To test this, we performed two-photon imaging of hippocampal CA1 as mice navigated virtual environments with changing hidden reward locations. When the reward moved, a subpopulation of neurons updated their firing fields to the same relative position with respect to reward, constructing behavioral timescale sequences spanning the entire task. Over learning, this reward-relative representation became more robust as additional neurons were recruited, and changes in reward-relative firing often preceded behavioral adaptations following reward relocation. Concurrently, the spatial environment code was maintained through a parallel, dynamic subpopulation rather than through dedicated cell classes. These findings reveal how hippocampal ensembles flexibly encode multiple aspects of experience while amplifying behaviorally relevant information.",
+    "variableMeasured": [
+      "TwoPhotonSeries",
+      "PlaneSegmentation",
+      "BehavioralTimeSeries",
+      "ProcessingModule",
+      "ImagingPlane",
+      "OpticalChannel"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  }
+}
+
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 4
+Submitting completion request...
+Processing response...
+I have successfully retrieved the Dandiset metadata. Now I need to get the Dandiset assets using the `dandiset-assets` command.
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py dandiset-assets 001361 --version 0.250406.0045', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py dandiset-assets 001361 --version 0.250406.0045
+================================
+{
+  "results": {
+    "count": 152,
+    "results": [
+      {
+        "asset_id": "d77ea78a-8978-461d-9d11-3c5cef860d82",
+        "path": "sub-m11/sub-m11_ses-03_behavior+ophys.nwb",
+        "size": 93427620
+      },
+      {
+        "asset_id": "b53ef825-89ca-483e-abeb-b38a0ae9293c",
+        "path": "sub-m11/sub-m11_ses-04_behavior+ophys.nwb",
+        "size": 89674484
+      },
+      {
+        "asset_id": "a22cc1da-b5e8-4fea-a770-7b83a6e79656",
+        "path": "sub-m11/sub-m11_ses-05_behavior+ophys.nwb",
+        "size": 99311004
+      },
+      {
+        "asset_id": "5a5da0ea-5e7a-497b-a3aa-7e6ee1628bde",
+        "path": "sub-m11/sub-m11_ses-06_behavior+ophys.nwb",
+        "size": 94611388
+      },
+      {
+        "asset_id": "27481b95-aeb2-4108-b7ac-b3859892da7a",
+        "path": "sub-m11/sub-m11_ses-07_behavior+ophys.nwb",
+        "size": 119720332
+      },
+      {
+        "asset_id": "d4e069d6-40f6-4702-92d4-70abfd65c1bd",
+        "path": "sub-m11/sub-m11_ses-08_behavior+ophys.nwb",
+        "size": 128446344
+      },
+      {
+        "asset_id": "739f2b51-6fb2-4b3f-94e9-f49928b0b24f",
+        "path": "sub-m11/sub-m11_ses-09_behavior+ophys.nwb",
+        "size": 110016228
+      },
+      {
+        "asset_id": "ead36e91-9db7-482e-9ea9-bab69370a364",
+        "path": "sub-m11/sub-m11_ses-10_behavior+ophys.nwb",
+        "size": 110882776
+      },
+      {
+        "asset_id": "5910e145-9e31-4436-bcc9-264ab89684a1",
+        "path": "sub-m11/sub-m11_ses-11_behavior+ophys.nwb",
+        "size": 111621748
+      },
+      {
+        "asset_id": "303e5b99-348d-4dd7-bfac-e094817850e9",
+        "path": "sub-m11/sub-m11_ses-12_behavior+ophys.nwb",
+        "size": 120944548
+      },
+      {
+        "asset_id": "37be80e6-203e-4cd6-8e12-ad9354504117",
+        "path": "sub-m11/sub-m11_ses-13_behavior+ophys.nwb",
+        "size": 134787448
+      },
+      {
+        "asset_id": "ed84727c-a4d1-4347-adc2-18f614cd8903",
+        "path": "sub-m11/sub-m11_ses-14_behavior+ophys.nwb",
+        "size": 168882036
+      },
+      {
+        "asset_id": "538dc481-9341-4861-8552-591bffe8717e",
+        "path": "sub-m12/sub-m12_ses-01_behavior+ophys.nwb",
+        "size": 600071168
+      },
+      {
+        "asset_id": "a04698df-e49b-4fde-8d96-773f7dfa73ee",
+        "path": "sub-m12/sub-m12_ses-02_behavior+ophys.nwb",
+        "size": 423612572
+      },
+      {
+        "asset_id": "88817b3e-e56e-4dcf-9771-7f8a4cfc4ce7",
+        "path": "sub-m12/sub-m12_ses-03_behavior+ophys.nwb",
+        "size": 440515880
+      },
+      {
+        "asset_id": "934e4ae9-ecff-4c91-bb75-a8228d3f55b0",
+        "path": "sub-m12/sub-m12_ses-04_behavior+ophys.nwb",
+        "size": 391298732
+      },
+      {
+        "asset_id": "d3dcc85e-0b3c-4a7b-850b-f6209cfb5ef0",
+        "path": "sub-m12/sub-m12_ses-05_behavior+ophys.nwb",
+        "size": 538773212
+      },
+      {
+        "asset_id": "c3ff1e3b-d7e8-4b47-b027-0d796f33ae41",
+        "path": "sub-m12/sub-m12_ses-06_behavior+ophys.nwb",
+        "size": 388651092
+      },
+      {
+        "asset_id": "a6a69c98-37e5-4c1e-b255-e75d1aef178b",
+        "path": "sub-m12/sub-m12_ses-07_behavior+ophys.nwb",
+        "size": 560460572
+      },
+      {
+        "asset_id": "090c1e62-f386-46a2-8fd5-ac29c01de01b",
+        "path": "sub-m12/sub-m12_ses-08_behavior+ophys.nwb",
+        "size": 543039180
+      }
+    ]
+  }
+}
+Total prompt tokens: 19077 + 0
+Total completion tokens: 403 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py dandiset-assets 001361 --version 0.250406.0045' (requires approval):
+Command executed successfully
+STDOUT:
+{
+  "results": {
+    "count": 152,
+    "results": [
+      {
+        "asset_id": "d77ea78a-8978-461d-9d11-3c5cef860d82",
+        "path": "sub-m11/sub-m11_ses-03_behavior+ophys.nwb",
+        "size": 93427620
+      },
+      {
+        "asset_id": "b53ef825-89ca-483e-abeb-b38a0ae9293c",
+        "path": "sub-m11/sub-m11_ses-04_behavior+ophys.nwb",
+        "size": 89674484
+      },
+      {
+        "asset_id": "a22cc1da-b5e8-4fea-a770-7b83a6e79656",
+        "path": "sub-m11/sub-m11_ses-05_behavior+ophys.nwb",
+        "size": 99311004
+      },
+      {
+        "asset_id": "5a5da0ea-5e7a-497b-a3aa-7e6ee1628bde",
+        "path": "sub-m11/sub-m11_ses-06_behavior+ophys.nwb",
+        "size": 94611388
+      },
+      {
+        "asset_id": "27481b95-aeb2-4108-b7ac-b3859892da7a",
+        "path": "sub-m11/sub-m11_ses-07_behavior+ophys.nwb",
+        "size": 119720332
+      },
+      {
+        "asset_id": "d4e069d6-40f6-4702-92d4-70abfd65c1bd",
+        "path": "sub-m11/sub-m11_ses-08_behavior+ophys.nwb",
+        "size": 128446344
+      },
+      {
+        "asset_id": "739f2b51-6fb2-4b3f-94e9-f49928b0b24f",
+        "path": "sub-m11/sub-m11_ses-09_behavior+ophys.nwb",
+        "size": 110016228
+      },
+      {
+        "asset_id": "ead36e91-9db7-482e-9ea9-bab69370a364",
+        "path": "sub-m11/sub-m11_ses-10_behavior+ophys.nwb",
+        "size": 110882776
+      },
+      {
+        "asset_id": "5910e145-9e31-4436-bcc9-264ab89684a1",
+        "path": "sub-m11/sub-m11_ses-11_behavior+ophys.nwb",
+        "size": 111621748
+      },
+      {
+        "asset_id": "303e5b99-348d-4dd7-bfac-e094817850e9",
+        "path": "sub-m11/sub-m11_ses-12_behavior+ophys.nwb",
+        "size": 120944548
+      },
+      {
+        "asset_id": "37be80e6-203e-4cd6-8e12-ad9354504117",
+        "path": "sub-m11/sub-m11_ses-13_behavior+ophys.nwb",
+        "size": 134787448
+      },
+      {
+        "asset_id": "ed84727c-a4d1-4347-adc2-18f614cd8903",
+        "path": "sub-m11/sub-m11_ses-14_behavior+ophys.nwb",
+        "size": 168882036
+      },
+      {
+        "asset_id": "538dc481-9341-4861-8552-591bffe8717e",
+        "path": "sub-m12/sub-m12_ses-01_behavior+ophys.nwb",
+        "size": 600071168
+      },
+      {
+        "asset_id": "a04698df-e49b-4fde-8d96-773f7dfa73ee",
+        "path": "sub-m12/sub-m12_ses-02_behavior+ophys.nwb",
+        "size": 423612572
+      },
+      {
+        "asset_id": "88817b3e-e56e-4dcf-9771-7f8a4cfc4ce7",
+        "path": "sub-m12/sub-m12_ses-03_behavior+ophys.nwb",
+        "size": 440515880
+      },
+      {
+        "asset_id": "934e4ae9-ecff-4c91-bb75-a8228d3f55b0",
+        "path": "sub-m12/sub-m12_ses-04_behavior+ophys.nwb",
+        "size": 391298732
+      },
+      {
+        "asset_id": "d3dcc85e-0b3c-4a7b-850b-f6209cfb5ef0",
+        "path": "sub-m12/sub-m12_ses-05_behavior+ophys.nwb",
+        "size": 538773212
+      },
+      {
+        "asset_id": "c3ff1e3b-d7e8-4b47-b027-0d796f33ae41",
+        "path": "sub-m12/sub-m12_ses-06_behavior+ophys.nwb",
+        "size": 388651092
+      },
+      {
+        "asset_id": "a6a69c98-37e5-4c1e-b255-e75d1aef178b",
+        "path": "sub-m12/sub-m12_ses-07_behavior+ophys.nwb",
+        "size": 560460572
+      },
+      {
+        "asset_id": "090c1e62-f386-46a2-8fd5-ac29c01de01b",
+        "path": "sub-m12/sub-m12_ses-08_behavior+ophys.nwb",
+        "size": 543039180
+      }
+    ]
+  }
+}
+
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 6
+Submitting completion request...
+Processing response...
+I have retrieved the Dandiset assets. Now, I need to choose one NWB file from the assets and get its information using the `nwb-file-info` command. I'll choose the first NWB file, `sub-m11/sub-m11_ses-03_behavior+ophys.nwb`, with asset ID `d77ea78a-8978-461d-9d11-3c5cef860d82`.
+
+The URL for this asset is: https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/
+
+I will now use the `nwb-file-info` tool to get information about this NWB file.
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py nwb-file-info 001361 https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ --version 0.250406.0045', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py nwb-file-info 001361 https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ --version 0.250406.0045
+================================
+/home/magland/miniconda3/envs/dev/lib/python3.12/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/home/magland/src/dandi-ai-notebooks-3/packages/get-nwbfile-info/src/get_nwbfile_info/core.py:346: UserWarning: Warning: Duplicate entries found in the results.
+  warnings.warn("Warning: Duplicate entries found in the results.")
+# This script shows how to load the NWB file at https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ in Python using PyNWB
+
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb # (NWBFile)
+nwb.session_description # (str) processed suite2p data
+nwb.identifier # (str) /data/InVivoDA/GCAMP11/23_02_2023/Env1_LocationB_to_A
+nwb.session_start_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.timestamps_reference_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.file_create_date # (list) [datetime.datetime(2025, 3, 12, 23, 45, 29, 830157, tzinfo=tzoffset(None, -25200))]
+nwb.experimenter # (tuple) ['Mari Sosa']
+nwb.acquisition # (LabelledDict)
+acquisition = nwb.acquisition
+TwoPhotonSeries = acquisition["TwoPhotonSeries"]
+TwoPhotonSeries # (TwoPhotonSeries)
+TwoPhotonSeries.starting_time # (float64) 0.0
+TwoPhotonSeries.rate # (float64) 15.5078125
+TwoPhotonSeries.resolution # (float64) -1.0
+TwoPhotonSeries.comments # (str) no comments
+TwoPhotonSeries.description # (str) no description
+TwoPhotonSeries.conversion # (float64) 1.0
+TwoPhotonSeries.offset # (float64) 0.0
+TwoPhotonSeries.unit # (str) volt
+TwoPhotonSeries.data # (Dataset) shape (1, 1, 1); dtype float64
+# TwoPhotonSeries.data[:, :, :] # Access all data
+# TwoPhotonSeries.data[0, :, :] # Access first plane
+TwoPhotonSeries.starting_time_unit # (str) seconds
+TwoPhotonSeries.dimension # (Dataset) shape (2,); dtype int64
+# TwoPhotonSeries.dimension[:] # Access all data
+# TwoPhotonSeries.dimension[0:n] # Access first n elements
+# First few values of TwoPhotonSeries.dimension: [512 796]
+TwoPhotonSeries.format # (str) raw
+TwoPhotonSeries.imaging_plane # (ImagingPlane)
+TwoPhotonSeries.imaging_plane.optical_channel # (list)
+TwoPhotonSeries.imaging_plane.description # (str) standard
+TwoPhotonSeries.imaging_plane.excitation_lambda # (float64) 920.0
+TwoPhotonSeries.imaging_plane.imaging_rate # (float64) 15.5078125
+TwoPhotonSeries.imaging_plane.indicator # (str) GCaMP7f
+TwoPhotonSeries.imaging_plane.location # (str) hippocampus, CA1
+TwoPhotonSeries.imaging_plane.conversion # (float) 1.0
+TwoPhotonSeries.imaging_plane.unit # (str) meters
+TwoPhotonSeries.imaging_plane.origin_coords_unit # (str) meters
+TwoPhotonSeries.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# TwoPhotonSeries.imaging_plane.grid_spacing[:] # Access all data
+# TwoPhotonSeries.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of TwoPhotonSeries.imaging_plane.grid_spacing: [2. 2.]
+TwoPhotonSeries.imaging_plane.grid_spacing_unit # (str) microns
+TwoPhotonSeries.imaging_plane.device # (Device)
+TwoPhotonSeries.imaging_plane.device.description # (str) My two-photon microscope
+TwoPhotonSeries.imaging_plane.device.manufacturer # (str) Neurolabware
+nwb.processing # (LabelledDict)
+processing = nwb.processing
+behavior = processing["behavior"]
+behavior # (ProcessingModule)
+behavior.description # (str) behavior data
+behavior.data_interfaces # (LabelledDict)
+data_interfaces = behavior.data_interfaces
+BehavioralTimeSeries = data_interfaces["BehavioralTimeSeries"]
+BehavioralTimeSeries # (BehavioralTimeSeries)
+BehavioralTimeSeries.time_series # (LabelledDict)
+time_series = BehavioralTimeSeries.time_series
+Reward = time_series["Reward"]
+Reward # (TimeSeries)
+Reward.resolution # (float64) -1.0
+Reward.comments # (str) no comments
+Reward.description # (str) reward delivery
+Reward.conversion # (float64) 1.0
+Reward.offset # (float64) 0.0
+Reward.unit # (str) mL
+Reward.data # (Dataset) shape (69,); dtype float64
+# Reward.data[:] # Access all data
+# Reward.data[0:n] # Access first n elements
+Reward.timestamps # (Dataset) shape (69,); dtype float64
+# Reward.timestamps[:] # Access all data
+# Reward.timestamps[0:n] # Access first n elements
+Reward.timestamps_unit # (str) seconds
+Reward.interval # (int) 1
+autoreward = time_series["autoreward"]
+autoreward # (TimeSeries)
+autoreward.resolution # (float64) -1.0
+autoreward.comments # (str) no comments
+autoreward.description # (str) whether trial was automatically rewarded if the subject failed to lick
+autoreward.conversion # (float64) 1.0
+autoreward.offset # (float64) 0.0
+autoreward.unit # (str) integer
+autoreward.data # (Dataset) shape (20684,); dtype float64
+# autoreward.data[:] # Access all data
+# autoreward.data[0:n] # Access first n elements
+autoreward.timestamps # (Dataset) shape (20684,); dtype float64
+# autoreward.timestamps[:] # Access all data
+# autoreward.timestamps[0:n] # Access first n elements
+autoreward.timestamps_unit # (str) seconds
+autoreward.interval # (int) 1
+environment = time_series["environment"]
+environment # (TimeSeries)
+environment.resolution # (float64) -1.0
+environment.comments # (str) no comments
+environment.description # (str) Virtual reality environment
+environment.conversion # (float64) 1.0
+environment.offset # (float64) 0.0
+environment.unit # (str) AU
+environment.data # (Dataset) shape (20684,); dtype float64
+# environment.data[:] # Access all data
+# environment.data[0:n] # Access first n elements
+environment.timestamps # (Dataset) shape (20684,); dtype float64
+# environment.timestamps[:] # Access all data
+# environment.timestamps[0:n] # Access first n elements
+environment.timestamps_unit # (str) seconds
+environment.interval # (int) 1
+lick = time_series["lick"]
+lick # (TimeSeries)
+lick.resolution # (float64) -1.0
+lick.comments # (str) no comments
+lick.description # (str) lick detection by capacitive sensor, cumulative per imaging frame
+lick.conversion # (float64) 1.0
+lick.offset # (float64) 0.0
+lick.unit # (str) AU
+lick.data # (Dataset) shape (20684,); dtype float64
+# lick.data[:] # Access all data
+# lick.data[0:n] # Access first n elements
+lick.timestamps # (Dataset) shape (20684,); dtype float64
+# lick.timestamps[:] # Access all data
+# lick.timestamps[0:n] # Access first n elements
+lick.timestamps_unit # (str) seconds
+lick.interval # (int) 1
+position = time_series["position"]
+position # (TimeSeries)
+position.resolution # (float64) -1.0
+position.comments # (str) no comments
+position.description # (str) Position in a virtual linear track
+position.conversion # (float64) 1.0
+position.offset # (float64) 0.0
+position.unit # (str) cm
+position.data # (Dataset) shape (20684,); dtype float64
+# position.data[:] # Access all data
+# position.data[0:n] # Access first n elements
+position.timestamps # (Dataset) shape (20684,); dtype float64
+# position.timestamps[:] # Access all data
+# position.timestamps[0:n] # Access first n elements
+position.timestamps_unit # (str) seconds
+position.interval # (int) 1
+reward_zone = time_series["reward_zone"]
+reward_zone # (TimeSeries)
+reward_zone.resolution # (float64) -1.0
+reward_zone.comments # (str) no comments
+reward_zone.description # (str) reward zone entry (binary)
+reward_zone.conversion # (float64) 1.0
+reward_zone.offset # (float64) 0.0
+reward_zone.unit # (str) integer
+reward_zone.data # (Dataset) shape (20684,); dtype float64
+# reward_zone.data[:] # Access all data
+# reward_zone.data[0:n] # Access first n elements
+reward_zone.timestamps # (Dataset) shape (20684,); dtype float64
+# reward_zone.timestamps[:] # Access all data
+# reward_zone.timestamps[0:n] # Access first n elements
+reward_zone.timestamps_unit # (str) seconds
+reward_zone.interval # (int) 1
+scanning = time_series["scanning"]
+scanning # (TimeSeries)
+scanning.resolution # (float64) -1.0
+scanning.comments # (str) no comments
+scanning.description # (str) whether scanning occurred to collect ophys data
+scanning.conversion # (float64) 1.0
+scanning.offset # (float64) 0.0
+scanning.unit # (str) integer
+scanning.data # (Dataset) shape (20684,); dtype float64
+# scanning.data[:] # Access all data
+# scanning.data[0:n] # Access first n elements
+scanning.timestamps # (Dataset) shape (20684,); dtype float64
+# scanning.timestamps[:] # Access all data
+# scanning.timestamps[0:n] # Access first n elements
+scanning.timestamps_unit # (str) seconds
+scanning.interval # (int) 1
+speed = time_series["speed"]
+speed # (TimeSeries)
+speed.resolution # (float64) -1.0
+speed.comments # (str) no comments
+speed.description # (str) the speed of the subject measured over time
+speed.conversion # (float64) 1.0
+speed.offset # (float64) 0.0
+speed.unit # (str) cm/s
+speed.data # (Dataset) shape (20684,); dtype float64
+# speed.data[:] # Access all data
+# speed.data[0:n] # Access first n elements
+speed.timestamps # (Dataset) shape (20684,); dtype float64
+# speed.timestamps[:] # Access all data
+# speed.timestamps[0:n] # Access first n elements
+speed.timestamps_unit # (str) seconds
+speed.interval # (int) 1
+teleport = time_series["teleport"]
+teleport # (TimeSeries)
+teleport.resolution # (float64) -1.0
+teleport.comments # (str) no comments
+teleport.description # (str) end of a trial, i.e. entry into the intertrial interval
+teleport.conversion # (float64) 1.0
+teleport.offset # (float64) 0.0
+teleport.unit # (str) integer
+teleport.data # (Dataset) shape (20684,); dtype float64
+# teleport.data[:] # Access all data
+# teleport.data[0:n] # Access first n elements
+teleport.timestamps # (Dataset) shape (20684,); dtype float64
+# teleport.timestamps[:] # Access all data
+# teleport.timestamps[0:n] # Access first n elements
+teleport.timestamps_unit # (str) seconds
+teleport.interval # (int) 1
+trial_number = time_series["trial number"]
+trial_number # (TimeSeries)
+trial_number.resolution # (float64) -1.0
+trial_number.comments # (str) no comments
+trial_number.description # (str) trial number, where each trial is a lap of the track
+trial_number.conversion # (float64) 1.0
+trial_number.offset # (float64) 0.0
+trial_number.unit # (str) integer
+trial_number.data # (Dataset) shape (20684,); dtype float64
+# trial_number.data[:] # Access all data
+# trial_number.data[0:n] # Access first n elements
+trial_number.timestamps # (Dataset) shape (20684,); dtype float64
+# trial_number.timestamps[:] # Access all data
+# trial_number.timestamps[0:n] # Access first n elements
+trial_number.timestamps_unit # (str) seconds
+trial_number.interval # (int) 1
+trial_start = time_series["trial_start"]
+trial_start # (TimeSeries)
+trial_start.resolution # (float64) -1.0
+trial_start.comments # (str) no comments
+trial_start.description # (str) start of a trial, i.e. entry to the linear track
+trial_start.conversion # (float64) 1.0
+trial_start.offset # (float64) 0.0
+trial_start.unit # (str) integer
+trial_start.data # (Dataset) shape (20684,); dtype float64
+# trial_start.data[:] # Access all data
+# trial_start.data[0:n] # Access first n elements
+trial_start.timestamps # (Dataset) shape (20684,); dtype float64
+# trial_start.timestamps[:] # Access all data
+# trial_start.timestamps[0:n] # Access first n elements
+trial_start.timestamps_unit # (str) seconds
+trial_start.interval # (int) 1
+ophys = processing["ophys"]
+ophys # (ProcessingModule)
+ophys.description # (str) optical physiology processed data
+ophys.data_interfaces # (LabelledDict)
+data_interfaces = ophys.data_interfaces
+Backgrounds_0 = data_interfaces["Backgrounds_0"]
+Backgrounds_0 # (Images)
+Backgrounds_0.description # (str) no description
+Backgrounds_0.images # (LabelledDict)
+images = Backgrounds_0.images
+Vcorr = images["Vcorr"]
+Vcorr # (GrayscaleImage)
+max_proj = images["max_proj"]
+max_proj # (GrayscaleImage)
+meanImg = images["meanImg"]
+meanImg # (GrayscaleImage)
+Deconvolved = data_interfaces["Deconvolved"]
+Deconvolved # (Fluorescence)
+Deconvolved.roi_response_series # (LabelledDict)
+roi_response_series = Deconvolved.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+Fluorescence = data_interfaces["Fluorescence"]
+Fluorescence # (Fluorescence)
+Fluorescence.roi_response_series # (LabelledDict)
+roi_response_series = Fluorescence.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+ImageSegmentation = data_interfaces["ImageSegmentation"]
+ImageSegmentation # (ImageSegmentation)
+ImageSegmentation.plane_segmentations # (LabelledDict)
+plane_segmentations = ImageSegmentation.plane_segmentations
+PlaneSegmentation = plane_segmentations["PlaneSegmentation"]
+PlaneSegmentation # (PlaneSegmentation)
+PlaneSegmentation.description # (str) suite2p output
+PlaneSegmentation.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+PlaneSegmentation.columns # (tuple)
+PlaneSegmentation.reference_images # (list)
+PlaneSegmentation.id # (ElementIdentifiers)
+PlaneSegmentation.imaging_plane # (ImagingPlane)
+PlaneSegmentation.imaging_plane.optical_channel # (list)
+PlaneSegmentation.imaging_plane.description # (str) standard
+PlaneSegmentation.imaging_plane.excitation_lambda # (float64) 920.0
+PlaneSegmentation.imaging_plane.imaging_rate # (float64) 15.5078125
+PlaneSegmentation.imaging_plane.indicator # (str) GCaMP7f
+PlaneSegmentation.imaging_plane.location # (str) hippocampus, CA1
+PlaneSegmentation.imaging_plane.conversion # (float) 1.0
+PlaneSegmentation.imaging_plane.unit # (str) meters
+PlaneSegmentation.imaging_plane.origin_coords_unit # (str) meters
+PlaneSegmentation.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# PlaneSegmentation.imaging_plane.grid_spacing[:] # Access all data
+# PlaneSegmentation.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of PlaneSegmentation.imaging_plane.grid_spacing: [2. 2.]
+PlaneSegmentation.imaging_plane.grid_spacing_unit # (str) microns
+PlaneSegmentation.imaging_plane.device # (Device)
+PlaneSegmentation.imaging_plane.device.description # (str) My two-photon microscope
+PlaneSegmentation.imaging_plane.device.manufacturer # (str) Neurolabware
+# PlaneSegmentation.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# PlaneSegmentation.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+PlaneSegmentation.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# PlaneSegmentation.pixel_mask_index[0] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[1] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[2] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[3] # (ndarray)
+# ...
+PlaneSegmentation.iscell # (VectorData) two columns - iscell & probcell
+PlaneSegmentation.planeIdx # (VectorData) rec plane for each roi
+Neuropil = data_interfaces["Neuropil"]
+Neuropil # (Fluorescence)
+Neuropil.roi_response_series # (LabelledDict)
+roi_response_series = Neuropil.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+nwb.devices # (LabelledDict)
+devices = nwb.devices
+Microscope = devices["Microscope"]
+Microscope # (Device)
+Microscope.description # (str) My two-photon microscope
+Microscope.manufacturer # (str) Neurolabware
+nwb.imaging_planes # (LabelledDict)
+imaging_planes = nwb.imaging_planes
+ImagingPlane = imaging_planes["ImagingPlane"]
+ImagingPlane # (ImagingPlane)
+ImagingPlane.optical_channel # (list)
+ImagingPlane.description # (str) standard
+ImagingPlane.excitation_lambda # (float64) 920.0
+ImagingPlane.imaging_rate # (float64) 15.5078125
+ImagingPlane.indicator # (str) GCaMP7f
+ImagingPlane.location # (str) hippocampus, CA1
+ImagingPlane.conversion # (float) 1.0
+ImagingPlane.unit # (str) meters
+ImagingPlane.origin_coords_unit # (str) meters
+ImagingPlane.grid_spacing # (Dataset) shape (2,); dtype float64
+# ImagingPlane.grid_spacing[:] # Access all data
+# ImagingPlane.grid_spacing[0:n] # Access first n elements
+# First few values of ImagingPlane.grid_spacing: [2. 2.]
+ImagingPlane.grid_spacing_unit # (str) microns
+ImagingPlane.device # (Device)
+ImagingPlane.device.description # (str) My two-photon microscope
+ImagingPlane.device.manufacturer # (str) Neurolabware
+nwb.session_id # (str) 03
+nwb.subject # (Subject)
+nwb.subject.age__reference # (str) birth
+nwb.subject.sex # (str) M
+nwb.subject.species # (str) Mus musculus
+nwb.subject.subject_id # (str) m11
+nwb.subject.date_of_birth # (datetime) 2022-09-20T00:00:00-07:00
+Total prompt tokens: 31296 + 0
+Total completion tokens: 720 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py nwb-file-info 001361 https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ --version 0.250406.0045' (requires approval):
+Command executed successfully
+STDOUT:
+# This script shows how to load the NWB file at https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ in Python using PyNWB
+
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb # (NWBFile)
+nwb.session_description # (str) processed suite2p data
+nwb.identifier # (str) /data/InVivoDA/GCAMP11/23_02_2023/Env1_LocationB_to_A
+nwb.session_start_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.timestamps_reference_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.file_create_date # (list) [datetime.datetime(2025, 3, 12, 23, 45, 29, 830157, tzinfo=tzoffset(None, -25200))]
+nwb.experimenter # (tuple) ['Mari Sosa']
+nwb.acquisition # (LabelledDict)
+acquisition = nwb.acquisition
+TwoPhotonSeries = acquisition["TwoPhotonSeries"]
+TwoPhotonSeries # (TwoPhotonSeries)
+TwoPhotonSeries.starting_time # (float64) 0.0
+TwoPhotonSeries.rate # (float64) 15.5078125
+TwoPhotonSeries.resolution # (float64) -1.0
+TwoPhotonSeries.comments # (str) no comments
+TwoPhotonSeries.description # (str) no description
+TwoPhotonSeries.conversion # (float64) 1.0
+TwoPhotonSeries.offset # (float64) 0.0
+TwoPhotonSeries.unit # (str) volt
+TwoPhotonSeries.data # (Dataset) shape (1, 1, 1); dtype float64
+# TwoPhotonSeries.data[:, :, :] # Access all data
+# TwoPhotonSeries.data[0, :, :] # Access first plane
+TwoPhotonSeries.starting_time_unit # (str) seconds
+TwoPhotonSeries.dimension # (Dataset) shape (2,); dtype int64
+# TwoPhotonSeries.dimension[:] # Access all data
+# TwoPhotonSeries.dimension[0:n] # Access first n elements
+# First few values of TwoPhotonSeries.dimension: [512 796]
+TwoPhotonSeries.format # (str) raw
+TwoPhotonSeries.imaging_plane # (ImagingPlane)
+TwoPhotonSeries.imaging_plane.optical_channel # (list)
+TwoPhotonSeries.imaging_plane.description # (str) standard
+TwoPhotonSeries.imaging_plane.excitation_lambda # (float64) 920.0
+TwoPhotonSeries.imaging_plane.imaging_rate # (float64) 15.5078125
+TwoPhotonSeries.imaging_plane.indicator # (str) GCaMP7f
+TwoPhotonSeries.imaging_plane.location # (str) hippocampus, CA1
+TwoPhotonSeries.imaging_plane.conversion # (float) 1.0
+TwoPhotonSeries.imaging_plane.unit # (str) meters
+TwoPhotonSeries.imaging_plane.origin_coords_unit # (str) meters
+TwoPhotonSeries.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# TwoPhotonSeries.imaging_plane.grid_spacing[:] # Access all data
+# TwoPhotonSeries.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of TwoPhotonSeries.imaging_plane.grid_spacing: [2. 2.]
+TwoPhotonSeries.imaging_plane.grid_spacing_unit # (str) microns
+TwoPhotonSeries.imaging_plane.device # (Device)
+TwoPhotonSeries.imaging_plane.device.description # (str) My two-photon microscope
+TwoPhotonSeries.imaging_plane.device.manufacturer # (str) Neurolabware
+nwb.processing # (LabelledDict)
+processing = nwb.processing
+behavior = processing["behavior"]
+behavior # (ProcessingModule)
+behavior.description # (str) behavior data
+behavior.data_interfaces # (LabelledDict)
+data_interfaces = behavior.data_interfaces
+BehavioralTimeSeries = data_interfaces["BehavioralTimeSeries"]
+BehavioralTimeSeries # (BehavioralTimeSeries)
+BehavioralTimeSeries.time_series # (LabelledDict)
+time_series = BehavioralTimeSeries.time_series
+Reward = time_series["Reward"]
+Reward # (TimeSeries)
+Reward.resolution # (float64) -1.0
+Reward.comments # (str) no comments
+Reward.description # (str) reward delivery
+Reward.conversion # (float64) 1.0
+Reward.offset # (float64) 0.0
+Reward.unit # (str) mL
+Reward.data # (Dataset) shape (69,); dtype float64
+# Reward.data[:] # Access all data
+# Reward.data[0:n] # Access first n elements
+Reward.timestamps # (Dataset) shape (69,); dtype float64
+# Reward.timestamps[:] # Access all data
+# Reward.timestamps[0:n] # Access first n elements
+Reward.timestamps_unit # (str) seconds
+Reward.interval # (int) 1
+autoreward = time_series["autoreward"]
+autoreward # (TimeSeries)
+autoreward.resolution # (float64) -1.0
+autoreward.comments # (str) no comments
+autoreward.description # (str) whether trial was automatically rewarded if the subject failed to lick
+autoreward.conversion # (float64) 1.0
+autoreward.offset # (float64) 0.0
+autoreward.unit # (str) integer
+autoreward.data # (Dataset) shape (20684,); dtype float64
+# autoreward.data[:] # Access all data
+# autoreward.data[0:n] # Access first n elements
+autoreward.timestamps # (Dataset) shape (20684,); dtype float64
+# autoreward.timestamps[:] # Access all data
+# autoreward.timestamps[0:n] # Access first n elements
+autoreward.timestamps_unit # (str) seconds
+autoreward.interval # (int) 1
+environment = time_series["environment"]
+environment # (TimeSeries)
+environment.resolution # (float64) -1.0
+environment.comments # (str) no comments
+environment.description # (str) Virtual reality environment
+environment.conversion # (float64) 1.0
+environment.offset # (float64) 0.0
+environment.unit # (str) AU
+environment.data # (Dataset) shape (20684,); dtype float64
+# environment.data[:] # Access all data
+# environment.data[0:n] # Access first n elements
+environment.timestamps # (Dataset) shape (20684,); dtype float64
+# environment.timestamps[:] # Access all data
+# environment.timestamps[0:n] # Access first n elements
+environment.timestamps_unit # (str) seconds
+environment.interval # (int) 1
+lick = time_series["lick"]
+lick # (TimeSeries)
+lick.resolution # (float64) -1.0
+lick.comments # (str) no comments
+lick.description # (str) lick detection by capacitive sensor, cumulative per imaging frame
+lick.conversion # (float64) 1.0
+lick.offset # (float64) 0.0
+lick.unit # (str) AU
+lick.data # (Dataset) shape (20684,); dtype float64
+# lick.data[:] # Access all data
+# lick.data[0:n] # Access first n elements
+lick.timestamps # (Dataset) shape (20684,); dtype float64
+# lick.timestamps[:] # Access all data
+# lick.timestamps[0:n] # Access first n elements
+lick.timestamps_unit # (str) seconds
+lick.interval # (int) 1
+position = time_series["position"]
+position # (TimeSeries)
+position.resolution # (float64) -1.0
+position.comments # (str) no comments
+position.description # (str) Position in a virtual linear track
+position.conversion # (float64) 1.0
+position.offset # (float64) 0.0
+position.unit # (str) cm
+position.data # (Dataset) shape (20684,); dtype float64
+# position.data[:] # Access all data
+# position.data[0:n] # Access first n elements
+position.timestamps # (Dataset) shape (20684,); dtype float64
+# position.timestamps[:] # Access all data
+# position.timestamps[0:n] # Access first n elements
+position.timestamps_unit # (str) seconds
+position.interval # (int) 1
+reward_zone = time_series["reward_zone"]
+reward_zone # (TimeSeries)
+reward_zone.resolution # (float64) -1.0
+reward_zone.comments # (str) no comments
+reward_zone.description # (str) reward zone entry (binary)
+reward_zone.conversion # (float64) 1.0
+reward_zone.offset # (float64) 0.0
+reward_zone.unit # (str) integer
+reward_zone.data # (Dataset) shape (20684,); dtype float64
+# reward_zone.data[:] # Access all data
+# reward_zone.data[0:n] # Access first n elements
+reward_zone.timestamps # (Dataset) shape (20684,); dtype float64
+# reward_zone.timestamps[:] # Access all data
+# reward_zone.timestamps[0:n] # Access first n elements
+reward_zone.timestamps_unit # (str) seconds
+reward_zone.interval # (int) 1
+scanning = time_series["scanning"]
+scanning # (TimeSeries)
+scanning.resolution # (float64) -1.0
+scanning.comments # (str) no comments
+scanning.description # (str) whether scanning occurred to collect ophys data
+scanning.conversion # (float64) 1.0
+scanning.offset # (float64) 0.0
+scanning.unit # (str) integer
+scanning.data # (Dataset) shape (20684,); dtype float64
+# scanning.data[:] # Access all data
+# scanning.data[0:n] # Access first n elements
+scanning.timestamps # (Dataset) shape (20684,); dtype float64
+# scanning.timestamps[:] # Access all data
+# scanning.timestamps[0:n] # Access first n elements
+scanning.timestamps_unit # (str) seconds
+scanning.interval # (int) 1
+speed = time_series["speed"]
+speed # (TimeSeries)
+speed.resolution # (float64) -1.0
+speed.comments # (str) no comments
+speed.description # (str) the speed of the subject measured over time
+speed.conversion # (float64) 1.0
+speed.offset # (float64) 0.0
+speed.unit # (str) cm/s
+speed.data # (Dataset) shape (20684,); dtype float64
+# speed.data[:] # Access all data
+# speed.data[0:n] # Access first n elements
+speed.timestamps # (Dataset) shape (20684,); dtype float64
+# speed.timestamps[:] # Access all data
+# speed.timestamps[0:n] # Access first n elements
+speed.timestamps_unit # (str) seconds
+speed.interval # (int) 1
+teleport = time_series["teleport"]
+teleport # (TimeSeries)
+teleport.resolution # (float64) -1.0
+teleport.comments # (str) no comments
+teleport.description # (str) end of a trial, i.e. entry into the intertrial interval
+teleport.conversion # (float64) 1.0
+teleport.offset # (float64) 0.0
+teleport.unit # (str) integer
+teleport.data # (Dataset) shape (20684,); dtype float64
+# teleport.data[:] # Access all data
+# teleport.data[0:n] # Access first n elements
+teleport.timestamps # (Dataset) shape (20684,); dtype float64
+# teleport.timestamps[:] # Access all data
+# teleport.timestamps[0:n] # Access first n elements
+teleport.timestamps_unit # (str) seconds
+teleport.interval # (int) 1
+trial_number = time_series["trial number"]
+trial_number # (TimeSeries)
+trial_number.resolution # (float64) -1.0
+trial_number.comments # (str) no comments
+trial_number.description # (str) trial number, where each trial is a lap of the track
+trial_number.conversion # (float64) 1.0
+trial_number.offset # (float64) 0.0
+trial_number.unit # (str) integer
+trial_number.data # (Dataset) shape (20684,); dtype float64
+# trial_number.data[:] # Access all data
+# trial_number.data[0:n] # Access first n elements
+trial_number.timestamps # (Dataset) shape (20684,); dtype float64
+# trial_number.timestamps[:] # Access all data
+# trial_number.timestamps[0:n] # Access first n elements
+trial_number.timestamps_unit # (str) seconds
+trial_number.interval # (int) 1
+trial_start = time_series["trial_start"]
+trial_start # (TimeSeries)
+trial_start.resolution # (float64) -1.0
+trial_start.comments # (str) no comments
+trial_start.description # (str) start of a trial, i.e. entry to the linear track
+trial_start.conversion # (float64) 1.0
+trial_start.offset # (float64) 0.0
+trial_start.unit # (str) integer
+trial_start.data # (Dataset) shape (20684,); dtype float64
+# trial_start.data[:] # Access all data
+# trial_start.data[0:n] # Access first n elements
+trial_start.timestamps # (Dataset) shape (20684,); dtype float64
+# trial_start.timestamps[:] # Access all data
+# trial_start.timestamps[0:n] # Access first n elements
+trial_start.timestamps_unit # (str) seconds
+trial_start.interval # (int) 1
+ophys = processing["ophys"]
+ophys # (ProcessingModule)
+ophys.description # (str) optical physiology processed data
+ophys.data_interfaces # (LabelledDict)
+data_interfaces = ophys.data_interfaces
+Backgrounds_0 = data_interfaces["Backgrounds_0"]
+Backgrounds_0 # (Images)
+Backgrounds_0.description # (str) no description
+Backgrounds_0.images # (LabelledDict)
+images = Backgrounds_0.images
+Vcorr = images["Vcorr"]
+Vcorr # (GrayscaleImage)
+max_proj = images["max_proj"]
+max_proj # (GrayscaleImage)
+meanImg = images["meanImg"]
+meanImg # (GrayscaleImage)
+Deconvolved = data_interfaces["Deconvolved"]
+Deconvolved # (Fluorescence)
+Deconvolved.roi_response_series # (LabelledDict)
+roi_response_series = Deconvolved.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+Fluorescence = data_interfaces["Fluorescence"]
+Fluorescence # (Fluorescence)
+Fluorescence.roi_response_series # (LabelledDict)
+roi_response_series = Fluorescence.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+ImageSegmentation = data_interfaces["ImageSegmentation"]
+ImageSegmentation # (ImageSegmentation)
+ImageSegmentation.plane_segmentations # (LabelledDict)
+plane_segmentations = ImageSegmentation.plane_segmentations
+PlaneSegmentation = plane_segmentations["PlaneSegmentation"]
+PlaneSegmentation # (PlaneSegmentation)
+PlaneSegmentation.description # (str) suite2p output
+PlaneSegmentation.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+PlaneSegmentation.columns # (tuple)
+PlaneSegmentation.reference_images # (list)
+PlaneSegmentation.id # (ElementIdentifiers)
+PlaneSegmentation.imaging_plane # (ImagingPlane)
+PlaneSegmentation.imaging_plane.optical_channel # (list)
+PlaneSegmentation.imaging_plane.description # (str) standard
+PlaneSegmentation.imaging_plane.excitation_lambda # (float64) 920.0
+PlaneSegmentation.imaging_plane.imaging_rate # (float64) 15.5078125
+PlaneSegmentation.imaging_plane.indicator # (str) GCaMP7f
+PlaneSegmentation.imaging_plane.location # (str) hippocampus, CA1
+PlaneSegmentation.imaging_plane.conversion # (float) 1.0
+PlaneSegmentation.imaging_plane.unit # (str) meters
+PlaneSegmentation.imaging_plane.origin_coords_unit # (str) meters
+PlaneSegmentation.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# PlaneSegmentation.imaging_plane.grid_spacing[:] # Access all data
+# PlaneSegmentation.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of PlaneSegmentation.imaging_plane.grid_spacing: [2. 2.]
+PlaneSegmentation.imaging_plane.grid_spacing_unit # (str) microns
+PlaneSegmentation.imaging_plane.device # (Device)
+PlaneSegmentation.imaging_plane.device.description # (str) My two-photon microscope
+PlaneSegmentation.imaging_plane.device.manufacturer # (str) Neurolabware
+# PlaneSegmentation.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# PlaneSegmentation.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+PlaneSegmentation.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# PlaneSegmentation.pixel_mask_index[0] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[1] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[2] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[3] # (ndarray)
+# ...
+PlaneSegmentation.iscell # (VectorData) two columns - iscell & probcell
+PlaneSegmentation.planeIdx # (VectorData) rec plane for each roi
+Neuropil = data_interfaces["Neuropil"]
+Neuropil # (Fluorescence)
+Neuropil.roi_response_series # (LabelledDict)
+roi_response_series = Neuropil.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+nwb.devices # (LabelledDict)
+devices = nwb.devices
+Microscope = devices["Microscope"]
+Microscope # (Device)
+Microscope.description # (str) My two-photon microscope
+Microscope.manufacturer # (str) Neurolabware
+nwb.imaging_planes # (LabelledDict)
+imaging_planes = nwb.imaging_planes
+ImagingPlane = imaging_planes["ImagingPlane"]
+ImagingPlane # (ImagingPlane)
+ImagingPlane.optical_channel # (list)
+ImagingPlane.description # (str) standard
+ImagingPlane.excitation_lambda # (float64) 920.0
+ImagingPlane.imaging_rate # (float64) 15.5078125
+ImagingPlane.indicator # (str) GCaMP7f
+ImagingPlane.location # (str) hippocampus, CA1
+ImagingPlane.conversion # (float) 1.0
+ImagingPlane.unit # (str) meters
+ImagingPlane.origin_coords_unit # (str) meters
+ImagingPlane.grid_spacing # (Dataset) shape (2,); dtype float64
+# ImagingPlane.grid_spacing[:] # Access all data
+# ImagingPlane.grid_spacing[0:n] # Access first n elements
+# First few values of ImagingPlane.grid_spacing: [2. 2.]
+ImagingPlane.grid_spacing_unit # (str) microns
+ImagingPlane.device # (Device)
+ImagingPlane.device.description # (str) My two-photon microscope
+ImagingPlane.device.manufacturer # (str) Neurolabware
+nwb.session_id # (str) 03
+nwb.subject # (Subject)
+nwb.subject.age__reference # (str) birth
+nwb.subject.sex # (str) M
+nwb.subject.species # (str) Mus musculus
+nwb.subject.subject_id # (str) m11
+nwb.subject.date_of_birth # (datetime) 2022-09-20T00:00:00-07:00
+
+STDERR:
+/home/magland/miniconda3/envs/dev/lib/python3.12/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/home/magland/src/dandi-ai-notebooks-3/packages/get-nwbfile-info/src/get_nwbfile_info/core.py:346: UserWarning: Warning: Duplicate entries found in the results.
+  warnings.warn("Warning: Duplicate entries found in the results.")
+
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 8
+Submitting completion request...
+Processing response...
+I have successfully retrieved the NWB file information using the `nwb-file-info` command. Now I have all the information needed to create the `notebook.py` file.
+
+Tool: write_to_file
+Params: {'path': 'notebook.py', 'content': '# %% [markdown]\n# # Exploring Dandiset 001361: A flexible hippocampal population code for experience relative to reward\n\n# %% [markdown]\n# **Important:** This notebook was AI-generated and has not been fully verified. Use caution when interpreting the code or results.\n\n# %% [markdown]\n# ## Overview of Dandiset 001361\n#\n# This notebook provides an exploration of Dandiset 001361, titled "A flexible hippocampal population code for experience relative to reward." This Dandiset contains 2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. The data were collected by Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. and are related to their publication in Nature Neuroscience.\n#\n# Dandiset URL: [https://dandiarchive.org/dandiset/001361/0.250406.0045](https://dandiarchive.org/dandiset/001361/0.250406.0045)\n\n# %% [markdown]\n# ## What this notebook will cover\n#\n# This notebook will guide you through the process of:\n#\n# 1.  Loading the Dandiset metadata using the DANDI API.\n# 2.  Loading a specific NWB file from the Dandiset.\n# 3.  Exploring the contents of the NWB file, including behavioral and optical physiology data.\n# 4.  Visualizing some of the data.\n# 5.  Suggesting possible future directions for analysis.\n\n# %% [markdown]\n# ## Required Packages\n#\n# The following packages are required to run this notebook. Please make sure they are installed in your environment.\n#\n# *   pynwb\n# *   h5py\n# *   remfile\n# *   matplotlib\n# *   numpy\n# *   seaborn\n\n# %% [markdown]\n# ## Loading the Dandiset using the DANDI API\n\n# %%\nfrom itertools import islice\nfrom dandi.dandiapi import DandiAPIClient\n\n# Connect to DANDI archive\nclient = DandiAPIClient()\ndandiset = client.get_dandiset("001361", "0.250406.0045")\n\n# Print basic information about the Dandiset\nmetadata = dandiset.get_raw_metadata()\nprint(f"Dandiset name: {metadata[\'name\']}")\nprint(f"Dandiset URL: {metadata[\'url\']}")\n\n# List some assets in the Dandiset\nassets = dandiset.get_assets()\nprint("\\nFirst 5 assets:")\nfor asset in islice(assets, 5):\n    print(f"- {asset.path} (ID: {asset.identifier})")\n\n# %% [markdown]\n# ## Loading an NWB file and exploring its contents\n#\n# In this section, we will load one of the NWB files from the Dandiset and explore its contents. We will focus on the file:\n#\n# `sub-m11/sub-m11_ses-03_behavior+ophys.nwb`\n#\n# This file contains both behavioral and optical physiology data.\n#\n# We will be using the following URL to access the file:\n#\n# `https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/`\n\n# %%\nimport pynwb\nimport h5py\nimport remfile\n\n# Load\nurl = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\nremote_file = remfile.File(url)\nh5_file = h5py.File(remote_file)\nio = pynwb.NWBHDF5IO(file=h5_file)\nnwb = io.read()\n\nnwb # (NWBFile)\nprint(f"Session description: {nwb.session_description}") # (str) processed suite2p data\nprint(f"Identifier: {nwb.identifier}") # (str) /data/InVivoDA/GCAMP11/23_02_2023/Env1_LocationB_to_A\nprint(f"Session start time: {nwb.session_start_time}") # (datetime) 2023-02-23T00:00:00-08:00\nprint(f"Timestamps reference time: {nwb.timestamps_reference_time}") # (datetime) 2023-02-23T00:00:00-08:00\nprint(f"File create date: {nwb.file_create_date}") # (list) [datetime.datetime(2025, 3, 12, 23, 45, 29, 830157, tzinfo=tzoffset(None, -25200))]\nprint(f"Experimenter: {nwb.experimenter}") # (tuple) [\'Mari Sosa\']\n# %% [markdown]\n# You can explore this NWB file on neurosift using the following link:\n#\n# [https://neurosift.app/nwb?url=https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/&dandisetId=001361&dandisetVersion=draft](https://neurosift.app/nwb?url=https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/&dandisetId=001361&dandisetVersion=draft)\n\n# %% [markdown]\n# ### Acquisition: TwoPhotonSeries\n#\n# This section describes the TwoPhotonSeries data.\n\n# %%\nacquisition = nwb.acquisition\nTwoPhotonSeries = acquisition["TwoPhotonSeries"]\nTwoPhotonSeries # (TwoPhotonSeries)\nprint(f"Starting time: {TwoPhotonSeries.starting_time}") # (float64) 0.0\nprint(f"Rate: {TwoPhotonSeries.rate}") # (float64) 15.5078125\nprint(f"Resolution: {TwoPhotonSeries.resolution}") # (float64) -1.0\nprint(f"Comments: {TwoPhotonSeries.comments}") # (str) no comments\nprint(f"Description: {TwoPhotonSeries.description}") # (str) no description\nprint(f"Conversion: {TwoPhotonSeries.conversion}") # (float64) 1.0\nprint(f"Offset: {TwoPhotonSeries.offset}") # (float64) 0.0\nprint(f"Unit: {TwoPhotonSeries.unit}") # (str) volt\nprint(f"Starting time unit: {TwoPhotonSeries.starting_time_unit}") # (str) seconds\nprint(f"Dimension: {TwoPhotonSeries.dimension[:]}")\nprint(f"Format: {TwoPhotonSeries.format}") # (str) raw\nprint(f"Imaging plane description: {TwoPhotonSeries.imaging_plane.description}") # (str) standard\nprint(f"Excitation lambda: {TwoPhotonSeries.imaging_plane.excitation_lambda}") # (float64) 920.0\nprint(f"Imaging rate: {TwoPhotonSeries.imaging_plane.imaging_rate}") # (float64) 15.5078125\nprint(f"Indicator: {TwoPhotonSeries.imaging_plane.indicator}") # (str) GCaMP7f\nprint(f"Location: {TwoPhotonSeries.imaging_plane.location}") # (str) hippocampus, CA1\nprint(f"Conversion: {TwoPhotonSeries.imaging_plane.conversion}") # (float) 1.0\nprint(f"Unit: {TwoPhotonSeries.imaging_plane.unit}") # (str) meters\nprint(f"Origin coords unit: {TwoPhotonSeries.imaging_plane.origin_coords_unit}") # (str) meters\nprint(f"Grid spacing: {TwoPhotonSeries.imaging_plane.grid_spacing[:]}") # (Dataset) shape (2,); dtype float64\nprint(f"Grid spacing unit: {TwoPhotonSeries.imaging_plane.grid_spacing_unit}") # (str) microns\nprint(f"Device description: {TwoPhotonSeries.imaging_plane.device.description}") # (str) My two-photon microscope\nprint(f"Device manufacturer: {TwoPhotonSeries.imaging_plane.device.manufacturer}") # (str) Neurolabware\n# %% [markdown]\n# ### Processing: behavior\n#\n# This section describes the behavior data\n\n# %%\nprocessing = nwb.processing\nbehavior = processing["behavior"]\nprint(f"Behavior description: {behavior.description}") # (str) behavior data\ndata_interfaces = behavior.data_interfaces\nBehavioralTimeSeries = data_interfaces["BehavioralTimeSeries"]\ntime_series = BehavioralTimeSeries.time_series\nReward = time_series["Reward"]\nprint(f"Reward resolution: {Reward.resolution}") # (float64) -1.0\nprint(f"Reward comments: {Reward.comments}") # (str) no comments\nprint(f"Reward description: {Reward.description}") # (str) reward delivery\nprint(f"Reward conversion: {Reward.conversion}") # (float64) 1.0\nprint(f"Reward offset: {Reward.offset}") # (float64) 0.0\nprint(f"Reward unit: {Reward.unit}") # (str) mL\n\nautoreward = time_series["autoreward"]\nprint(f"Autoreward resolution: {autoreward.resolution}") # (float64) -1.0\nprint(f"Autoreward comments: {autoreward.comments}") # (str) no comments\nprint(f"Autoreward  description: {autoreward.description}") # (str) whether trial was automatically rewarded if the subject failed to lick\nprint(f"Autoreward conversion: {autoreward.conversion}") # (float64) 1.0\nprint(f"Autoreward offset: {autoreward.offset}") # (float64) 0.0\nprint(f"Autoreward unit: {autoreward.unit}") # (str) integer\n\nenvironment = time_series["environment"]\nprint(f"Environment resolution: {environment.resolution}") # (float64) -1.0\nprint(f"Environment comments: {environment.comments}") # (str) no comments\nprint(f"Environment description: {environment.description}") # (str) Virtual reality environment\nprint(f"Environment conversion: {environment.conversion}") # (float64) 1.0\nprint(f"Environment offset: {environment.offset}") # (float64) 0.0\nprint(f"Environment unit: {environment.unit}") # (str) AU\n\nlick = time_series["lick"]\nprint(f"Lick resolution: {lick.resolution}") # (float64) -1.0\nprint(f"Lick comments: {lick.comments}") # (str) no comments\nprint(f"Lick description: {lick.description}") # (str) lick detection by capacitive sensor, cumulative per imaging frame\nprint(f"Lick conversion: {lick.conversion}") # (float64) 1.0\nprint(f"Lick offset: {lick.offset}") # (float64) 0.0\nprint(f"Lick unit: {lick.unit}") # (str) AU\n\nposition = time_series["position"]\nprint(f"Position resolution: {position.resolution}") # (float64) -1.0\nprint(f"Position comments: {position.comments}") # (str) no comments\nprint(f"Position description: {position.description}") # (str) Position in a virtual linear track\nprint(f"Position conversion: {position.conversion}") # (float64) 1.0\nprint(f"Position offset: {position.offset}") # (float64) 0.0\nprint(f"Position unit: {position.unit}") # (str) cm\n\nreward_zone = time_series["reward_zone"]\nprint(f"Reward zone resolution: {reward_zone.resolution}") # (float64) -1.0\nprint(f"Reward zone comments: {reward_zone.comments}") # (str) no comments\nprint(f"Reward zone description: {reward_zone.description}") # (str) reward zone entry (binary)\nprint(f"Reward zone conversion: {reward_zone.conversion}") # (float64) 1.0\nprint(f"Reward zone offset: {reward_zone.offset}") # (float64) 0.0\nprint(f"Reward zone unit: {reward_zone.unit}") # (str) integer\n\nscanning = time_series["scanning"]\nprint(f"Scanning resolution: {scanning.resolution}") # (float64) -1.0\nprint(f"Scanning comments: {scanning.comments}") # (str) no comments\nprint(f"Scanning description: {scanning.description}") # (str) whether scanning occurred to collect ophys data\nprint(f"Scanning conversion: {scanning.conversion}") # (float64) 1.0\nprint(f"Scanning offset: {scanning.offset}") # (float64) 0.0\nprint(f"Scanning unit: {scanning.unit}") # (str) integer\n\nspeed = time_series["speed"]\nprint(f"Speed resolution: {speed.resolution}") # (float64) -1.0\nprint(f"Speed comments: {speed.comments}") # (str) no comments\nprint(f"Speed description: {speed.description}") # (str) the speed of the subject measured over time\nprint(f"Speed conversion: {speed.conversion}") # (float64) 1.0\nprint(f"Speed offset: {speed.offset}") # (float64) 0.0\nprint(f"Speed unit: {speed.unit}") # (str) cm/s\n\nteleport = time_series["teleport"]\nprint(f"Teleport resolution: {teleport.resolution}") # (float64) -1.0\nprint(f"Teleport comments: {teleport.comments}") # (str) no comments\nprint(f"Teleport description: {teleport.description}") # (str) end of a trial, i.e. entry into the intertrial interval\nprint(f"Teleport conversion: {teleport.conversion}") # (float64) 1.0\nprint(f"Teleport offset: {teleport.offset}") # (float64) 0.0\nprint(f"Teleport unit: {teleport.unit}") # (str) integer\n\ntrial_number = time_series["trial number"]\nprint(f"Trial number resolution: {trial_number.resolution}") # (float64) -1.0\nprint(f"Trial number comments: {trial_number.comments}") # (str) no comments\nprint(f"Trial number description: {trial_number.description}") # (str) trial number, where each trial is a lap of the track\nprint(f"Trial number conversion: {trial_number.conversion}") # (float64) 1.0\nprint(f"Trial number offset: {trial_number.offset}") # (float64) 0.0\nprint(f"Trial number unit: {trial_number.unit}") # (str) integer\n\ntrial_start = time_series["trial_start"]\nprint(f"Trial start resolution: {trial_start.resolution}") # (float64) -1.0\nprint(f"Trial start comments: {trial_start.comments}") # (str) no comments\nprint(f"Trial start description: {trial_start.description}") # (str) start of a trial, i.e. entry to the linear track\nprint(f"Trial start conversion: {trial_start.conversion}") # (float64) 1.0\nprint(f"Trial start offset: {trial_start.offset}") # (float64) 0.0\nprint(f"Trial start unit: {trial_start.unit}") # (str) integer\n# %% [markdown]\n# ### Processing: ophys\n#\n# This section describes the ophys data\n\n# %%\nophys = processing["ophys"]\nprint(f"Ophys description: {ophys.description}") # (str) optical physiology processed data\ndata_interfaces = ophys.data_interfaces\nBackgrounds_0 = data_interfaces["Backgrounds_0"]\nprint(f"Backgrounds_0 description: {Backgrounds_0.description}") # (str) no description\nimages = Backgrounds_0.images\nVcorr = images["Vcorr"]\nmax_proj = images["max_proj"]\nmeanImg = images["meanImg"]\n\nDeconvolved = data_interfaces["Deconvolved"]\nroi_response_series = Deconvolved.roi_response_series\nplane0 = roi_response_series["plane0"]\nprint(f"Plane0 starting time: {plane0.starting_time}") # (float64) 0.0\nprint(f"Plane0 rate: {plane0.rate}") # (float64) 15.5078125\nprint(f"Plane0 resolution: {plane0.resolution}") # (float64) -1.0\nprint(f"Plane0 comments: {plane0.comments}") # (str) no comments\nprint(f"Plane0 description: {plane0.description}") # (str) no description\nprint(f"Plane0 conversion: {plane0.conversion}") # (float64) 1.0\nprint(f"Plane0 offset: {plane0.offset}") # (float64) 0.0\nprint(f"Plane0 unit: {plane0.unit}") # (str) lumens\n\nFluorescence = data_interfaces["Fluorescence"]\nroi_response_series = Fluorescence.roi_response_series\nplane0 = roi_response_series["plane0"]\nprint(f"Plane0 starting time: {plane0.starting_time}") # (float64) 0.0\nprint(f"Plane0 rate: {plane0.rate}") # (float64) 15.5078125\nprint(f"Plane0 resolution: {plane0.resolution}") # (float64) -1.0\nprint(f"Plane0 comments: {plane0.comments}") # (str) no comments\nprint(f"Plane0 description: {plane0.description}") # (str) no description\nprint(f"Plane0 conversion: {plane0.conversion}") # (float64) 1.0\nprint(f"Plane0 offset: {plane0.offset}") # (float64) 0.0\nprint(f"Plane0 unit: {plane0.unit}") # (str) lumens\n\nImageSegmentation = data_interfaces["ImageSegmentation"]\nplane_segmentations = ImageSegmentation.plane_segmentations\nPlaneSegmentation = plane_segmentations["PlaneSegmentation"]\nprint(f"PlaneSegmentation description: {PlaneSegmentation.description}") # (str) suite2p output\n\nNeuropil = data_interfaces["Neuropil"]\nroi_response_series = Neuropil.roi_response_series\nplane0 = roi_response_series["plane0"]\nprint(f"Plane0 starting time: {plane0.starting_time}") # (float64) 0.0\nprint(f"Plane0 rate: {plane0.rate}") # (float64) 15.5078125\nprint(f"Plane0 resolution: {plane0.resolution}") # (float64) -1.0\nprint(f"Plane0 comments: {plane0.comments}") # (str) no comments\nprint(f"Plane0 description: {plane0.description}") # (str) no description\nprint(f"Plane0 conversion: {plane0.conversion}") # (float64) 1.0\nprint(f"Plane0 offset: {plane0.offset}") # (float64) 0.0\nprint(f"Plane0 unit: {plane0.unit}") # (str) lumens\n\n# %% [markdown]\n# ### Devices & Imaging Planes\n#\n\n# %%\ndevices = nwb.devices\nMicroscope = devices["Microscope"]\nprint(f"Microscope description: {Microscope.description}") # (str) My two-photon microscope\nprint(f"Microscope manufacturer: {Microscope.manufacturer}") # (str) Neurolabware\n\nimaging_planes = nwb.imaging_planes\nImagingPlane = imaging_planes["ImagingPlane"]\nprint(f"ImagingPlane description: {ImagingPlane.description}") # (str) standard\nprint(f"ImagingPlane excitation_lambda: {ImagingPlane.excitation_lambda}") # (float64) 920.0\nprint(f"ImagingPlane imaging_rate: {ImagingPlane.imaging_rate}") # (float64) 15.5078125\nprint(f"ImagingPlane indicator: {ImagingPlane.indicator}") # (str) GCaMP7f\nprint(f"ImagingPlane location: {ImagingPlane.location}") # (str) hippocampus, CA1\nprint(f"ImagingPlane conversion: {ImagingPlane.conversion}") # (float) 1.0\nprint(f"ImagingPlane unit: {ImagingPlane.unit}") # (str) meters\nprint(f"ImagingPlane origin_coords_unit: {ImagingPlane.origin_coords_unit}") # (str) meters\nprint(f"ImagingPlane grid_spacing: {ImagingPlane.grid_spacing[:]}")\nprint(f"ImagingPlane grid_spacing_unit: {ImagingPlane.grid_spacing_unit}") # (str) microns\nprint(f"ImagingPlane device description: {ImagingPlane.device.description}") # (str) My two-photon microscope\nprint(f"ImagingPlane device manufacturer: {ImagingPlane.device.manufacturer}") # (str) Neurolabware\n\n# %% [markdown]\n# ### Subject\n#\n\n# %%\nprint(f"Session id: {nwb.session_id}") # (str) 03\nsubject = nwb.subject\nprint(f"Subject age reference: {subject.age__reference}") # (str) birth\nprint(f"Subject sex: {subject.sex}") # (str) M\nprint(f"Subject species: {subject.species}") # (str) Mus musculus\nprint(f"Subject subject_id: {subject.subject_id}") # (str) m11\nprint(f"Subject date of birth: {subject.date_of_birth}") # (datetime) 2022-09-20T00:00:00-07:00\n\n# %% [markdown]\n# ## Loading and visualizing data\n#\n\n# %%\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport seaborn as sns\nsns.set_theme()\n\n# %% [markdown]\n# ### Plotting position data\n#\n\n# %%\nposition_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[:]\nposition_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[:]\n\nplt.figure(figsize=(10, 5))\nplt.plot(position_timestamps, position_data)\nplt.xlabel("Time (s)")\nplt.ylabel("Position (cm)")\nplt.title("Position vs. Time")\nplt.show()\n\n# %% [markdown]\n# ### Plotting a subset of fluorescence data\n#\n# Here we plot a subset of the deconvolved fluorescence data for the first 5 cells.\n\n# %%\ndeconvolved_data = nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].data[:]\nnum_cells = 5\nplt.figure(figsize=(10, 5))\nfor i in range(num_cells):\n    plt.plot(deconvolved_data[:, i], label=f"Cell {i}")\nplt.xlabel("Time (frames)")\nplt.ylabel("Deconvolved Fluorescence")\nplt.title(f"Deconvolved Fluorescence for First {num_cells} Cells")\nplt.legend()\nplt.show()\n\n# %% [markdown]\n# ## Summary and future directions\n#\n# This notebook has provided a basic overview of how to load and explore data from Dandiset 001361. We have demonstrated how to:\n#\n# 1.  Connect to the DANDI archive and retrieve Dandiset metadata.\n# 2.  Load an NWB file from the Dandiset.\n# 3.  Explore the contents of the NWB file, including behavioral and optical physiology data.\n# 4.  Visualize some of the data, such as position and deconvolved fluorescence.\n#\n# Possible future directions for analysis include:\n#\n# *   Performing more in-depth analysis of the behavioral data, such as identifying reward zones and analyzing the animal\'s behavior in relation to those zones.\n# *   Analyzing the relationships between the behavioral and optical physiology data.\n# *   Performing spike sorting on the raw electrophysiology data.\n# *   Developing more sophisticated visualizations to better understand the data.'}
+================================
+Content to be written to notebook.py:
+# %% [markdown]
+# # Exploring Dandiset 001361: A flexible hippocampal population code for experience relative to reward
+
+# %% [markdown]
+# **Important:** This notebook was AI-generated and has not been fully verified. Use caution when interpreting the code or results.
+
+# %% [markdown]
+# ## Overview of Dandiset 001361
+#
+# This notebook provides an exploration of Dandiset 001361, titled "A flexible hippocampal population code for experience relative to reward." This Dandiset contains 2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. The data were collected by Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. and are related to their publication in Nature Neuroscience.
+#
+# Dandiset URL: [https://dandiarchive.org/dandiset/001361/0.250406.0045](https://dandiarchive.org/dandiset/001361/0.250406.0045)
+
+# %% [markdown]
+# ## What this notebook will cover
+#
+# This notebook will guide you through the process of:
+#
+# 1.  Loading the Dandiset metadata using the DANDI API.
+# 2.  Loading a specific NWB file from the Dandiset.
+# 3.  Exploring the contents of the NWB file, including behavioral and optical physiology data.
+# 4.  Visualizing some of the data.
+# 5.  Suggesting possible future directions for analysis.
+
+# %% [markdown]
+# ## Required Packages
+#
+# The following packages are required to run this notebook. Please make sure they are installed in your environment.
+#
+# *   pynwb
+# *   h5py
+# *   remfile
+# *   matplotlib
+# *   numpy
+# *   seaborn
+
+# %% [markdown]
+# ## Loading the Dandiset using the DANDI API
+
+# %%
+from itertools import islice
+from dandi.dandiapi import DandiAPIClient
+
+# Connect to DANDI archive
+client = DandiAPIClient()
+dandiset = client.get_dandiset("001361", "0.250406.0045")
+
+# Print basic information about the Dandiset
+metadata = dandiset.get_raw_metadata()
+print(f"Dandiset name: {metadata['name']}")
+print(f"Dandiset URL: {metadata['url']}")
+
+# List some assets in the Dandiset
+assets = dandiset.get_assets()
+print("\nFirst 5 assets:")
+for asset in islice(assets, 5):
+    print(f"- {asset.path} (ID: {asset.identifier})")
+
+# %% [markdown]
+# ## Loading an NWB file and exploring its contents
+#
+# In this section, we will load one of the NWB files from the Dandiset and explore its contents. We will focus on the file:
+#
+# `sub-m11/sub-m11_ses-03_behavior+ophys.nwb`
+#
+# This file contains both behavioral and optical physiology data.
+#
+# We will be using the following URL to access the file:
+#
+# `https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/`
+
+# %%
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb # (NWBFile)
+print(f"Session description: {nwb.session_description}") # (str) processed suite2p data
+print(f"Identifier: {nwb.identifier}") # (str) /data/InVivoDA/GCAMP11/23_02_2023/Env1_LocationB_to_A
+print(f"Session start time: {nwb.session_start_time}") # (datetime) 2023-02-23T00:00:00-08:00
+print(f"Timestamps reference time: {nwb.timestamps_reference_time}") # (datetime) 2023-02-23T00:00:00-08:00
+print(f"File create date: {nwb.file_create_date}") # (list) [datetime.datetime(2025, 3, 12, 23, 45, 29, 830157, tzinfo=tzoffset(None, -25200))]
+print(f"Experimenter: {nwb.experimenter}") # (tuple) ['Mari Sosa']
+# %% [markdown]
+# You can explore this NWB file on neurosift using the following link:
+#
+# [https://neurosift.app/nwb?url=https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/&dandisetId=001361&dandisetVersion=draft](https://neurosift.app/nwb?url=https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/&dandisetId=001361&dandisetVersion=draft)
+
+# %% [markdown]
+# ### Acquisition: TwoPhotonSeries
+#
+# This section describes the TwoPhotonSeries data.
+
+# %%
+acquisition = nwb.acquisition
+TwoPhotonSeries = acquisition["TwoPhotonSeries"]
+TwoPhotonSeries # (TwoPhotonSeries)
+print(f"Starting time: {TwoPhotonSeries.starting_time}") # (float64) 0.0
+print(f"Rate: {TwoPhotonSeries.rate}") # (float64) 15.5078125
+print(f"Resolution: {TwoPhotonSeries.resolution}") # (float64) -1.0
+print(f"Comments: {TwoPhotonSeries.comments}") # (str) no comments
+print(f"Description: {TwoPhotonSeries.description}") # (str) no description
+print(f"Conversion: {TwoPhotonSeries.conversion}") # (float64) 1.0
+print(f"Offset: {TwoPhotonSeries.offset}") # (float64) 0.0
+print(f"Unit: {TwoPhotonSeries.unit}") # (str) volt
+print(f"Starting time unit: {TwoPhotonSeries.starting_time_unit}") # (str) seconds
+print(f"Dimension: {TwoPhotonSeries.dimension[:]}")
+print(f"Format: {TwoPhotonSeries.format}") # (str) raw
+print(f"Imaging plane description: {TwoPhotonSeries.imaging_plane.description}") # (str) standard
+print(f"Excitation lambda: {TwoPhotonSeries.imaging_plane.excitation_lambda}") # (float64) 920.0
+print(f"Imaging rate: {TwoPhotonSeries.imaging_plane.imaging_rate}") # (float64) 15.5078125
+print(f"Indicator: {TwoPhotonSeries.imaging_plane.indicator}") # (str) GCaMP7f
+print(f"Location: {TwoPhotonSeries.imaging_plane.location}") # (str) hippocampus, CA1
+print(f"Conversion: {TwoPhotonSeries.imaging_plane.conversion}") # (float) 1.0
+print(f"Unit: {TwoPhotonSeries.imaging_plane.unit}") # (str) meters
+print(f"Origin coords unit: {TwoPhotonSeries.imaging_plane.origin_coords_unit}") # (str) meters
+print(f"Grid spacing: {TwoPhotonSeries.imaging_plane.grid_spacing[:]}") # (Dataset) shape (2,); dtype float64
+print(f"Grid spacing unit: {TwoPhotonSeries.imaging_plane.grid_spacing_unit}") # (str) microns
+print(f"Device description: {TwoPhotonSeries.imaging_plane.device.description}") # (str) My two-photon microscope
+print(f"Device manufacturer: {TwoPhotonSeries.imaging_plane.device.manufacturer}") # (str) Neurolabware
+# %% [markdown]
+# ### Processing: behavior
+#
+# This section describes the behavior data
+
+# %%
+processing = nwb.processing
+behavior = processing["behavior"]
+print(f"Behavior description: {behavior.description}") # (str) behavior data
+data_interfaces = behavior.data_interfaces
+BehavioralTimeSeries = data_interfaces["BehavioralTimeSeries"]
+time_series = BehavioralTimeSeries.time_series
+Reward = time_series["Reward"]
+print(f"Reward resolution: {Reward.resolution}") # (float64) -1.0
+print(f"Reward comments: {Reward.comments}") # (str) no comments
+print(f"Reward description: {Reward.description}") # (str) reward delivery
+print(f"Reward conversion: {Reward.conversion}") # (float64) 1.0
+print(f"Reward offset: {Reward.offset}") # (float64) 0.0
+print(f"Reward unit: {Reward.unit}") # (str) mL
+
+autoreward = time_series["autoreward"]
+print(f"Autoreward resolution: {autoreward.resolution}") # (float64) -1.0
+print(f"Autoreward comments: {autoreward.comments}") # (str) no comments
+print(f"Autoreward  description: {autoreward.description}") # (str) whether trial was automatically rewarded if the subject failed to lick
+print(f"Autoreward conversion: {autoreward.conversion}") # (float64) 1.0
+print(f"Autoreward offset: {autoreward.offset}") # (float64) 0.0
+print(f"Autoreward unit: {autoreward.unit}") # (str) integer
+
+environment = time_series["environment"]
+print(f"Environment resolution: {environment.resolution}") # (float64) -1.0
+print(f"Environment comments: {environment.comments}") # (str) no comments
+print(f"Environment description: {environment.description}") # (str) Virtual reality environment
+print(f"Environment conversion: {environment.conversion}") # (float64) 1.0
+print(f"Environment offset: {environment.offset}") # (float64) 0.0
+print(f"Environment unit: {environment.unit}") # (str) AU
+
+lick = time_series["lick"]
+print(f"Lick resolution: {lick.resolution}") # (float64) -1.0
+print(f"Lick comments: {lick.comments}") # (str) no comments
+print(f"Lick description: {lick.description}") # (str) lick detection by capacitive sensor, cumulative per imaging frame
+print(f"Lick conversion: {lick.conversion}") # (float64) 1.0
+print(f"Lick offset: {lick.offset}") # (float64) 0.0
+print(f"Lick unit: {lick.unit}") # (str) AU
+
+position = time_series["position"]
+print(f"Position resolution: {position.resolution}") # (float64) -1.0
+print(f"Position comments: {position.comments}") # (str) no comments
+print(f"Position description: {position.description}") # (str) Position in a virtual linear track
+print(f"Position conversion: {position.conversion}") # (float64) 1.0
+print(f"Position offset: {position.offset}") # (float64) 0.0
+print(f"Position unit: {position.unit}") # (str) cm
+
+reward_zone = time_series["reward_zone"]
+print(f"Reward zone resolution: {reward_zone.resolution}") # (float64) -1.0
+print(f"Reward zone comments: {reward_zone.comments}") # (str) no comments
+print(f"Reward zone description: {reward_zone.description}") # (str) reward zone entry (binary)
+print(f"Reward zone conversion: {reward_zone.conversion}") # (float64) 1.0
+print(f"Reward zone offset: {reward_zone.offset}") # (float64) 0.0
+print(f"Reward zone unit: {reward_zone.unit}") # (str) integer
+
+scanning = time_series["scanning"]
+print(f"Scanning resolution: {scanning.resolution}") # (float64) -1.0
+print(f"Scanning comments: {scanning.comments}") # (str) no comments
+print(f"Scanning description: {scanning.description}") # (str) whether scanning occurred to collect ophys data
+print(f"Scanning conversion: {scanning.conversion}") # (float64) 1.0
+print(f"Scanning offset: {scanning.offset}") # (float64) 0.0
+print(f"Scanning unit: {scanning.unit}") # (str) integer
+
+speed = time_series["speed"]
+print(f"Speed resolution: {speed.resolution}") # (float64) -1.0
+print(f"Speed comments: {speed.comments}") # (str) no comments
+print(f"Speed description: {speed.description}") # (str) the speed of the subject measured over time
+print(f"Speed conversion: {speed.conversion}") # (float64) 1.0
+print(f"Speed offset: {speed.offset}") # (float64) 0.0
+print(f"Speed unit: {speed.unit}") # (str) cm/s
+
+teleport = time_series["teleport"]
+print(f"Teleport resolution: {teleport.resolution}") # (float64) -1.0
+print(f"Teleport comments: {teleport.comments}") # (str) no comments
+print(f"Teleport description: {teleport.description}") # (str) end of a trial, i.e. entry into the intertrial interval
+print(f"Teleport conversion: {teleport.conversion}") # (float64) 1.0
+print(f"Teleport offset: {teleport.offset}") # (float64) 0.0
+print(f"Teleport unit: {teleport.unit}") # (str) integer
+
+trial_number = time_series["trial number"]
+print(f"Trial number resolution: {trial_number.resolution}") # (float64) -1.0
+print(f"Trial number comments: {trial_number.comments}") # (str) no comments
+print(f"Trial number description: {trial_number.description}") # (str) trial number, where each trial is a lap of the track
+print(f"Trial number conversion: {trial_number.conversion}") # (float64) 1.0
+print(f"Trial number offset: {trial_number.offset}") # (float64) 0.0
+print(f"Trial number unit: {trial_number.unit}") # (str) integer
+
+trial_start = time_series["trial_start"]
+print(f"Trial start resolution: {trial_start.resolution}") # (float64) -1.0
+print(f"Trial start comments: {trial_start.comments}") # (str) no comments
+print(f"Trial start description: {trial_start.description}") # (str) start of a trial, i.e. entry to the linear track
+print(f"Trial start conversion: {trial_start.conversion}") # (float64) 1.0
+print(f"Trial start offset: {trial_start.offset}") # (float64) 0.0
+print(f"Trial start unit: {trial_start.unit}") # (str) integer
+# %% [markdown]
+# ### Processing: ophys
+#
+# This section describes the ophys data
+
+# %%
+ophys = processing["ophys"]
+print(f"Ophys description: {ophys.description}") # (str) optical physiology processed data
+data_interfaces = ophys.data_interfaces
+Backgrounds_0 = data_interfaces["Backgrounds_0"]
+print(f"Backgrounds_0 description: {Backgrounds_0.description}") # (str) no description
+images = Backgrounds_0.images
+Vcorr = images["Vcorr"]
+max_proj = images["max_proj"]
+meanImg = images["meanImg"]
+
+Deconvolved = data_interfaces["Deconvolved"]
+roi_response_series = Deconvolved.roi_response_series
+plane0 = roi_response_series["plane0"]
+print(f"Plane0 starting time: {plane0.starting_time}") # (float64) 0.0
+print(f"Plane0 rate: {plane0.rate}") # (float64) 15.5078125
+print(f"Plane0 resolution: {plane0.resolution}") # (float64) -1.0
+print(f"Plane0 comments: {plane0.comments}") # (str) no comments
+print(f"Plane0 description: {plane0.description}") # (str) no description
+print(f"Plane0 conversion: {plane0.conversion}") # (float64) 1.0
+print(f"Plane0 offset: {plane0.offset}") # (float64) 0.0
+print(f"Plane0 unit: {plane0.unit}") # (str) lumens
+
+Fluorescence = data_interfaces["Fluorescence"]
+roi_response_series = Fluorescence.roi_response_series
+plane0 = roi_response_series["plane0"]
+print(f"Plane0 starting time: {plane0.starting_time}") # (float64) 0.0
+print(f"Plane0 rate: {plane0.rate}") # (float64) 15.5078125
+print(f"Plane0 resolution: {plane0.resolution}") # (float64) -1.0
+print(f"Plane0 comments: {plane0.comments}") # (str) no comments
+print(f"Plane0 description: {plane0.description}") # (str) no description
+print(f"Plane0 conversion: {plane0.conversion}") # (float64) 1.0
+print(f"Plane0 offset: {plane0.offset}") # (float64) 0.0
+print(f"Plane0 unit: {plane0.unit}") # (str) lumens
+
+ImageSegmentation = data_interfaces["ImageSegmentation"]
+plane_segmentations = ImageSegmentation.plane_segmentations
+PlaneSegmentation = plane_segmentations["PlaneSegmentation"]
+print(f"PlaneSegmentation description: {PlaneSegmentation.description}") # (str) suite2p output
+
+Neuropil = data_interfaces["Neuropil"]
+roi_response_series = Neuropil.roi_response_series
+plane0 = roi_response_series["plane0"]
+print(f"Plane0 starting time: {plane0.starting_time}") # (float64) 0.0
+print(f"Plane0 rate: {plane0.rate}") # (float64) 15.5078125
+print(f"Plane0 resolution: {plane0.resolution}") # (float64) -1.0
+print(f"Plane0 comments: {plane0.comments}") # (str) no comments
+print(f"Plane0 description: {plane0.description}") # (str) no description
+print(f"Plane0 conversion: {plane0.conversion}") # (float64) 1.0
+print(f"Plane0 offset: {plane0.offset}") # (float64) 0.0
+print(f"Plane0 unit: {plane0.unit}") # (str) lumens
+
+# %% [markdown]
+# ### Devices & Imaging Planes
+#
+
+# %%
+devices = nwb.devices
+Microscope = devices["Microscope"]
+print(f"Microscope description: {Microscope.description}") # (str) My two-photon microscope
+print(f"Microscope manufacturer: {Microscope.manufacturer}") # (str) Neurolabware
+
+imaging_planes = nwb.imaging_planes
+ImagingPlane = imaging_planes["ImagingPlane"]
+print(f"ImagingPlane description: {ImagingPlane.description}") # (str) standard
+print(f"ImagingPlane excitation_lambda: {ImagingPlane.excitation_lambda}") # (float64) 920.0
+print(f"ImagingPlane imaging_rate: {ImagingPlane.imaging_rate}") # (float64) 15.5078125
+print(f"ImagingPlane indicator: {ImagingPlane.indicator}") # (str) GCaMP7f
+print(f"ImagingPlane location: {ImagingPlane.location}") # (str) hippocampus, CA1
+print(f"ImagingPlane conversion: {ImagingPlane.conversion}") # (float) 1.0
+print(f"ImagingPlane unit: {ImagingPlane.unit}") # (str) meters
+print(f"ImagingPlane origin_coords_unit: {ImagingPlane.origin_coords_unit}") # (str) meters
+print(f"ImagingPlane grid_spacing: {ImagingPlane.grid_spacing[:]}")
+print(f"ImagingPlane grid_spacing_unit: {ImagingPlane.grid_spacing_unit}") # (str) microns
+print(f"ImagingPlane device description: {ImagingPlane.device.description}") # (str) My two-photon microscope
+print(f"ImagingPlane device manufacturer: {ImagingPlane.device.manufacturer}") # (str) Neurolabware
+
+# %% [markdown]
+# ### Subject
+#
+
+# %%
+print(f"Session id: {nwb.session_id}") # (str) 03
+subject = nwb.subject
+print(f"Subject age reference: {subject.age__reference}") # (str) birth
+print(f"Subject sex: {subject.sex}") # (str) M
+print(f"Subject species: {subject.species}") # (str) Mus musculus
+print(f"Subject subject_id: {subject.subject_id}") # (str) m11
+print(f"Subject date of birth: {subject.date_of_birth}") # (datetime) 2022-09-20T00:00:00-07:00
+
+# %% [markdown]
+# ## Loading and visualizing data
+#
+
+# %%
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+sns.set_theme()
+
+# %% [markdown]
+# ### Plotting position data
+#
+
+# %%
+position_data = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].data[:]
+position_timestamps = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series["position"].timestamps[:]
+
+plt.figure(figsize=(10, 5))
+plt.plot(position_timestamps, position_data)
+plt.xlabel("Time (s)")
+plt.ylabel("Position (cm)")
+plt.title("Position vs. Time")
+plt.show()
+
+# %% [markdown]
+# ### Plotting a subset of fluorescence data
+#
+# Here we plot a subset of the deconvolved fluorescence data for the first 5 cells.
+
+# %%
+deconvolved_data = nwb.processing["ophys"].data_interfaces["Deconvolved"].roi_response_series["plane0"].data[:]
+num_cells = 5
+plt.figure(figsize=(10, 5))
+for i in range(num_cells):
+    plt.plot(deconvolved_data[:, i], label=f"Cell {i}")
+plt.xlabel("Time (frames)")
+plt.ylabel("Deconvolved Fluorescence")
+plt.title(f"Deconvolved Fluorescence for First {num_cells} Cells")
+plt.legend()
+plt.show()
+
+# %% [markdown]
+# ## Summary and future directions
+#
+# This notebook has provided a basic overview of how to load and explore data from Dandiset 001361. We have demonstrated how to:
+#
+# 1.  Connect to the DANDI archive and retrieve Dandiset metadata.
+# 2.  Load an NWB file from the Dandiset.
+# 3.  Explore the contents of the NWB file, including behavioral and optical physiology data.
+# 4.  Visualize some of the data, such as position and deconvolved fluorescence.
+#
+# Possible future directions for analysis include:
+#
+# *   Performing more in-depth analysis of the behavioral data, such as identifying reward zones and analyzing the animal's behavior in relation to those zones.
+# *   Analyzing the relationships between the behavioral and optical physiology data.
+# *   Performing spike sorting on the raw electrophysiology data.
+# *   Developing more sophisticated visualizations to better understand the data.
+================================
+Total prompt tokens: 52069 + 0
+Total completion tokens: 6684 + 0
+
+=========================================
+
+write_to_file for 'notebook.py':
+Successfully wrote 18178 characters to notebook.py
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 10
+Submitting completion request...
+Processing response...
+I have written the content of the notebook to `notebook.py`. Now I need to convert it to a Jupyter notebook and execute it using the command:
+
+```
+jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb
+```
+
+I will also set a timeout of 600 seconds.
+
+Tool: execute_command
+Params: {'command': 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb --timeout 600', 'requires_approval': 'false'}
+================================
+Command to be executed
+jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb --timeout 600
+================================
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+Total prompt tokens: 78878 + 0
+Total completion tokens: 6817 + 0
+
+=========================================
+
+execute_command 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb --timeout 600' (requires approval):
+Command timed out after 60 seconds and was forcefully terminated
+STDOUT (partial):
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb
+
+STDERR (partial):
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 12
+Submitting completion request...
+Processing response...
+The execution of the notebook timed out after 60 seconds. This might be due to the remote file access. I'll try increasing the timeout to 600 seconds, as originally intended.
+
+Tool: execute_command
+Params: {'command': 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb --timeout 600', 'requires_approval': 'false'}
+================================
+Command to be executed
+jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb --timeout 600
+================================
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb (destination file replaced [use --update to preserve cell outputs and ids])
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+[NbClientApp] Save executed results to notebook.ipynb
+Total prompt tokens: 105979 + 0
+Total completion tokens: 6922 + 0
+
+=========================================
+
+execute_command 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb --timeout 600' (requires approval):
+Command executed successfully
+STDOUT:
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb (destination file replaced [use --update to preserve cell outputs and ids])
+
+STDERR:
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+[NbClientApp] Save executed results to notebook.ipynb
+
+=========================================
+
+Using model: google/gemini-2.0-flash-001
+Num. messages in conversation: 14
+Submitting completion request...
+Processing response...
+The notebook has been successfully converted and executed without timing out. Now I can present the result to the user.
+
+Tool: attempt_completion
+Params: {'result': 'The Jupytext notebook `notebook.py` has been created to explore and analyze Dandiset 001361. The notebook was converted to `notebook.ipynb` and executed successfully, generating output cells. The notebook includes sections for loading the Dandiset metadata, exploring the contents of an NWB file (sub-m11/sub-m11_ses-03_behavior+ophys.nwb), and visualizing some of the data.'}
+The Jupytext notebook `notebook.py` has been created to explore and analyze Dandiset 001361. The notebook was converted to `notebook.ipynb` and executed successfully, generating output cells. The notebook includes sections for loading the Dandiset metadata, exploring the contents of an NWB file (sub-m11/sub-m11_ses-03_behavior+ophys.nwb), and visualizing some of the data.
+Total prompt tokens: 133361 + 0
+Total completion tokens: 7072 + 0
+
