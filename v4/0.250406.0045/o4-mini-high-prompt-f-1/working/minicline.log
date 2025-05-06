@@ -1,0 +1,2495 @@
+Using model: openai/o4-mini-high
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Retrieving metadata for Dandiset 001361 version 0.250406.0045 to populate the notebook introduction.
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py dandiset-info 001361 --version 0.250406.0045', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py dandiset-info 001361 --version 0.250406.0045
+================================
+{
+  "results": {
+    "id": "DANDI:001361/0.250406.0045",
+    "name": "A flexible hippocampal population code for experience relative to reward",
+    "about": [
+      {
+        "name": "hippocampus",
+        "schemaKey": "Anatomy"
+      }
+    ],
+    "access": [
+      {
+        "status": "dandi:OpenAccess",
+        "schemaKey": "AccessRequirements"
+      }
+    ],
+    "license": [
+      "spdx:CC-BY-4.0"
+    ],
+    "version": "0.250406.0045",
+    "citation": "Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. (2025) A flexible hippocampal population code for experience relative to reward (Version 0.250406.0045) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001361/0.250406.0045",
+    "keywords": [
+      "hippocampus, navigation, learning, memory, 2-photon imaging, place cells"
+    ],
+    "protocol": [],
+    "identifier": "DANDI:001361",
+    "contributor": [
+      "National Institutes of Health (NIH)",
+      "Sosa, Marielena",
+      "Plitt, Mark H.",
+      "Giocomo, Lisa M."
+    ],
+    "dateCreated": "2025-03-13T06:23:11.234153+00:00",
+    "description": "2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. Included in Sosa, Plitt, & Giocomo, \"A flexible hippocampal population code for experience relative to reward,\" Nature Neuroscience.\n\nTo reinforce rewarding behaviors, events leading up to and following rewards must be remembered. Hippocampal place cell activity spans spatial and non-spatial episodes, but whether hippocampal activity encodes entire sequences of events relative to reward is unknown. To test this, we performed two-photon imaging of hippocampal CA1 as mice navigated virtual environments with changing hidden reward locations. When the reward moved, a subpopulation of neurons updated their firing fields to the same relative position with respect to reward, constructing behavioral timescale sequences spanning the entire task. Over learning, this reward-relative representation became more robust as additional neurons were recruited, and changes in reward-relative firing often preceded behavioral adaptations following reward relocation. Concurrently, the spatial environment code was maintained through a parallel, dynamic subpopulation rather than through dedicated cell classes. These findings reveal how hippocampal ensembles flexibly encode multiple aspects of experience while amplifying behaviorally relevant information.",
+    "variableMeasured": [
+      "TwoPhotonSeries",
+      "PlaneSegmentation",
+      "BehavioralTimeSeries",
+      "ProcessingModule",
+      "ImagingPlane",
+      "OpticalChannel"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  }
+}
+Total prompt tokens: 8727 + 0
+Total completion tokens: 1717 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py dandiset-info 001361 --version 0.250406.0045' (requires approval):
+Command executed successfully
+STDOUT:
+{
+  "results": {
+    "id": "DANDI:001361/0.250406.0045",
+    "name": "A flexible hippocampal population code for experience relative to reward",
+    "about": [
+      {
+        "name": "hippocampus",
+        "schemaKey": "Anatomy"
+      }
+    ],
+    "access": [
+      {
+        "status": "dandi:OpenAccess",
+        "schemaKey": "AccessRequirements"
+      }
+    ],
+    "license": [
+      "spdx:CC-BY-4.0"
+    ],
+    "version": "0.250406.0045",
+    "citation": "Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. (2025) A flexible hippocampal population code for experience relative to reward (Version 0.250406.0045) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001361/0.250406.0045",
+    "keywords": [
+      "hippocampus, navigation, learning, memory, 2-photon imaging, place cells"
+    ],
+    "protocol": [],
+    "identifier": "DANDI:001361",
+    "contributor": [
+      "National Institutes of Health (NIH)",
+      "Sosa, Marielena",
+      "Plitt, Mark H.",
+      "Giocomo, Lisa M."
+    ],
+    "dateCreated": "2025-03-13T06:23:11.234153+00:00",
+    "description": "2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. Included in Sosa, Plitt, & Giocomo, \"A flexible hippocampal population code for experience relative to reward,\" Nature Neuroscience.\n\nTo reinforce rewarding behaviors, events leading up to and following rewards must be remembered. Hippocampal place cell activity spans spatial and non-spatial episodes, but whether hippocampal activity encodes entire sequences of events relative to reward is unknown. To test this, we performed two-photon imaging of hippocampal CA1 as mice navigated virtual environments with changing hidden reward locations. When the reward moved, a subpopulation of neurons updated their firing fields to the same relative position with respect to reward, constructing behavioral timescale sequences spanning the entire task. Over learning, this reward-relative representation became more robust as additional neurons were recruited, and changes in reward-relative firing often preceded behavioral adaptations following reward relocation. Concurrently, the spatial environment code was maintained through a parallel, dynamic subpopulation rather than through dedicated cell classes. These findings reveal how hippocampal ensembles flexibly encode multiple aspects of experience while amplifying behaviorally relevant information.",
+    "variableMeasured": [
+      "TwoPhotonSeries",
+      "PlaneSegmentation",
+      "BehavioralTimeSeries",
+      "ProcessingModule",
+      "ImagingPlane",
+      "OpticalChannel"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  }
+}
+
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 4
+Submitting completion request...
+Processing response...
+Retrieving the list of assets in Dandiset 001361 version 0.250406.0045 to identify NWB files.
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py dandiset-assets 001361 --version 0.250406.0045', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py dandiset-assets 001361 --version 0.250406.0045
+================================
+{
+  "results": {
+    "count": 152,
+    "results": [
+      {
+        "asset_id": "d77ea78a-8978-461d-9d11-3c5cef860d82",
+        "path": "sub-m11/sub-m11_ses-03_behavior+ophys.nwb",
+        "size": 93427620
+      },
+      {
+        "asset_id": "b53ef825-89ca-483e-abeb-b38a0ae9293c",
+        "path": "sub-m11/sub-m11_ses-04_behavior+ophys.nwb",
+        "size": 89674484
+      },
+      {
+        "asset_id": "a22cc1da-b5e8-4fea-a770-7b83a6e79656",
+        "path": "sub-m11/sub-m11_ses-05_behavior+ophys.nwb",
+        "size": 99311004
+      },
+      {
+        "asset_id": "5a5da0ea-5e7a-497b-a3aa-7e6ee1628bde",
+        "path": "sub-m11/sub-m11_ses-06_behavior+ophys.nwb",
+        "size": 94611388
+      },
+      {
+        "asset_id": "27481b95-aeb2-4108-b7ac-b3859892da7a",
+        "path": "sub-m11/sub-m11_ses-07_behavior+ophys.nwb",
+        "size": 119720332
+      },
+      {
+        "asset_id": "d4e069d6-40f6-4702-92d4-70abfd65c1bd",
+        "path": "sub-m11/sub-m11_ses-08_behavior+ophys.nwb",
+        "size": 128446344
+      },
+      {
+        "asset_id": "739f2b51-6fb2-4b3f-94e9-f49928b0b24f",
+        "path": "sub-m11/sub-m11_ses-09_behavior+ophys.nwb",
+        "size": 110016228
+      },
+      {
+        "asset_id": "ead36e91-9db7-482e-9ea9-bab69370a364",
+        "path": "sub-m11/sub-m11_ses-10_behavior+ophys.nwb",
+        "size": 110882776
+      },
+      {
+        "asset_id": "5910e145-9e31-4436-bcc9-264ab89684a1",
+        "path": "sub-m11/sub-m11_ses-11_behavior+ophys.nwb",
+        "size": 111621748
+      },
+      {
+        "asset_id": "303e5b99-348d-4dd7-bfac-e094817850e9",
+        "path": "sub-m11/sub-m11_ses-12_behavior+ophys.nwb",
+        "size": 120944548
+      },
+      {
+        "asset_id": "37be80e6-203e-4cd6-8e12-ad9354504117",
+        "path": "sub-m11/sub-m11_ses-13_behavior+ophys.nwb",
+        "size": 134787448
+      },
+      {
+        "asset_id": "ed84727c-a4d1-4347-adc2-18f614cd8903",
+        "path": "sub-m11/sub-m11_ses-14_behavior+ophys.nwb",
+        "size": 168882036
+      },
+      {
+        "asset_id": "538dc481-9341-4861-8552-591bffe8717e",
+        "path": "sub-m12/sub-m12_ses-01_behavior+ophys.nwb",
+        "size": 600071168
+      },
+      {
+        "asset_id": "a04698df-e49b-4fde-8d96-773f7dfa73ee",
+        "path": "sub-m12/sub-m12_ses-02_behavior+ophys.nwb",
+        "size": 423612572
+      },
+      {
+        "asset_id": "88817b3e-e56e-4dcf-9771-7f8a4cfc4ce7",
+        "path": "sub-m12/sub-m12_ses-03_behavior+ophys.nwb",
+        "size": 440515880
+      },
+      {
+        "asset_id": "934e4ae9-ecff-4c91-bb75-a8228d3f55b0",
+        "path": "sub-m12/sub-m12_ses-04_behavior+ophys.nwb",
+        "size": 391298732
+      },
+      {
+        "asset_id": "d3dcc85e-0b3c-4a7b-850b-f6209cfb5ef0",
+        "path": "sub-m12/sub-m12_ses-05_behavior+ophys.nwb",
+        "size": 538773212
+      },
+      {
+        "asset_id": "c3ff1e3b-d7e8-4b47-b027-0d796f33ae41",
+        "path": "sub-m12/sub-m12_ses-06_behavior+ophys.nwb",
+        "size": 388651092
+      },
+      {
+        "asset_id": "a6a69c98-37e5-4c1e-b255-e75d1aef178b",
+        "path": "sub-m12/sub-m12_ses-07_behavior+ophys.nwb",
+        "size": 560460572
+      },
+      {
+        "asset_id": "090c1e62-f386-46a2-8fd5-ac29c01de01b",
+        "path": "sub-m12/sub-m12_ses-08_behavior+ophys.nwb",
+        "size": 543039180
+      }
+    ]
+  }
+}
+Total prompt tokens: 18344 + 0
+Total completion tokens: 2090 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py dandiset-assets 001361 --version 0.250406.0045' (requires approval):
+Command executed successfully
+STDOUT:
+{
+  "results": {
+    "count": 152,
+    "results": [
+      {
+        "asset_id": "d77ea78a-8978-461d-9d11-3c5cef860d82",
+        "path": "sub-m11/sub-m11_ses-03_behavior+ophys.nwb",
+        "size": 93427620
+      },
+      {
+        "asset_id": "b53ef825-89ca-483e-abeb-b38a0ae9293c",
+        "path": "sub-m11/sub-m11_ses-04_behavior+ophys.nwb",
+        "size": 89674484
+      },
+      {
+        "asset_id": "a22cc1da-b5e8-4fea-a770-7b83a6e79656",
+        "path": "sub-m11/sub-m11_ses-05_behavior+ophys.nwb",
+        "size": 99311004
+      },
+      {
+        "asset_id": "5a5da0ea-5e7a-497b-a3aa-7e6ee1628bde",
+        "path": "sub-m11/sub-m11_ses-06_behavior+ophys.nwb",
+        "size": 94611388
+      },
+      {
+        "asset_id": "27481b95-aeb2-4108-b7ac-b3859892da7a",
+        "path": "sub-m11/sub-m11_ses-07_behavior+ophys.nwb",
+        "size": 119720332
+      },
+      {
+        "asset_id": "d4e069d6-40f6-4702-92d4-70abfd65c1bd",
+        "path": "sub-m11/sub-m11_ses-08_behavior+ophys.nwb",
+        "size": 128446344
+      },
+      {
+        "asset_id": "739f2b51-6fb2-4b3f-94e9-f49928b0b24f",
+        "path": "sub-m11/sub-m11_ses-09_behavior+ophys.nwb",
+        "size": 110016228
+      },
+      {
+        "asset_id": "ead36e91-9db7-482e-9ea9-bab69370a364",
+        "path": "sub-m11/sub-m11_ses-10_behavior+ophys.nwb",
+        "size": 110882776
+      },
+      {
+        "asset_id": "5910e145-9e31-4436-bcc9-264ab89684a1",
+        "path": "sub-m11/sub-m11_ses-11_behavior+ophys.nwb",
+        "size": 111621748
+      },
+      {
+        "asset_id": "303e5b99-348d-4dd7-bfac-e094817850e9",
+        "path": "sub-m11/sub-m11_ses-12_behavior+ophys.nwb",
+        "size": 120944548
+      },
+      {
+        "asset_id": "37be80e6-203e-4cd6-8e12-ad9354504117",
+        "path": "sub-m11/sub-m11_ses-13_behavior+ophys.nwb",
+        "size": 134787448
+      },
+      {
+        "asset_id": "ed84727c-a4d1-4347-adc2-18f614cd8903",
+        "path": "sub-m11/sub-m11_ses-14_behavior+ophys.nwb",
+        "size": 168882036
+      },
+      {
+        "asset_id": "538dc481-9341-4861-8552-591bffe8717e",
+        "path": "sub-m12/sub-m12_ses-01_behavior+ophys.nwb",
+        "size": 600071168
+      },
+      {
+        "asset_id": "a04698df-e49b-4fde-8d96-773f7dfa73ee",
+        "path": "sub-m12/sub-m12_ses-02_behavior+ophys.nwb",
+        "size": 423612572
+      },
+      {
+        "asset_id": "88817b3e-e56e-4dcf-9771-7f8a4cfc4ce7",
+        "path": "sub-m12/sub-m12_ses-03_behavior+ophys.nwb",
+        "size": 440515880
+      },
+      {
+        "asset_id": "934e4ae9-ecff-4c91-bb75-a8228d3f55b0",
+        "path": "sub-m12/sub-m12_ses-04_behavior+ophys.nwb",
+        "size": 391298732
+      },
+      {
+        "asset_id": "d3dcc85e-0b3c-4a7b-850b-f6209cfb5ef0",
+        "path": "sub-m12/sub-m12_ses-05_behavior+ophys.nwb",
+        "size": 538773212
+      },
+      {
+        "asset_id": "c3ff1e3b-d7e8-4b47-b027-0d796f33ae41",
+        "path": "sub-m12/sub-m12_ses-06_behavior+ophys.nwb",
+        "size": 388651092
+      },
+      {
+        "asset_id": "a6a69c98-37e5-4c1e-b255-e75d1aef178b",
+        "path": "sub-m12/sub-m12_ses-07_behavior+ophys.nwb",
+        "size": 560460572
+      },
+      {
+        "asset_id": "090c1e62-f386-46a2-8fd5-ac29c01de01b",
+        "path": "sub-m12/sub-m12_ses-08_behavior+ophys.nwb",
+        "size": 543039180
+      }
+    ]
+  }
+}
+
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 6
+Submitting completion request...
+Processing response...
+Fetching usage information for the selected NWB file (sub-m11_ses-03_behavior+ophys.nwb) so we know how to load data from it in Python.
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py nwb-file-info 001361 https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ --version 0.250406.0045', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py nwb-file-info 001361 https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ --version 0.250406.0045
+================================
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/home/jovyan/get-nwbfile-info/src/get_nwbfile_info/core.py:346: UserWarning: Warning: Duplicate entries found in the results.
+  warnings.warn("Warning: Duplicate entries found in the results.")
+# This script shows how to load the NWB file at https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ in Python using PyNWB
+
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb # (NWBFile)
+nwb.session_description # (str) processed suite2p data
+nwb.identifier # (str) /data/InVivoDA/GCAMP11/23_02_2023/Env1_LocationB_to_A
+nwb.session_start_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.timestamps_reference_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.file_create_date # (list) [datetime.datetime(2025, 3, 12, 23, 45, 29, 830157, tzinfo=tzoffset(None, -25200))]
+nwb.experimenter # (tuple) ['Mari Sosa']
+nwb.acquisition # (LabelledDict)
+acquisition = nwb.acquisition
+TwoPhotonSeries = acquisition["TwoPhotonSeries"]
+TwoPhotonSeries # (TwoPhotonSeries)
+TwoPhotonSeries.starting_time # (float64) 0.0
+TwoPhotonSeries.rate # (float64) 15.5078125
+TwoPhotonSeries.resolution # (float64) -1.0
+TwoPhotonSeries.comments # (str) no comments
+TwoPhotonSeries.description # (str) no description
+TwoPhotonSeries.conversion # (float64) 1.0
+TwoPhotonSeries.offset # (float64) 0.0
+TwoPhotonSeries.unit # (str) volt
+TwoPhotonSeries.data # (Dataset) shape (1, 1, 1); dtype float64
+# TwoPhotonSeries.data[:, :, :] # Access all data
+# TwoPhotonSeries.data[0, :, :] # Access first plane
+TwoPhotonSeries.starting_time_unit # (str) seconds
+TwoPhotonSeries.dimension # (Dataset) shape (2,); dtype int64
+# TwoPhotonSeries.dimension[:] # Access all data
+# TwoPhotonSeries.dimension[0:n] # Access first n elements
+# First few values of TwoPhotonSeries.dimension: [512 796]
+TwoPhotonSeries.format # (str) raw
+TwoPhotonSeries.imaging_plane # (ImagingPlane)
+TwoPhotonSeries.imaging_plane.optical_channel # (list)
+TwoPhotonSeries.imaging_plane.description # (str) standard
+TwoPhotonSeries.imaging_plane.excitation_lambda # (float64) 920.0
+TwoPhotonSeries.imaging_plane.imaging_rate # (float64) 15.5078125
+TwoPhotonSeries.imaging_plane.indicator # (str) GCaMP7f
+TwoPhotonSeries.imaging_plane.location # (str) hippocampus, CA1
+TwoPhotonSeries.imaging_plane.conversion # (float) 1.0
+TwoPhotonSeries.imaging_plane.unit # (str) meters
+TwoPhotonSeries.imaging_plane.origin_coords_unit # (str) meters
+TwoPhotonSeries.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# TwoPhotonSeries.imaging_plane.grid_spacing[:] # Access all data
+# TwoPhotonSeries.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of TwoPhotonSeries.imaging_plane.grid_spacing: [2. 2.]
+TwoPhotonSeries.imaging_plane.grid_spacing_unit # (str) microns
+TwoPhotonSeries.imaging_plane.device # (Device)
+TwoPhotonSeries.imaging_plane.device.description # (str) My two-photon microscope
+TwoPhotonSeries.imaging_plane.device.manufacturer # (str) Neurolabware
+nwb.processing # (LabelledDict)
+processing = nwb.processing
+behavior = processing["behavior"]
+behavior # (ProcessingModule)
+behavior.description # (str) behavior data
+behavior.data_interfaces # (LabelledDict)
+data_interfaces = behavior.data_interfaces
+BehavioralTimeSeries = data_interfaces["BehavioralTimeSeries"]
+BehavioralTimeSeries # (BehavioralTimeSeries)
+BehavioralTimeSeries.time_series # (LabelledDict)
+time_series = BehavioralTimeSeries.time_series
+Reward = time_series["Reward"]
+Reward # (TimeSeries)
+Reward.resolution # (float64) -1.0
+Reward.comments # (str) no comments
+Reward.description # (str) reward delivery
+Reward.conversion # (float64) 1.0
+Reward.offset # (float64) 0.0
+Reward.unit # (str) mL
+Reward.data # (Dataset) shape (69,); dtype float64
+# Reward.data[:] # Access all data
+# Reward.data[0:n] # Access first n elements
+Reward.timestamps # (Dataset) shape (69,); dtype float64
+# Reward.timestamps[:] # Access all data
+# Reward.timestamps[0:n] # Access first n elements
+Reward.timestamps_unit # (str) seconds
+Reward.interval # (int) 1
+autoreward = time_series["autoreward"]
+autoreward # (TimeSeries)
+autoreward.resolution # (float64) -1.0
+autoreward.comments # (str) no comments
+autoreward.description # (str) whether trial was automatically rewarded if the subject failed to lick
+autoreward.conversion # (float64) 1.0
+autoreward.offset # (float64) 0.0
+autoreward.unit # (str) integer
+autoreward.data # (Dataset) shape (20684,); dtype float64
+# autoreward.data[:] # Access all data
+# autoreward.data[0:n] # Access first n elements
+autoreward.timestamps # (Dataset) shape (20684,); dtype float64
+# autoreward.timestamps[:] # Access all data
+# autoreward.timestamps[0:n] # Access first n elements
+autoreward.timestamps_unit # (str) seconds
+autoreward.interval # (int) 1
+environment = time_series["environment"]
+environment # (TimeSeries)
+environment.resolution # (float64) -1.0
+environment.comments # (str) no comments
+environment.description # (str) Virtual reality environment
+environment.conversion # (float64) 1.0
+environment.offset # (float64) 0.0
+environment.unit # (str) AU
+environment.data # (Dataset) shape (20684,); dtype float64
+# environment.data[:] # Access all data
+# environment.data[0:n] # Access first n elements
+environment.timestamps # (Dataset) shape (20684,); dtype float64
+# environment.timestamps[:] # Access all data
+# environment.timestamps[0:n] # Access first n elements
+environment.timestamps_unit # (str) seconds
+environment.interval # (int) 1
+lick = time_series["lick"]
+lick # (TimeSeries)
+lick.resolution # (float64) -1.0
+lick.comments # (str) no comments
+lick.description # (str) lick detection by capacitive sensor, cumulative per imaging frame
+lick.conversion # (float64) 1.0
+lick.offset # (float64) 0.0
+lick.unit # (str) AU
+lick.data # (Dataset) shape (20684,); dtype float64
+# lick.data[:] # Access all data
+# lick.data[0:n] # Access first n elements
+lick.timestamps # (Dataset) shape (20684,); dtype float64
+# lick.timestamps[:] # Access all data
+# lick.timestamps[0:n] # Access first n elements
+lick.timestamps_unit # (str) seconds
+lick.interval # (int) 1
+position = time_series["position"]
+position # (TimeSeries)
+position.resolution # (float64) -1.0
+position.comments # (str) no comments
+position.description # (str) Position in a virtual linear track
+position.conversion # (float64) 1.0
+position.offset # (float64) 0.0
+position.unit # (str) cm
+position.data # (Dataset) shape (20684,); dtype float64
+# position.data[:] # Access all data
+# position.data[0:n] # Access first n elements
+position.timestamps # (Dataset) shape (20684,); dtype float64
+# position.timestamps[:] # Access all data
+# position.timestamps[0:n] # Access first n elements
+position.timestamps_unit # (str) seconds
+position.interval # (int) 1
+reward_zone = time_series["reward_zone"]
+reward_zone # (TimeSeries)
+reward_zone.resolution # (float64) -1.0
+reward_zone.comments # (str) no comments
+reward_zone.description # (str) reward zone entry (binary)
+reward_zone.conversion # (float64) 1.0
+reward_zone.offset # (float64) 0.0
+reward_zone.unit # (str) integer
+reward_zone.data # (Dataset) shape (20684,); dtype float64
+# reward_zone.data[:] # Access all data
+# reward_zone.data[0:n] # Access first n elements
+reward_zone.timestamps # (Dataset) shape (20684,); dtype float64
+# reward_zone.timestamps[:] # Access all data
+# reward_zone.timestamps[0:n] # Access first n elements
+reward_zone.timestamps_unit # (str) seconds
+reward_zone.interval # (int) 1
+scanning = time_series["scanning"]
+scanning # (TimeSeries)
+scanning.resolution # (float64) -1.0
+scanning.comments # (str) no comments
+scanning.description # (str) whether scanning occurred to collect ophys data
+scanning.conversion # (float64) 1.0
+scanning.offset # (float64) 0.0
+scanning.unit # (str) integer
+scanning.data # (Dataset) shape (20684,); dtype float64
+# scanning.data[:] # Access all data
+# scanning.data[0:n] # Access first n elements
+scanning.timestamps # (Dataset) shape (20684,); dtype float64
+# scanning.timestamps[:] # Access all data
+# scanning.timestamps[0:n] # Access first n elements
+scanning.timestamps_unit # (str) seconds
+scanning.interval # (int) 1
+speed = time_series["speed"]
+speed # (TimeSeries)
+speed.resolution # (float64) -1.0
+speed.comments # (str) no comments
+speed.description # (str) the speed of the subject measured over time
+speed.conversion # (float64) 1.0
+speed.offset # (float64) 0.0
+speed.unit # (str) cm/s
+speed.data # (Dataset) shape (20684,); dtype float64
+# speed.data[:] # Access all data
+# speed.data[0:n] # Access first n elements
+speed.timestamps # (Dataset) shape (20684,); dtype float64
+# speed.timestamps[:] # Access all data
+# speed.timestamps[0:n] # Access first n elements
+speed.timestamps_unit # (str) seconds
+speed.interval # (int) 1
+teleport = time_series["teleport"]
+teleport # (TimeSeries)
+teleport.resolution # (float64) -1.0
+teleport.comments # (str) no comments
+teleport.description # (str) end of a trial, i.e. entry into the intertrial interval
+teleport.conversion # (float64) 1.0
+teleport.offset # (float64) 0.0
+teleport.unit # (str) integer
+teleport.data # (Dataset) shape (20684,); dtype float64
+# teleport.data[:] # Access all data
+# teleport.data[0:n] # Access first n elements
+teleport.timestamps # (Dataset) shape (20684,); dtype float64
+# teleport.timestamps[:] # Access all data
+# teleport.timestamps[0:n] # Access first n elements
+teleport.timestamps_unit # (str) seconds
+teleport.interval # (int) 1
+trial_number = time_series["trial number"]
+trial_number # (TimeSeries)
+trial_number.resolution # (float64) -1.0
+trial_number.comments # (str) no comments
+trial_number.description # (str) trial number, where each trial is a lap of the track
+trial_number.conversion # (float64) 1.0
+trial_number.offset # (float64) 0.0
+trial_number.unit # (str) integer
+trial_number.data # (Dataset) shape (20684,); dtype float64
+# trial_number.data[:] # Access all data
+# trial_number.data[0:n] # Access first n elements
+trial_number.timestamps # (Dataset) shape (20684,); dtype float64
+# trial_number.timestamps[:] # Access all data
+# trial_number.timestamps[0:n] # Access first n elements
+trial_number.timestamps_unit # (str) seconds
+trial_number.interval # (int) 1
+trial_start = time_series["trial_start"]
+trial_start # (TimeSeries)
+trial_start.resolution # (float64) -1.0
+trial_start.comments # (str) no comments
+trial_start.description # (str) start of a trial, i.e. entry to the linear track
+trial_start.conversion # (float64) 1.0
+trial_start.offset # (float64) 0.0
+trial_start.unit # (str) integer
+trial_start.data # (Dataset) shape (20684,); dtype float64
+# trial_start.data[:] # Access all data
+# trial_start.data[0:n] # Access first n elements
+trial_start.timestamps # (Dataset) shape (20684,); dtype float64
+# trial_start.timestamps[:] # Access all data
+# trial_start.timestamps[0:n] # Access first n elements
+trial_start.timestamps_unit # (str) seconds
+trial_start.interval # (int) 1
+ophys = processing["ophys"]
+ophys # (ProcessingModule)
+ophys.description # (str) optical physiology processed data
+ophys.data_interfaces # (LabelledDict)
+data_interfaces = ophys.data_interfaces
+Backgrounds_0 = data_interfaces["Backgrounds_0"]
+Backgrounds_0 # (Images)
+Backgrounds_0.description # (str) no description
+Backgrounds_0.images # (LabelledDict)
+images = Backgrounds_0.images
+Vcorr = images["Vcorr"]
+Vcorr # (GrayscaleImage)
+max_proj = images["max_proj"]
+max_proj # (GrayscaleImage)
+meanImg = images["meanImg"]
+meanImg # (GrayscaleImage)
+Deconvolved = data_interfaces["Deconvolved"]
+Deconvolved # (Fluorescence)
+Deconvolved.roi_response_series # (LabelledDict)
+roi_response_series = Deconvolved.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+Fluorescence = data_interfaces["Fluorescence"]
+Fluorescence # (Fluorescence)
+Fluorescence.roi_response_series # (LabelledDict)
+roi_response_series = Fluorescence.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+ImageSegmentation = data_interfaces["ImageSegmentation"]
+ImageSegmentation # (ImageSegmentation)
+ImageSegmentation.plane_segmentations # (LabelledDict)
+plane_segmentations = ImageSegmentation.plane_segmentations
+PlaneSegmentation = plane_segmentations["PlaneSegmentation"]
+PlaneSegmentation # (PlaneSegmentation)
+PlaneSegmentation.description # (str) suite2p output
+PlaneSegmentation.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+PlaneSegmentation.columns # (tuple)
+PlaneSegmentation.reference_images # (list)
+PlaneSegmentation.id # (ElementIdentifiers)
+PlaneSegmentation.imaging_plane # (ImagingPlane)
+PlaneSegmentation.imaging_plane.optical_channel # (list)
+PlaneSegmentation.imaging_plane.description # (str) standard
+PlaneSegmentation.imaging_plane.excitation_lambda # (float64) 920.0
+PlaneSegmentation.imaging_plane.imaging_rate # (float64) 15.5078125
+PlaneSegmentation.imaging_plane.indicator # (str) GCaMP7f
+PlaneSegmentation.imaging_plane.location # (str) hippocampus, CA1
+PlaneSegmentation.imaging_plane.conversion # (float) 1.0
+PlaneSegmentation.imaging_plane.unit # (str) meters
+PlaneSegmentation.imaging_plane.origin_coords_unit # (str) meters
+PlaneSegmentation.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# PlaneSegmentation.imaging_plane.grid_spacing[:] # Access all data
+# PlaneSegmentation.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of PlaneSegmentation.imaging_plane.grid_spacing: [2. 2.]
+PlaneSegmentation.imaging_plane.grid_spacing_unit # (str) microns
+PlaneSegmentation.imaging_plane.device # (Device)
+PlaneSegmentation.imaging_plane.device.description # (str) My two-photon microscope
+PlaneSegmentation.imaging_plane.device.manufacturer # (str) Neurolabware
+# PlaneSegmentation.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# PlaneSegmentation.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+PlaneSegmentation.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# PlaneSegmentation.pixel_mask_index[0] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[1] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[2] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[3] # (ndarray)
+# ...
+PlaneSegmentation.iscell # (VectorData) two columns - iscell & probcell
+PlaneSegmentation.planeIdx # (VectorData) rec plane for each roi
+Neuropil = data_interfaces["Neuropil"]
+Neuropil # (Fluorescence)
+Neuropil.roi_response_series # (LabelledDict)
+roi_response_series = Neuropil.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+nwb.devices # (LabelledDict)
+devices = nwb.devices
+Microscope = devices["Microscope"]
+Microscope # (Device)
+Microscope.description # (str) My two-photon microscope
+Microscope.manufacturer # (str) Neurolabware
+nwb.imaging_planes # (LabelledDict)
+imaging_planes = nwb.imaging_planes
+ImagingPlane = imaging_planes["ImagingPlane"]
+ImagingPlane # (ImagingPlane)
+ImagingPlane.optical_channel # (list)
+ImagingPlane.description # (str) standard
+ImagingPlane.excitation_lambda # (float64) 920.0
+ImagingPlane.imaging_rate # (float64) 15.5078125
+ImagingPlane.indicator # (str) GCaMP7f
+ImagingPlane.location # (str) hippocampus, CA1
+ImagingPlane.conversion # (float) 1.0
+ImagingPlane.unit # (str) meters
+ImagingPlane.origin_coords_unit # (str) meters
+ImagingPlane.grid_spacing # (Dataset) shape (2,); dtype float64
+# ImagingPlane.grid_spacing[:] # Access all data
+# ImagingPlane.grid_spacing[0:n] # Access first n elements
+# First few values of ImagingPlane.grid_spacing: [2. 2.]
+ImagingPlane.grid_spacing_unit # (str) microns
+ImagingPlane.device # (Device)
+ImagingPlane.device.description # (str) My two-photon microscope
+ImagingPlane.device.manufacturer # (str) Neurolabware
+nwb.session_id # (str) 03
+nwb.subject # (Subject)
+nwb.subject.age__reference # (str) birth
+nwb.subject.sex # (str) M
+nwb.subject.species # (str) Mus musculus
+nwb.subject.subject_id # (str) m11
+nwb.subject.date_of_birth # (datetime) 2022-09-20T00:00:00-07:00
+Total prompt tokens: 29438 + 0
+Total completion tokens: 2614 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py nwb-file-info 001361 https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ --version 0.250406.0045' (requires approval):
+Command executed successfully
+STDOUT:
+# This script shows how to load the NWB file at https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ in Python using PyNWB
+
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb # (NWBFile)
+nwb.session_description # (str) processed suite2p data
+nwb.identifier # (str) /data/InVivoDA/GCAMP11/23_02_2023/Env1_LocationB_to_A
+nwb.session_start_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.timestamps_reference_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.file_create_date # (list) [datetime.datetime(2025, 3, 12, 23, 45, 29, 830157, tzinfo=tzoffset(None, -25200))]
+nwb.experimenter # (tuple) ['Mari Sosa']
+nwb.acquisition # (LabelledDict)
+acquisition = nwb.acquisition
+TwoPhotonSeries = acquisition["TwoPhotonSeries"]
+TwoPhotonSeries # (TwoPhotonSeries)
+TwoPhotonSeries.starting_time # (float64) 0.0
+TwoPhotonSeries.rate # (float64) 15.5078125
+TwoPhotonSeries.resolution # (float64) -1.0
+TwoPhotonSeries.comments # (str) no comments
+TwoPhotonSeries.description # (str) no description
+TwoPhotonSeries.conversion # (float64) 1.0
+TwoPhotonSeries.offset # (float64) 0.0
+TwoPhotonSeries.unit # (str) volt
+TwoPhotonSeries.data # (Dataset) shape (1, 1, 1); dtype float64
+# TwoPhotonSeries.data[:, :, :] # Access all data
+# TwoPhotonSeries.data[0, :, :] # Access first plane
+TwoPhotonSeries.starting_time_unit # (str) seconds
+TwoPhotonSeries.dimension # (Dataset) shape (2,); dtype int64
+# TwoPhotonSeries.dimension[:] # Access all data
+# TwoPhotonSeries.dimension[0:n] # Access first n elements
+# First few values of TwoPhotonSeries.dimension: [512 796]
+TwoPhotonSeries.format # (str) raw
+TwoPhotonSeries.imaging_plane # (ImagingPlane)
+TwoPhotonSeries.imaging_plane.optical_channel # (list)
+TwoPhotonSeries.imaging_plane.description # (str) standard
+TwoPhotonSeries.imaging_plane.excitation_lambda # (float64) 920.0
+TwoPhotonSeries.imaging_plane.imaging_rate # (float64) 15.5078125
+TwoPhotonSeries.imaging_plane.indicator # (str) GCaMP7f
+TwoPhotonSeries.imaging_plane.location # (str) hippocampus, CA1
+TwoPhotonSeries.imaging_plane.conversion # (float) 1.0
+TwoPhotonSeries.imaging_plane.unit # (str) meters
+TwoPhotonSeries.imaging_plane.origin_coords_unit # (str) meters
+TwoPhotonSeries.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# TwoPhotonSeries.imaging_plane.grid_spacing[:] # Access all data
+# TwoPhotonSeries.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of TwoPhotonSeries.imaging_plane.grid_spacing: [2. 2.]
+TwoPhotonSeries.imaging_plane.grid_spacing_unit # (str) microns
+TwoPhotonSeries.imaging_plane.device # (Device)
+TwoPhotonSeries.imaging_plane.device.description # (str) My two-photon microscope
+TwoPhotonSeries.imaging_plane.device.manufacturer # (str) Neurolabware
+nwb.processing # (LabelledDict)
+processing = nwb.processing
+behavior = processing["behavior"]
+behavior # (ProcessingModule)
+behavior.description # (str) behavior data
+behavior.data_interfaces # (LabelledDict)
+data_interfaces = behavior.data_interfaces
+BehavioralTimeSeries = data_interfaces["BehavioralTimeSeries"]
+BehavioralTimeSeries # (BehavioralTimeSeries)
+BehavioralTimeSeries.time_series # (LabelledDict)
+time_series = BehavioralTimeSeries.time_series
+Reward = time_series["Reward"]
+Reward # (TimeSeries)
+Reward.resolution # (float64) -1.0
+Reward.comments # (str) no comments
+Reward.description # (str) reward delivery
+Reward.conversion # (float64) 1.0
+Reward.offset # (float64) 0.0
+Reward.unit # (str) mL
+Reward.data # (Dataset) shape (69,); dtype float64
+# Reward.data[:] # Access all data
+# Reward.data[0:n] # Access first n elements
+Reward.timestamps # (Dataset) shape (69,); dtype float64
+# Reward.timestamps[:] # Access all data
+# Reward.timestamps[0:n] # Access first n elements
+Reward.timestamps_unit # (str) seconds
+Reward.interval # (int) 1
+autoreward = time_series["autoreward"]
+autoreward # (TimeSeries)
+autoreward.resolution # (float64) -1.0
+autoreward.comments # (str) no comments
+autoreward.description # (str) whether trial was automatically rewarded if the subject failed to lick
+autoreward.conversion # (float64) 1.0
+autoreward.offset # (float64) 0.0
+autoreward.unit # (str) integer
+autoreward.data # (Dataset) shape (20684,); dtype float64
+# autoreward.data[:] # Access all data
+# autoreward.data[0:n] # Access first n elements
+autoreward.timestamps # (Dataset) shape (20684,); dtype float64
+# autoreward.timestamps[:] # Access all data
+# autoreward.timestamps[0:n] # Access first n elements
+autoreward.timestamps_unit # (str) seconds
+autoreward.interval # (int) 1
+environment = time_series["environment"]
+environment # (TimeSeries)
+environment.resolution # (float64) -1.0
+environment.comments # (str) no comments
+environment.description # (str) Virtual reality environment
+environment.conversion # (float64) 1.0
+environment.offset # (float64) 0.0
+environment.unit # (str) AU
+environment.data # (Dataset) shape (20684,); dtype float64
+# environment.data[:] # Access all data
+# environment.data[0:n] # Access first n elements
+environment.timestamps # (Dataset) shape (20684,); dtype float64
+# environment.timestamps[:] # Access all data
+# environment.timestamps[0:n] # Access first n elements
+environment.timestamps_unit # (str) seconds
+environment.interval # (int) 1
+lick = time_series["lick"]
+lick # (TimeSeries)
+lick.resolution # (float64) -1.0
+lick.comments # (str) no comments
+lick.description # (str) lick detection by capacitive sensor, cumulative per imaging frame
+lick.conversion # (float64) 1.0
+lick.offset # (float64) 0.0
+lick.unit # (str) AU
+lick.data # (Dataset) shape (20684,); dtype float64
+# lick.data[:] # Access all data
+# lick.data[0:n] # Access first n elements
+lick.timestamps # (Dataset) shape (20684,); dtype float64
+# lick.timestamps[:] # Access all data
+# lick.timestamps[0:n] # Access first n elements
+lick.timestamps_unit # (str) seconds
+lick.interval # (int) 1
+position = time_series["position"]
+position # (TimeSeries)
+position.resolution # (float64) -1.0
+position.comments # (str) no comments
+position.description # (str) Position in a virtual linear track
+position.conversion # (float64) 1.0
+position.offset # (float64) 0.0
+position.unit # (str) cm
+position.data # (Dataset) shape (20684,); dtype float64
+# position.data[:] # Access all data
+# position.data[0:n] # Access first n elements
+position.timestamps # (Dataset) shape (20684,); dtype float64
+# position.timestamps[:] # Access all data
+# position.timestamps[0:n] # Access first n elements
+position.timestamps_unit # (str) seconds
+position.interval # (int) 1
+reward_zone = time_series["reward_zone"]
+reward_zone # (TimeSeries)
+reward_zone.resolution # (float64) -1.0
+reward_zone.comments # (str) no comments
+reward_zone.description # (str) reward zone entry (binary)
+reward_zone.conversion # (float64) 1.0
+reward_zone.offset # (float64) 0.0
+reward_zone.unit # (str) integer
+reward_zone.data # (Dataset) shape (20684,); dtype float64
+# reward_zone.data[:] # Access all data
+# reward_zone.data[0:n] # Access first n elements
+reward_zone.timestamps # (Dataset) shape (20684,); dtype float64
+# reward_zone.timestamps[:] # Access all data
+# reward_zone.timestamps[0:n] # Access first n elements
+reward_zone.timestamps_unit # (str) seconds
+reward_zone.interval # (int) 1
+scanning = time_series["scanning"]
+scanning # (TimeSeries)
+scanning.resolution # (float64) -1.0
+scanning.comments # (str) no comments
+scanning.description # (str) whether scanning occurred to collect ophys data
+scanning.conversion # (float64) 1.0
+scanning.offset # (float64) 0.0
+scanning.unit # (str) integer
+scanning.data # (Dataset) shape (20684,); dtype float64
+# scanning.data[:] # Access all data
+# scanning.data[0:n] # Access first n elements
+scanning.timestamps # (Dataset) shape (20684,); dtype float64
+# scanning.timestamps[:] # Access all data
+# scanning.timestamps[0:n] # Access first n elements
+scanning.timestamps_unit # (str) seconds
+scanning.interval # (int) 1
+speed = time_series["speed"]
+speed # (TimeSeries)
+speed.resolution # (float64) -1.0
+speed.comments # (str) no comments
+speed.description # (str) the speed of the subject measured over time
+speed.conversion # (float64) 1.0
+speed.offset # (float64) 0.0
+speed.unit # (str) cm/s
+speed.data # (Dataset) shape (20684,); dtype float64
+# speed.data[:] # Access all data
+# speed.data[0:n] # Access first n elements
+speed.timestamps # (Dataset) shape (20684,); dtype float64
+# speed.timestamps[:] # Access all data
+# speed.timestamps[0:n] # Access first n elements
+speed.timestamps_unit # (str) seconds
+speed.interval # (int) 1
+teleport = time_series["teleport"]
+teleport # (TimeSeries)
+teleport.resolution # (float64) -1.0
+teleport.comments # (str) no comments
+teleport.description # (str) end of a trial, i.e. entry into the intertrial interval
+teleport.conversion # (float64) 1.0
+teleport.offset # (float64) 0.0
+teleport.unit # (str) integer
+teleport.data # (Dataset) shape (20684,); dtype float64
+# teleport.data[:] # Access all data
+# teleport.data[0:n] # Access first n elements
+teleport.timestamps # (Dataset) shape (20684,); dtype float64
+# teleport.timestamps[:] # Access all data
+# teleport.timestamps[0:n] # Access first n elements
+teleport.timestamps_unit # (str) seconds
+teleport.interval # (int) 1
+trial_number = time_series["trial number"]
+trial_number # (TimeSeries)
+trial_number.resolution # (float64) -1.0
+trial_number.comments # (str) no comments
+trial_number.description # (str) trial number, where each trial is a lap of the track
+trial_number.conversion # (float64) 1.0
+trial_number.offset # (float64) 0.0
+trial_number.unit # (str) integer
+trial_number.data # (Dataset) shape (20684,); dtype float64
+# trial_number.data[:] # Access all data
+# trial_number.data[0:n] # Access first n elements
+trial_number.timestamps # (Dataset) shape (20684,); dtype float64
+# trial_number.timestamps[:] # Access all data
+# trial_number.timestamps[0:n] # Access first n elements
+trial_number.timestamps_unit # (str) seconds
+trial_number.interval # (int) 1
+trial_start = time_series["trial_start"]
+trial_start # (TimeSeries)
+trial_start.resolution # (float64) -1.0
+trial_start.comments # (str) no comments
+trial_start.description # (str) start of a trial, i.e. entry to the linear track
+trial_start.conversion # (float64) 1.0
+trial_start.offset # (float64) 0.0
+trial_start.unit # (str) integer
+trial_start.data # (Dataset) shape (20684,); dtype float64
+# trial_start.data[:] # Access all data
+# trial_start.data[0:n] # Access first n elements
+trial_start.timestamps # (Dataset) shape (20684,); dtype float64
+# trial_start.timestamps[:] # Access all data
+# trial_start.timestamps[0:n] # Access first n elements
+trial_start.timestamps_unit # (str) seconds
+trial_start.interval # (int) 1
+ophys = processing["ophys"]
+ophys # (ProcessingModule)
+ophys.description # (str) optical physiology processed data
+ophys.data_interfaces # (LabelledDict)
+data_interfaces = ophys.data_interfaces
+Backgrounds_0 = data_interfaces["Backgrounds_0"]
+Backgrounds_0 # (Images)
+Backgrounds_0.description # (str) no description
+Backgrounds_0.images # (LabelledDict)
+images = Backgrounds_0.images
+Vcorr = images["Vcorr"]
+Vcorr # (GrayscaleImage)
+max_proj = images["max_proj"]
+max_proj # (GrayscaleImage)
+meanImg = images["meanImg"]
+meanImg # (GrayscaleImage)
+Deconvolved = data_interfaces["Deconvolved"]
+Deconvolved # (Fluorescence)
+Deconvolved.roi_response_series # (LabelledDict)
+roi_response_series = Deconvolved.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+Fluorescence = data_interfaces["Fluorescence"]
+Fluorescence # (Fluorescence)
+Fluorescence.roi_response_series # (LabelledDict)
+roi_response_series = Fluorescence.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+ImageSegmentation = data_interfaces["ImageSegmentation"]
+ImageSegmentation # (ImageSegmentation)
+ImageSegmentation.plane_segmentations # (LabelledDict)
+plane_segmentations = ImageSegmentation.plane_segmentations
+PlaneSegmentation = plane_segmentations["PlaneSegmentation"]
+PlaneSegmentation # (PlaneSegmentation)
+PlaneSegmentation.description # (str) suite2p output
+PlaneSegmentation.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+PlaneSegmentation.columns # (tuple)
+PlaneSegmentation.reference_images # (list)
+PlaneSegmentation.id # (ElementIdentifiers)
+PlaneSegmentation.imaging_plane # (ImagingPlane)
+PlaneSegmentation.imaging_plane.optical_channel # (list)
+PlaneSegmentation.imaging_plane.description # (str) standard
+PlaneSegmentation.imaging_plane.excitation_lambda # (float64) 920.0
+PlaneSegmentation.imaging_plane.imaging_rate # (float64) 15.5078125
+PlaneSegmentation.imaging_plane.indicator # (str) GCaMP7f
+PlaneSegmentation.imaging_plane.location # (str) hippocampus, CA1
+PlaneSegmentation.imaging_plane.conversion # (float) 1.0
+PlaneSegmentation.imaging_plane.unit # (str) meters
+PlaneSegmentation.imaging_plane.origin_coords_unit # (str) meters
+PlaneSegmentation.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# PlaneSegmentation.imaging_plane.grid_spacing[:] # Access all data
+# PlaneSegmentation.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of PlaneSegmentation.imaging_plane.grid_spacing: [2. 2.]
+PlaneSegmentation.imaging_plane.grid_spacing_unit # (str) microns
+PlaneSegmentation.imaging_plane.device # (Device)
+PlaneSegmentation.imaging_plane.device.description # (str) My two-photon microscope
+PlaneSegmentation.imaging_plane.device.manufacturer # (str) Neurolabware
+# PlaneSegmentation.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# PlaneSegmentation.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+PlaneSegmentation.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# PlaneSegmentation.pixel_mask_index[0] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[1] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[2] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[3] # (ndarray)
+# ...
+PlaneSegmentation.iscell # (VectorData) two columns - iscell & probcell
+PlaneSegmentation.planeIdx # (VectorData) rec plane for each roi
+Neuropil = data_interfaces["Neuropil"]
+Neuropil # (Fluorescence)
+Neuropil.roi_response_series # (LabelledDict)
+roi_response_series = Neuropil.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+nwb.devices # (LabelledDict)
+devices = nwb.devices
+Microscope = devices["Microscope"]
+Microscope # (Device)
+Microscope.description # (str) My two-photon microscope
+Microscope.manufacturer # (str) Neurolabware
+nwb.imaging_planes # (LabelledDict)
+imaging_planes = nwb.imaging_planes
+ImagingPlane = imaging_planes["ImagingPlane"]
+ImagingPlane # (ImagingPlane)
+ImagingPlane.optical_channel # (list)
+ImagingPlane.description # (str) standard
+ImagingPlane.excitation_lambda # (float64) 920.0
+ImagingPlane.imaging_rate # (float64) 15.5078125
+ImagingPlane.indicator # (str) GCaMP7f
+ImagingPlane.location # (str) hippocampus, CA1
+ImagingPlane.conversion # (float) 1.0
+ImagingPlane.unit # (str) meters
+ImagingPlane.origin_coords_unit # (str) meters
+ImagingPlane.grid_spacing # (Dataset) shape (2,); dtype float64
+# ImagingPlane.grid_spacing[:] # Access all data
+# ImagingPlane.grid_spacing[0:n] # Access first n elements
+# First few values of ImagingPlane.grid_spacing: [2. 2.]
+ImagingPlane.grid_spacing_unit # (str) microns
+ImagingPlane.device # (Device)
+ImagingPlane.device.description # (str) My two-photon microscope
+ImagingPlane.device.manufacturer # (str) Neurolabware
+nwb.session_id # (str) 03
+nwb.subject # (Subject)
+nwb.subject.age__reference # (str) birth
+nwb.subject.sex # (str) M
+nwb.subject.species # (str) Mus musculus
+nwb.subject.subject_id # (str) m11
+nwb.subject.date_of_birth # (datetime) 2022-09-20T00:00:00-07:00
+
+STDERR:
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/home/jovyan/get-nwbfile-info/src/get_nwbfile_info/core.py:346: UserWarning: Warning: Duplicate entries found in the results.
+  warnings.warn("Warning: Duplicate entries found in the results.")
+
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 8
+Submitting completion request...
+Processing response...
+Creating an exploration script to generate behavior plots (speed and position) for the chosen NWB file. The script will save PNGs into an `explore/` directory.
+
+Tool: write_to_file
+Params: {'path': 'explore/plot_behavior.py', 'content': '#!/usr/bin/env python3\n"""\nScript to plot behavior data (speed and position) for the NWB file.\nGenerates two PNG files in explore/: behavior_speed.png and behavior_position.png.\n"""\nimport os\nimport remfile\nimport h5py\nimport pynwb\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.set_theme()\n\n# URL for the selected NWB asset\nurl = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\n\n# Open remote NWB file\nremote_file = remfile.File(url)\nwith h5py.File(remote_file, \'r\') as h5_file:\n    io = pynwb.NWBHDF5IO(file=h5_file)\n    nwb = io.read()\n\n# Access behavioral time series\nbt = nwb.processing[\'behavior\'].data_interfaces[\'BehavioralTimeSeries\']\nts = bt.time_series\nspeed = ts[\'speed\']\nposition = ts[\'position\']\n\n# Plot only the first N samples to limit data size\nn_samples = 2000\nspeed_t = speed.timestamps[:n_samples]\nspeed_d = speed.data[:n_samples]\nposition_t = position.timestamps[:n_samples]\nposition_d = position.data[:n_samples]\n\n# Ensure output directory exists\nos.makedirs(\'explore\', exist_ok=True)\n\n# Speed plot\nplt.figure(figsize=(10, 4))\nplt.plot(speed_t, speed_d)\nplt.xlabel(\'Time (s)\')\nplt.ylabel(f"Speed ({speed.unit})")\nplt.title(\'Speed over time (first 2000 samples)\')\nplt.tight_layout()\nplt.savefig(\'explore/behavior_speed.png\')\nplt.close()\n\n# Position plot\nplt.figure(figsize=(10, 4))\nplt.plot(position_t, position_d)\nplt.xlabel(\'Time (s)\')\nplt.ylabel(f"Position ({position.unit})")\nplt.title(\'Position over time (first 2000 samples)\')\nplt.tight_layout()\nplt.savefig(\'explore/behavior_position.png\')\nplt.close()'}
+================================
+Content to be written to explore/plot_behavior.py:
+#!/usr/bin/env python3
+"""
+Script to plot behavior data (speed and position) for the NWB file.
+Generates two PNG files in explore/: behavior_speed.png and behavior_position.png.
+"""
+import os
+import remfile
+import h5py
+import pynwb
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set_theme()
+
+# URL for the selected NWB asset
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+
+# Open remote NWB file
+remote_file = remfile.File(url)
+with h5py.File(remote_file, 'r') as h5_file:
+    io = pynwb.NWBHDF5IO(file=h5_file)
+    nwb = io.read()
+
+# Access behavioral time series
+bt = nwb.processing['behavior'].data_interfaces['BehavioralTimeSeries']
+ts = bt.time_series
+speed = ts['speed']
+position = ts['position']
+
+# Plot only the first N samples to limit data size
+n_samples = 2000
+speed_t = speed.timestamps[:n_samples]
+speed_d = speed.data[:n_samples]
+position_t = position.timestamps[:n_samples]
+position_d = position.data[:n_samples]
+
+# Ensure output directory exists
+os.makedirs('explore', exist_ok=True)
+
+# Speed plot
+plt.figure(figsize=(10, 4))
+plt.plot(speed_t, speed_d)
+plt.xlabel('Time (s)')
+plt.ylabel(f"Speed ({speed.unit})")
+plt.title('Speed over time (first 2000 samples)')
+plt.tight_layout()
+plt.savefig('explore/behavior_speed.png')
+plt.close()
+
+# Position plot
+plt.figure(figsize=(10, 4))
+plt.plot(position_t, position_d)
+plt.xlabel('Time (s)')
+plt.ylabel(f"Position ({position.unit})")
+plt.title('Position over time (first 2000 samples)')
+plt.tight_layout()
+plt.savefig('explore/behavior_position.png')
+plt.close()
+================================
+Total prompt tokens: 47663 + 0
+Total completion tokens: 5067 + 0
+
+=========================================
+
+write_to_file for 'explore/plot_behavior.py':
+Successfully wrote 1582 characters to explore/plot_behavior.py
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 10
+Submitting completion request...
+Processing response...
+Executing the exploration script to generate speed and position plots.
+
+Tool: execute_command
+Params: {'command': 'python explore/plot_behavior.py', 'requires_approval': 'false'}
+================================
+Command to be executed
+python explore/plot_behavior.py
+================================
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+Traceback (most recent call last):
+  File "/home/jovyan/dandi-ai-notebooks-4/dandiset_repos/001361/v4/0.250406.0045/o4-mini-high-prompt-f-1/working/explore/plot_behavior.py", line 32, in <module>
+    speed_t = speed.timestamps[:n_samples]
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/opt/conda/lib/python3.11/site-packages/h5py/_hl/dataset.py", line 779, in __getitem__
+    if self._fast_read_ok and (new_dtype is None):
+       ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/h5py/_hl/base.py", line 532, in __get__
+    value = obj.__dict__[self.func.__name__] = self.func(obj)
+                                               ^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/h5py/_hl/dataset.py", line 761, in _fast_read_ok
+    self._extent_type == h5s.SIMPLE
+    ^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/h5py/_hl/base.py", line 532, in __get__
+    value = obj.__dict__[self.func.__name__] = self.func(obj)
+                                               ^^^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/opt/conda/lib/python3.11/site-packages/h5py/_hl/dataset.py", line 652, in _extent_type
+    return self.id.get_space().get_simple_extent_type()
+           ^^^^^^^^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5d.pyx", line 348, in h5py.h5d.DatasetID.get_space
+RuntimeError: Unable to synchronously get dataspace (invalid dataset identifier)
+Total prompt tokens: 66455 + 0
+Total completion tokens: 5476 + 0
+
+=========================================
+
+execute_command 'python explore/plot_behavior.py' (requires approval):
+Command failed with exit code 1
+STDERR:
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+Traceback (most recent call last):
+  File "/home/jovyan/dandi-ai-notebooks-4/dandiset_repos/001361/v4/0.250406.0045/o4-mini-high-prompt-f-1/working/explore/plot_behavior.py", line 32, in <module>
+    speed_t = speed.timestamps[:n_samples]
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/opt/conda/lib/python3.11/site-packages/h5py/_hl/dataset.py", line 779, in __getitem__
+    if self._fast_read_ok and (new_dtype is None):
+       ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/h5py/_hl/base.py", line 532, in __get__
+    value = obj.__dict__[self.func.__name__] = self.func(obj)
+                                               ^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/h5py/_hl/dataset.py", line 761, in _fast_read_ok
+    self._extent_type == h5s.SIMPLE
+    ^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/h5py/_hl/base.py", line 532, in __get__
+    value = obj.__dict__[self.func.__name__] = self.func(obj)
+                                               ^^^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/opt/conda/lib/python3.11/site-packages/h5py/_hl/dataset.py", line 652, in _extent_type
+    return self.id.get_space().get_simple_extent_type()
+           ^^^^^^^^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5d.pyx", line 348, in h5py.h5d.DatasetID.get_space
+RuntimeError: Unable to synchronously get dataspace (invalid dataset identifier)
+
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 12
+Submitting completion request...
+Processing response...
+Replacing the exploration script to download the NWB file into memory first via remfile, then load it from a BytesIO buffer so that h5py slicing works correctly.
+
+Tool: write_to_file
+Params: {'path': 'explore/plot_behavior.py', 'content': '#!/usr/bin/env python3\n"""\nScript to plot behavior data (speed and position) for the NWB file.\nGenerates two PNG files in explore/: behavior_speed.png and behavior_position.png.\n"""\nimport os\nfrom io import BytesIO\nimport remfile\nimport matplotlib.pyplot as plt\nfrom pynwb import NWBHDF5IO\nimport seaborn as sns\n\nsns.set_theme()\n\n# URL for the selected NWB asset\nurl = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\n\n# Download entire NWB file into memory\nremote_file = remfile.File(url)\ncontent = remote_file.read()\n\n# Load NWB from in-memory bytes\nbio = BytesIO(content)\nwith NWBHDF5IO(file=bio, mode=\'r\') as io:\n    nwb = io.read()\n\n# Access behavioral time series\nbt = nwb.processing[\'behavior\'].data_interfaces[\'BehavioralTimeSeries\']\nts = bt.time_series\nspeed = ts[\'speed\']\nposition = ts[\'position\']\n\n# Subset first N samples to limit memory and plotting time\nn_samples = 2000\nspeed_t = speed.timestamps[:n_samples]\nspeed_d = speed.data[:n_samples]\nposition_t = position.timestamps[:n_samples]\nposition_d = position.data[:n_samples]\n\n# Ensure output directory exists\nos.makedirs(\'explore\', exist_ok=True)\n\n# Speed plot\nplt.figure(figsize=(10, 4))\nplt.plot(speed_t, speed_d)\nplt.xlabel(\'Time (s)\')\nplt.ylabel(f"Speed ({speed.unit})")\nplt.title(\'Speed over time (first 2000 samples)\')\nplt.tight_layout()\nplt.savefig(\'explore/behavior_speed.png\')\nplt.close()\n\n# Position plot\nplt.figure(figsize=(10, 4))\nplt.plot(position_t, position_d)\nplt.xlabel(\'Time (s)\')\nplt.ylabel(f"Position ({position.unit})")\nplt.title(\'Position over time (first 2000 samples)\')\nplt.tight_layout()\nplt.savefig(\'explore/behavior_position.png\')\nplt.close()'}
+================================
+Content to be written to explore/plot_behavior.py:
+#!/usr/bin/env python3
+"""
+Script to plot behavior data (speed and position) for the NWB file.
+Generates two PNG files in explore/: behavior_speed.png and behavior_position.png.
+"""
+import os
+from io import BytesIO
+import remfile
+import matplotlib.pyplot as plt
+from pynwb import NWBHDF5IO
+import seaborn as sns
+
+sns.set_theme()
+
+# URL for the selected NWB asset
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+
+# Download entire NWB file into memory
+remote_file = remfile.File(url)
+content = remote_file.read()
+
+# Load NWB from in-memory bytes
+bio = BytesIO(content)
+with NWBHDF5IO(file=bio, mode='r') as io:
+    nwb = io.read()
+
+# Access behavioral time series
+bt = nwb.processing['behavior'].data_interfaces['BehavioralTimeSeries']
+ts = bt.time_series
+speed = ts['speed']
+position = ts['position']
+
+# Subset first N samples to limit memory and plotting time
+n_samples = 2000
+speed_t = speed.timestamps[:n_samples]
+speed_d = speed.data[:n_samples]
+position_t = position.timestamps[:n_samples]
+position_d = position.data[:n_samples]
+
+# Ensure output directory exists
+os.makedirs('explore', exist_ok=True)
+
+# Speed plot
+plt.figure(figsize=(10, 4))
+plt.plot(speed_t, speed_d)
+plt.xlabel('Time (s)')
+plt.ylabel(f"Speed ({speed.unit})")
+plt.title('Speed over time (first 2000 samples)')
+plt.tight_layout()
+plt.savefig('explore/behavior_speed.png')
+plt.close()
+
+# Position plot
+plt.figure(figsize=(10, 4))
+plt.plot(position_t, position_d)
+plt.xlabel('Time (s)')
+plt.ylabel(f"Position ({position.unit})")
+plt.title('Position over time (first 2000 samples)')
+plt.tight_layout()
+plt.savefig('explore/behavior_position.png')
+plt.close()
+================================
+Total prompt tokens: 85990 + 0
+Total completion tokens: 9544 + 0
+
+=========================================
+
+write_to_file for 'explore/plot_behavior.py':
+Successfully wrote 1675 characters to explore/plot_behavior.py
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 14
+Submitting completion request...
+Processing response...
+Running the revised behavior plotting script to generate the PNG files for review.
+
+Tool: execute_command
+Params: {'command': 'python explore/plot_behavior.py', 'requires_approval': 'false'}
+================================
+Command to be executed
+python explore/plot_behavior.py
+================================
+Traceback (most recent call last):
+  File "/home/jovyan/dandi-ai-notebooks-4/dandiset_repos/001361/v4/0.250406.0045/o4-mini-high-prompt-f-1/working/explore/plot_behavior.py", line 20, in <module>
+    content = remote_file.read()
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/remfile/RemFile.py", line 110, in read
+    raise Exception(
+Exception: The size argument must be provided in remfile
+Total prompt tokens: 106107 + 0
+Total completion tokens: 9741 + 0
+
+=========================================
+
+execute_command 'python explore/plot_behavior.py' (requires approval):
+Command failed with exit code 1
+STDERR:
+Traceback (most recent call last):
+  File "/home/jovyan/dandi-ai-notebooks-4/dandiset_repos/001361/v4/0.250406.0045/o4-mini-high-prompt-f-1/working/explore/plot_behavior.py", line 20, in <module>
+    content = remote_file.read()
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/remfile/RemFile.py", line 110, in read
+    raise Exception(
+Exception: The size argument must be provided in remfile
+
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 16
+Submitting completion request...
+Processing response...
+Updating the exploration script to supply the required size to `remote_file.read()`.
+
+Tool: write_to_file
+Params: {'path': 'explore/plot_behavior.py', 'content': '#!/usr/bin/env python3\n"""\nScript to plot behavior data (speed and position) for the NWB file.\nGenerates two PNG files in explore/: behavior_speed.png and behavior_position.png.\n"""\nimport os\nfrom io import BytesIO\nimport remfile\nimport matplotlib.pyplot as plt\nfrom pynwb import NWBHDF5IO\nimport seaborn as sns\n\nsns.set_theme()\n\n# URL for the selected NWB asset\nurl = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\n\n# Open remote NWB file and download into memory\nremote_file = remfile.File(url)\n# Supply size to read\nfile_size = remote_file.size\ncontent = remote_file.read(file_size)\n\n# Load NWB from in-memory bytes\nbio = BytesIO(content)\nwith NWBHDF5IO(file=bio, mode=\'r\') as io:\n    nwb = io.read()\n\n# Access behavioral time series\nbt = nwb.processing[\'behavior\'].data_interfaces[\'BehavioralTimeSeries\']\nts = bt.time_series\nspeed = ts[\'speed\']\nposition = ts[\'position\']\n\n# Subset first N samples to limit memory and plotting time\nn_samples = 2000\nspeed_t = speed.timestamps[:n_samples]\nspeed_d = speed.data[:n_samples]\nposition_t = position.timestamps[:n_samples]\nposition_d = position.data[:n_samples]\n\n# Ensure output directory exists\nos.makedirs(\'explore\', exist_ok=True)\n\n# Speed plot\nplt.figure(figsize=(10, 4))\nplt.plot(speed_t, speed_d)\nplt.xlabel(\'Time (s)\')\nplt.ylabel(f"Speed ({speed.unit})")\nplt.title(\'Speed over time (first 2000 samples)\')\nplt.tight_layout()\nplt.savefig(\'explore/behavior_speed.png\')\nplt.close()\n\n# Position plot\nplt.figure(figsize=(10, 4))\nplt.plot(position_t, position_d)\nplt.xlabel(\'Time (s)\')\nplt.ylabel(f"Position ({position.unit})")\nplt.title(\'Position over time (first 2000 samples)\')\nplt.tight_layout()\nplt.savefig(\'explore/behavior_position.png\')\nplt.close()'}
+================================
+Content to be written to explore/plot_behavior.py:
+#!/usr/bin/env python3
+"""
+Script to plot behavior data (speed and position) for the NWB file.
+Generates two PNG files in explore/: behavior_speed.png and behavior_position.png.
+"""
+import os
+from io import BytesIO
+import remfile
+import matplotlib.pyplot as plt
+from pynwb import NWBHDF5IO
+import seaborn as sns
+
+sns.set_theme()
+
+# URL for the selected NWB asset
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+
+# Open remote NWB file and download into memory
+remote_file = remfile.File(url)
+# Supply size to read
+file_size = remote_file.size
+content = remote_file.read(file_size)
+
+# Load NWB from in-memory bytes
+bio = BytesIO(content)
+with NWBHDF5IO(file=bio, mode='r') as io:
+    nwb = io.read()
+
+# Access behavioral time series
+bt = nwb.processing['behavior'].data_interfaces['BehavioralTimeSeries']
+ts = bt.time_series
+speed = ts['speed']
+position = ts['position']
+
+# Subset first N samples to limit memory and plotting time
+n_samples = 2000
+speed_t = speed.timestamps[:n_samples]
+speed_d = speed.data[:n_samples]
+position_t = position.timestamps[:n_samples]
+position_d = position.data[:n_samples]
+
+# Ensure output directory exists
+os.makedirs('explore', exist_ok=True)
+
+# Speed plot
+plt.figure(figsize=(10, 4))
+plt.plot(speed_t, speed_d)
+plt.xlabel('Time (s)')
+plt.ylabel(f"Speed ({speed.unit})")
+plt.title('Speed over time (first 2000 samples)')
+plt.tight_layout()
+plt.savefig('explore/behavior_speed.png')
+plt.close()
+
+# Position plot
+plt.figure(figsize=(10, 4))
+plt.plot(position_t, position_d)
+plt.xlabel('Time (s)')
+plt.ylabel(f"Position ({position.unit})")
+plt.title('Position over time (first 2000 samples)')
+plt.tight_layout()
+plt.savefig('explore/behavior_position.png')
+plt.close()
+================================
+Total prompt tokens: 126476 + 0
+Total completion tokens: 10802 + 0
+
+=========================================
+
+write_to_file for 'explore/plot_behavior.py':
+Successfully wrote 1744 characters to explore/plot_behavior.py
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 18
+Submitting completion request...
+Processing response...
+Running the updated exploration script to generate the behavior plots now that `remote_file.read` is provided the file size.
+
+Tool: execute_command
+Params: {'command': 'python explore/plot_behavior.py', 'requires_approval': 'false'}
+================================
+Command to be executed
+python explore/plot_behavior.py
+================================
+Traceback (most recent call last):
+  File "/home/jovyan/dandi-ai-notebooks-4/dandiset_repos/001361/v4/0.250406.0045/o4-mini-high-prompt-f-1/working/explore/plot_behavior.py", line 21, in <module>
+    file_size = remote_file.size
+                ^^^^^^^^^^^^^^^^
+AttributeError: 'RemFile' object has no attribute 'size'
+Total prompt tokens: 147426 + 0
+Total completion tokens: 11270 + 0
+
+=========================================
+
+execute_command 'python explore/plot_behavior.py' (requires approval):
+Command failed with exit code 1
+STDERR:
+Traceback (most recent call last):
+  File "/home/jovyan/dandi-ai-notebooks-4/dandiset_repos/001361/v4/0.250406.0045/o4-mini-high-prompt-f-1/working/explore/plot_behavior.py", line 21, in <module>
+    file_size = remote_file.size
+                ^^^^^^^^^^^^^^^^
+AttributeError: 'RemFile' object has no attribute 'size'
+
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 20
+Submitting completion request...
+Processing response...
+Replacing dynamic remote_file.size call with a hardcoded file size based on the asset listing (93427620 bytes).
+
+Tool: replace_in_file
+Params: {'path': 'explore/plot_behavior.py', 'diff': '<<<<<<< SEARCH\n# Open remote NWB file and download into memory\nremote_file = remfile.File(url)\n# Supply size to read\nfile_size = remote_file.size\ncontent = remote_file.read(file_size)\n=======\n# Open remote NWB file and download into memory\nremote_file = remfile.File(url)\n# Hardcoded size of the NWB asset (in bytes) based on asset listing\nfile_size = 93427620\ncontent = remote_file.read(file_size)\n>>>>>>> REPLACE'}
+================================
+Proposed replacement in explore/plot_behavior.py:
+<<<<<<< SEARCH
+# Open remote NWB file and download into memory
+remote_file = remfile.File(url)
+# Supply size to read
+file_size = remote_file.size
+content = remote_file.read(file_size)
+=======
+# Open remote NWB file and download into memory
+remote_file = remfile.File(url)
+# Hardcoded size of the NWB asset (in bytes) based on asset listing
+file_size = 93427620
+content = remote_file.read(file_size)
+>>>>>>> REPLACE
+================================
+Total prompt tokens: 168608 + 0
+Total completion tokens: 11855 + 0
+
+=========================================
+
+replace_in_file for 'explore/plot_behavior.py':
+Successfully made 1 replacements in explore/plot_behavior.py
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 22
+Submitting completion request...
+Processing response...
+Re-running the behavior plotting script after hardcoding the file size to generate the PNGs.
+
+Tool: execute_command
+Params: {'command': 'python explore/plot_behavior.py', 'requires_approval': 'false'}
+================================
+Command to be executed
+python explore/plot_behavior.py
+================================
+Traceback (most recent call last):
+  File "/home/jovyan/dandi-ai-notebooks-4/dandiset_repos/001361/v4/0.250406.0045/o4-mini-high-prompt-f-1/working/explore/plot_behavior.py", line 26, in <module>
+    with NWBHDF5IO(file=bio, mode='r') as io:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/hdmf/utils.py", line 667, in func_call
+    pargs = _check_args(args, kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/hdmf/utils.py", line 660, in _check_args
+    raise ExceptionType(msg)
+TypeError: NWBHDF5IO.__init__: incorrect type for 'file' (got 'BytesIO', expected 'File, S3File or RemFile')
+Total prompt tokens: 190024 + 0
+Total completion tokens: 11928 + 0
+
+=========================================
+
+execute_command 'python explore/plot_behavior.py' (requires approval):
+Command failed with exit code 1
+STDERR:
+Traceback (most recent call last):
+  File "/home/jovyan/dandi-ai-notebooks-4/dandiset_repos/001361/v4/0.250406.0045/o4-mini-high-prompt-f-1/working/explore/plot_behavior.py", line 26, in <module>
+    with NWBHDF5IO(file=bio, mode='r') as io:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/hdmf/utils.py", line 667, in func_call
+    pargs = _check_args(args, kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/hdmf/utils.py", line 660, in _check_args
+    raise ExceptionType(msg)
+TypeError: NWBHDF5IO.__init__: incorrect type for 'file' (got 'BytesIO', expected 'File, S3File or RemFile')
+
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 24
+Submitting completion request...
+Processing response...
+
+Tool: replace_in_file
+Params: {'path': 'explore/plot_behavior.py', 'diff': "<<<<<<< SEARCH\n# Open remote NWB file and download into memory\nremote_file = remfile.File(url)\n# Hardcoded size of the NWB asset (in bytes) based on asset listing\nfile_size = 93427620\ncontent = remote_file.read(file_size)\n\n# Load NWB from in-memory bytes\nbio = BytesIO(content)\nwith NWBHDF5IO(file=bio, mode='r') as io:\n    nwb = io.read()\n=======\n# Open remote NWB file and download into memory\nremote_file = remfile.File(url)\n# Hardcoded size of the NWB asset (in bytes) based on asset listing\nfile_size = 93427620\ncontent = remote_file.read(file_size)\n\n# Write content to a temporary NWB file\nos.makedirs('explore', exist_ok=True)\ntmp_path = 'explore/tmp.nwb'\nwith open(tmp_path, 'wb') as f:\n    f.write(content)\n\n# Load NWB from local file\nwith NWBHDF5IO(file=tmp_path, mode='r') as io:\n    nwb = io.read()\n>>>>>>> REPLACE"}
+================================
+Proposed replacement in explore/plot_behavior.py:
+<<<<<<< SEARCH
+# Open remote NWB file and download into memory
+remote_file = remfile.File(url)
+# Hardcoded size of the NWB asset (in bytes) based on asset listing
+file_size = 93427620
+content = remote_file.read(file_size)
+
+# Load NWB from in-memory bytes
+bio = BytesIO(content)
+with NWBHDF5IO(file=bio, mode='r') as io:
+    nwb = io.read()
+=======
+# Open remote NWB file and download into memory
+remote_file = remfile.File(url)
+# Hardcoded size of the NWB asset (in bytes) based on asset listing
+file_size = 93427620
+content = remote_file.read(file_size)
+
+# Write content to a temporary NWB file
+os.makedirs('explore', exist_ok=True)
+tmp_path = 'explore/tmp.nwb'
+with open(tmp_path, 'wb') as f:
+    f.write(content)
+
+# Load NWB from local file
+with NWBHDF5IO(file=tmp_path, mode='r') as io:
+    nwb = io.read()
+>>>>>>> REPLACE
+================================
+Total prompt tokens: 211779 + 0
+Total completion tokens: 13384 + 0
+
+=========================================
+
+replace_in_file for 'explore/plot_behavior.py':
+Successfully made 1 replacements in explore/plot_behavior.py
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 26
+Submitting completion request...
+Processing response...
+Running the updated exploration script to generate the behavior plots.
+
+Tool: execute_command
+Params: {'command': 'python explore/plot_behavior.py', 'requires_approval': 'false'}
+================================
+Command to be executed
+python explore/plot_behavior.py
+================================
+Traceback (most recent call last):
+  File "/home/jovyan/dandi-ai-notebooks-4/dandiset_repos/001361/v4/0.250406.0045/o4-mini-high-prompt-f-1/working/explore/plot_behavior.py", line 31, in <module>
+    with NWBHDF5IO(file=tmp_path, mode='r') as io:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/hdmf/utils.py", line 667, in func_call
+    pargs = _check_args(args, kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/hdmf/utils.py", line 660, in _check_args
+    raise ExceptionType(msg)
+TypeError: NWBHDF5IO.__init__: incorrect type for 'file' (got 'str', expected 'File, S3File or RemFile')
+Total prompt tokens: 233870 + 0
+Total completion tokens: 13968 + 0
+
+=========================================
+
+execute_command 'python explore/plot_behavior.py' (requires approval):
+Command failed with exit code 1
+STDERR:
+Traceback (most recent call last):
+  File "/home/jovyan/dandi-ai-notebooks-4/dandiset_repos/001361/v4/0.250406.0045/o4-mini-high-prompt-f-1/working/explore/plot_behavior.py", line 31, in <module>
+    with NWBHDF5IO(file=tmp_path, mode='r') as io:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/hdmf/utils.py", line 667, in func_call
+    pargs = _check_args(args, kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/hdmf/utils.py", line 660, in _check_args
+    raise ExceptionType(msg)
+TypeError: NWBHDF5IO.__init__: incorrect type for 'file' (got 'str', expected 'File, S3File or RemFile')
+
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 28
+Submitting completion request...
+Processing response...
+Reviewing the current exploration script to identify missing imports and correct the NWBHDF5IO instantiation.
+
+Tool: read_file
+Params: {'path': 'explore/plot_behavior.py'}
+Total prompt tokens: 256300 + 0
+Total completion tokens: 14633 + 0
+
+=========================================
+
+read_file for 'explore/plot_behavior.py':
+#!/usr/bin/env python3
+"""
+Script to plot behavior data (speed and position) for the NWB file.
+Generates two PNG files in explore/: behavior_speed.png and behavior_position.png.
+"""
+import os
+from io import BytesIO
+import remfile
+import matplotlib.pyplot as plt
+from pynwb import NWBHDF5IO
+import seaborn as sns
+
+sns.set_theme()
+
+# URL for the selected NWB asset
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+
+# Open remote NWB file and download into memory
+remote_file = remfile.File(url)
+# Hardcoded size of the NWB asset (in bytes) based on asset listing
+file_size = 93427620
+content = remote_file.read(file_size)
+
+# Write content to a temporary NWB file
+os.makedirs('explore', exist_ok=True)
+tmp_path = 'explore/tmp.nwb'
+with open(tmp_path, 'wb') as f:
+    f.write(content)
+
+# Load NWB from local file
+with NWBHDF5IO(file=tmp_path, mode='r') as io:
+    nwb = io.read()
+
+# Access behavioral time series
+bt = nwb.processing['behavior'].data_interfaces['BehavioralTimeSeries']
+ts = bt.time_series
+speed = ts['speed']
+position = ts['position']
+
+# Subset first N samples to limit memory and plotting time
+n_samples = 2000
+speed_t = speed.timestamps[:n_samples]
+speed_d = speed.data[:n_samples]
+position_t = position.timestamps[:n_samples]
+position_d = position.data[:n_samples]
+
+# Ensure output directory exists
+os.makedirs('explore', exist_ok=True)
+
+# Speed plot
+plt.figure(figsize=(10, 4))
+plt.plot(speed_t, speed_d)
+plt.xlabel('Time (s)')
+plt.ylabel(f"Speed ({speed.unit})")
+plt.title('Speed over time (first 2000 samples)')
+plt.tight_layout()
+plt.savefig('explore/behavior_speed.png')
+plt.close()
+
+# Position plot
+plt.figure(figsize=(10, 4))
+plt.plot(position_t, position_d)
+plt.xlabel('Time (s)')
+plt.ylabel(f"Position ({position.unit})")
+plt.title('Position over time (first 2000 samples)')
+plt.tight_layout()
+plt.savefig('explore/behavior_position.png')
+plt.close()
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 30
+Submitting completion request...
+Processing response...
+
+Tool: replace_in_file
+Params: {'path': 'explore/plot_behavior.py', 'diff': '<<<<<<< SEARCH\nfrom io import BytesIO\nimport remfile\nimport matplotlib.pyplot as plt\nfrom pynwb import NWBHDF5IO\nimport seaborn as sns\n\nsns.set_theme()\n\n# URL for the selected NWB asset\nurl = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\n\n# Open remote NWB file and download into memory\nremote_file = remfile.File(url)\n# Hardcoded size of the NWB asset (in bytes) based on asset listing\nfile_size = 93427620\ncontent = remote_file.read(file_size)\n\n# Write content to a temporary NWB file\nos.makedirs(\'explore\', exist_ok=True)\ntmp_path = \'explore/tmp.nwb\'\nwith open(tmp_path, \'wb\') as f:\n    f.write(content)\n\n# Load NWB from local file\nwith NWBHDF5IO(file=tmp_path, mode=\'r\') as io:\n    nwb = io.read()\n=======\nimport h5py\nimport remfile\nimport matplotlib.pyplot as plt\nfrom pynwb import NWBHDF5IO\nimport seaborn as sns\n\nsns.set_theme()\n\n# URL for the selected NWB asset\nurl = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\n\n# Open remote NWB file and load via h5py\nremote_file = remfile.File(url)\nh5_file = h5py.File(remote_file, \'r\')\nio = NWBHDF5IO(file=h5_file)\nnwb = io.read()\n>>>>>>> REPLACE'}
+================================
+Proposed replacement in explore/plot_behavior.py:
+<<<<<<< SEARCH
+from io import BytesIO
+import remfile
+import matplotlib.pyplot as plt
+from pynwb import NWBHDF5IO
+import seaborn as sns
+
+sns.set_theme()
+
+# URL for the selected NWB asset
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+
+# Open remote NWB file and download into memory
+remote_file = remfile.File(url)
+# Hardcoded size of the NWB asset (in bytes) based on asset listing
+file_size = 93427620
+content = remote_file.read(file_size)
+
+# Write content to a temporary NWB file
+os.makedirs('explore', exist_ok=True)
+tmp_path = 'explore/tmp.nwb'
+with open(tmp_path, 'wb') as f:
+    f.write(content)
+
+# Load NWB from local file
+with NWBHDF5IO(file=tmp_path, mode='r') as io:
+    nwb = io.read()
+=======
+import h5py
+import remfile
+import matplotlib.pyplot as plt
+from pynwb import NWBHDF5IO
+import seaborn as sns
+
+sns.set_theme()
+
+# URL for the selected NWB asset
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+
+# Open remote NWB file and load via h5py
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file, 'r')
+io = NWBHDF5IO(file=h5_file)
+nwb = io.read()
+>>>>>>> REPLACE
+================================
+Total prompt tokens: 279353 + 0
+Total completion tokens: 16085 + 0
+
+=========================================
+
+replace_in_file for 'explore/plot_behavior.py':
+Successfully made 1 replacements in explore/plot_behavior.py
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 32
+Submitting completion request...
+Processing response...
+Re-reading the exploration script to determine its current contents before applying further changes.
+
+Tool: read_file
+Params: {'path': 'explore/plot_behavior.py'}
+Total prompt tokens: 302874 + 0
+Total completion tokens: 20584 + 0
+
+=========================================
+
+read_file for 'explore/plot_behavior.py':
+#!/usr/bin/env python3
+"""
+Script to plot behavior data (speed and position) for the NWB file.
+Generates two PNG files in explore/: behavior_speed.png and behavior_position.png.
+"""
+import os
+import h5py
+import remfile
+import matplotlib.pyplot as plt
+from pynwb import NWBHDF5IO
+import seaborn as sns
+
+sns.set_theme()
+
+# URL for the selected NWB asset
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+
+# Open remote NWB file and load via h5py
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file, 'r')
+io = NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+# Access behavioral time series
+bt = nwb.processing['behavior'].data_interfaces['BehavioralTimeSeries']
+ts = bt.time_series
+speed = ts['speed']
+position = ts['position']
+
+# Subset first N samples to limit memory and plotting time
+n_samples = 2000
+speed_t = speed.timestamps[:n_samples]
+speed_d = speed.data[:n_samples]
+position_t = position.timestamps[:n_samples]
+position_d = position.data[:n_samples]
+
+# Ensure output directory exists
+os.makedirs('explore', exist_ok=True)
+
+# Speed plot
+plt.figure(figsize=(10, 4))
+plt.plot(speed_t, speed_d)
+plt.xlabel('Time (s)')
+plt.ylabel(f"Speed ({speed.unit})")
+plt.title('Speed over time (first 2000 samples)')
+plt.tight_layout()
+plt.savefig('explore/behavior_speed.png')
+plt.close()
+
+# Position plot
+plt.figure(figsize=(10, 4))
+plt.plot(position_t, position_d)
+plt.xlabel('Time (s)')
+plt.ylabel(f"Position ({position.unit})")
+plt.title('Position over time (first 2000 samples)')
+plt.tight_layout()
+plt.savefig('explore/behavior_position.png')
+plt.close()
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 34
+Submitting completion request...
+Processing response...
+Running the updated behavior plotting script to generate the PNG files.
+
+Tool: execute_command
+Params: {'command': 'python explore/plot_behavior.py', 'requires_approval': 'false'}
+================================
+Command to be executed
+python explore/plot_behavior.py
+================================
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+Total prompt tokens: 326932 + 0
+Total completion tokens: 22001 + 0
+
+=========================================
+
+execute_command 'python explore/plot_behavior.py' (requires approval):
+Command executed successfully
+STDERR:
+/opt/conda/lib/python3.11/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 36
+Submitting completion request...
+Processing response...
+
+Tool: read_image
+Params: {'path': 'explore/behavior_speed.png', 'instructions': 'Review this speed vs. time plot (first 2000 samples) and describe:\n- Whether the axes are clearly labeled and scaled.\n- If the data show meaningful variation (e.g., non-flat line) across time.\n- Whether there are any gaps or artifacts indicating missing data.\n- Overall informativeness and clarity for inclusion in the notebook.'}
+Using model: openai/o4-mini-high
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Total prompt tokens: 351203 + 823
+Total completion tokens: 22331 + 153
+
+=========================================
+
+read_image for 'explore/behavior_speed.png':
+The image for explore/behavior_speed.png is attached. AI description: • Axes: Both axes are clearly labeled (“Time (s)” on x, “Speed (cm/s)” on y) with sensible numeric scales and ticks.  
+• Variation: The trace shows substantial, non-flat fluctuations in speed over time, including multiple peaks around 70 cm/s and troughs near 0.  
+• Gaps/Artifacts: There are no missing-time gaps—zero values represent real speed drops rather than data dropouts. The line is continuous throughout.  
+• Informativeness: The plot is clear, well-scaled and directly conveys speed dynamics over the first 2,000 samples, making it suitable for the notebook.
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 38
+Submitting completion request...
+Processing response...
+
+Tool: read_image
+Params: {'path': 'explore/behavior_position.png', 'instructions': 'Review this position vs. time plot (first 2000 samples) and describe:\n- Whether the axes are clearly labeled and scaled.\n- If the data show meaningful variation or movement patterns.\n- Whether the position spans an expected range (e.g., track length).\n- If there are any gaps or plateau regions indicating no movement.\n- Overall informativeness and clarity for inclusion in the notebook.'}
+Using model: openai/o4-mini-high
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Total prompt tokens: 376514 + 1655
+Total completion tokens: 22646 + 682
+
+=========================================
+
+read_image for 'explore/behavior_position.png':
+The image for explore/behavior_position.png is attached. AI description: • Axes, labels and scaling  
+  – X-axis: “Time (s)” from 0 to ~130 s; Y-axis: “Position (cm)” from –500 to +450 cm. Units and ticks are clear and evenly spaced.  
+
+• Data variation & movement patterns  
+  – Repeated sawtooth cycles: roughly linear ramps upward followed by abrupt resets downward. No obvious noise, just smooth climbs.  
+
+• Position range  
+  – Covers approximately –500 cm up to +450 cm, matching an expected ~900 cm track length.  
+
+• Gaps or plateaus  
+  – No missing data; flat segments at the very start (~0–5 s) and immediately after each reset indicate brief pauses or dwell times.  
+
+• Overall clarity & informativeness  
+  – The plot is concise, clearly labeled, and conveys the cyclic movement pattern effectively for inclusion in the notebook.
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 40
+Submitting completion request...
+Processing response...
+
+Tool: write_to_file
+Params: {'path': 'notebook.py', 'content': '# %% [markdown]\n"""\n# Exploring Dandiset 001361: A Flexible Hippocampal Population Code for Experience Relative to Reward\n\n**DISCLAIMER**: This notebook was AI-generated and has not been fully verified. Use caution interpreting code or results.\n\n**Dandiset:** https://dandiarchive.org/dandiset/001361/0.250406.0045\n\n**Overview:**  \n- Load Dandiset metadata and list assets  \n- Load an NWB file and inspect its structure  \n- Visualize behavioral data (speed, position)  \n- Summarize findings and suggest future directions\n"""\n\n# %% [markdown]\n"""\n## Required Packages\n\n- itertools  \n- dandi.dandiapi.DandiAPIClient  \n- remfile  \n- h5py  \n- pynwb  \n- matplotlib  \n- seaborn  \n"""\n\n# %% \nfrom itertools import islice\nfrom dandi.dandiapi import DandiAPIClient\n\n# Connect to DANDI archive and load metadata\nclient = DandiAPIClient()\ndandiset = client.get_dandiset("001361", "0.250406.0045")\nmetadata = dandiset.get_raw_metadata()\nprint(f"Dandiset name: {metadata[\'name\']}")\nprint(f"Dandiset URL: {metadata[\'url\']}")\n\n# List first 5 assets\nassets = dandiset.get_assets()\nprint("\\nFirst 5 assets:")\nfor asset in islice(assets, 5):\n    print(f"- {asset.path} (ID: {asset.identifier})")\n\n# %% [markdown]\n"""\n## Load NWB file session sub-m11_ses-03_behavior+ophys.nwb\n\nThis cell loads the NWB file from the DANDI archive and prints basic metadata.\n"""\n\n# %%\nimport remfile\nimport h5py\nfrom pynwb import NWBHDF5IO\n\nnwb_url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\nprint(f"Loading NWB file from: {nwb_url}")\nremote = remfile.File(nwb_url)\nh5f = h5py.File(remote, \'r\')\nio = NWBHDF5IO(file=h5f)\nnwb = io.read()\n\nprint(f"Session description: {nwb.session_description}")\nprint(f"Identifier: {nwb.identifier}")\nprint(f"Session start time: {nwb.session_start_time}")\n\n# %% [markdown]\n"""\n## NWB File Structure Summary\n\n```\nnwb\n├── acquisitions\n├── processing\n│   ├── behavior\n│   │   └── time_series: Reward, autoreward, environment, lick, position, reward_zone, scanning, speed, teleport, trial number, trial_start\n│   └── ophys\n│       ├── Deconvolved (RoiResponseSeries)\n│       └── Fluorescence (RoiResponseSeries)\n└── subject, devices, imaging_planes\n```\n"""\n\n# %% [markdown]\n"""\nExplore this NWB file on NeuroSift:  \n[Open in NeuroSift](https://neurosift.app/nwb?url=https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/&dandisetId=001361&dandisetVersion=draft)\n"""\n\n# %% [markdown]\n"""\n## Visualize Behavioral Data\n\nThe following cell plots speed and position over the first 2,000 samples.\n"""\n\n# %%\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.set_theme()\n\nbt = nwb.processing[\'behavior\'].data_interfaces[\'BehavioralTimeSeries\']\nspeed = bt.time_series[\'speed\']\nposition = bt.time_series[\'position\']\n\nn_samples = 2000\nt_speed = speed.timestamps[:n_samples]\nd_speed = speed.data[:n_samples]\nt_pos = position.timestamps[:n_samples]\nd_pos = position.data[:n_samples]\n\nfig, axes = plt.subplots(2, 1, figsize=(10, 8))\naxes[0].plot(t_speed, d_speed, color=\'C0\')\naxes[0].set_title("Speed over time (first 2000 samples)")\naxes[0].set_xlabel("Time (s)")\naxes[0].set_ylabel(f"Speed ({speed.unit})")\n\naxes[1].plot(t_pos, d_pos, color=\'C1\')\naxes[1].set_title("Position over time (first 2000 samples)")\naxes[1].set_xlabel("Time (s)")\naxes[1].set_ylabel(f"Position ({position.unit})")\n\nplt.tight_layout()\n\n# %% [markdown]\n"""\n## Summary and Future Directions\n\n**Findings:**  \n- Behavioral data show clear cyclic navigation patterns with varying speed and position across trials.  \n- NWB file structure provides straightforward access to behavioral and optical physiology data.\n\n**Future Directions:**  \n- Visualize optical physiology (e.g., deconvolved fluorescence signals) for individual ROIs.  \n- Correlate neural activity with behavioral metrics such as speed and position.  \n- Investigate reward-related time series to study learning dynamics.\n"""'}
+================================
+Content to be written to notebook.py:
+# %% [markdown]
+"""
+# Exploring Dandiset 001361: A Flexible Hippocampal Population Code for Experience Relative to Reward
+
+**DISCLAIMER**: This notebook was AI-generated and has not been fully verified. Use caution interpreting code or results.
+
+**Dandiset:** https://dandiarchive.org/dandiset/001361/0.250406.0045
+
+**Overview:**  
+- Load Dandiset metadata and list assets  
+- Load an NWB file and inspect its structure  
+- Visualize behavioral data (speed, position)  
+- Summarize findings and suggest future directions
+"""
+
+# %% [markdown]
+"""
+## Required Packages
+
+- itertools  
+- dandi.dandiapi.DandiAPIClient  
+- remfile  
+- h5py  
+- pynwb  
+- matplotlib  
+- seaborn  
+"""
+
+# %% 
+from itertools import islice
+from dandi.dandiapi import DandiAPIClient
+
+# Connect to DANDI archive and load metadata
+client = DandiAPIClient()
+dandiset = client.get_dandiset("001361", "0.250406.0045")
+metadata = dandiset.get_raw_metadata()
+print(f"Dandiset name: {metadata['name']}")
+print(f"Dandiset URL: {metadata['url']}")
+
+# List first 5 assets
+assets = dandiset.get_assets()
+print("\nFirst 5 assets:")
+for asset in islice(assets, 5):
+    print(f"- {asset.path} (ID: {asset.identifier})")
+
+# %% [markdown]
+"""
+## Load NWB file session sub-m11_ses-03_behavior+ophys.nwb
+
+This cell loads the NWB file from the DANDI archive and prints basic metadata.
+"""
+
+# %%
+import remfile
+import h5py
+from pynwb import NWBHDF5IO
+
+nwb_url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+print(f"Loading NWB file from: {nwb_url}")
+remote = remfile.File(nwb_url)
+h5f = h5py.File(remote, 'r')
+io = NWBHDF5IO(file=h5f)
+nwb = io.read()
+
+print(f"Session description: {nwb.session_description}")
+print(f"Identifier: {nwb.identifier}")
+print(f"Session start time: {nwb.session_start_time}")
+
+# %% [markdown]
+"""
+## NWB File Structure Summary
+
+```
+nwb
+├── acquisitions
+├── processing
+│   ├── behavior
+│   │   └── time_series: Reward, autoreward, environment, lick, position, reward_zone, scanning, speed, teleport, trial number, trial_start
+│   └── ophys
+│       ├── Deconvolved (RoiResponseSeries)
+│       └── Fluorescence (RoiResponseSeries)
+└── subject, devices, imaging_planes
+```
+"""
+
+# %% [markdown]
+"""
+Explore this NWB file on NeuroSift:  
+[Open in NeuroSift](https://neurosift.app/nwb?url=https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/&dandisetId=001361&dandisetVersion=draft)
+"""
+
+# %% [markdown]
+"""
+## Visualize Behavioral Data
+
+The following cell plots speed and position over the first 2,000 samples.
+"""
+
+# %%
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set_theme()
+
+bt = nwb.processing['behavior'].data_interfaces['BehavioralTimeSeries']
+speed = bt.time_series['speed']
+position = bt.time_series['position']
+
+n_samples = 2000
+t_speed = speed.timestamps[:n_samples]
+d_speed = speed.data[:n_samples]
+t_pos = position.timestamps[:n_samples]
+d_pos = position.data[:n_samples]
+
+fig, axes = plt.subplots(2, 1, figsize=(10, 8))
+axes[0].plot(t_speed, d_speed, color='C0')
+axes[0].set_title("Speed over time (first 2000 samples)")
+axes[0].set_xlabel("Time (s)")
+axes[0].set_ylabel(f"Speed ({speed.unit})")
+
+axes[1].plot(t_pos, d_pos, color='C1')
+axes[1].set_title("Position over time (first 2000 samples)")
+axes[1].set_xlabel("Time (s)")
+axes[1].set_ylabel(f"Position ({position.unit})")
+
+plt.tight_layout()
+
+# %% [markdown]
+"""
+## Summary and Future Directions
+
+**Findings:**  
+- Behavioral data show clear cyclic navigation patterns with varying speed and position across trials.  
+- NWB file structure provides straightforward access to behavioral and optical physiology data.
+
+**Future Directions:**  
+- Visualize optical physiology (e.g., deconvolved fluorescence signals) for individual ROIs.  
+- Correlate neural activity with behavioral metrics such as speed and position.  
+- Investigate reward-related time series to study learning dynamics.
+"""
+================================
+Total prompt tokens: 402213 + 1655
+Total completion tokens: 26147 + 682
+
+=========================================
+
+write_to_file for 'notebook.py':
+Successfully wrote 3924 characters to notebook.py
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 42
+Submitting completion request...
+Processing response...
+Converting the Jupytext script to an `.ipynb` notebook and executing it in-place to verify it runs without errors (600s timeout).
+
+Tool: execute_command
+Params: {'command': 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb --ExecutePreprocessor.timeout=600', 'requires_approval': 'false'}
+================================
+Command to be executed
+jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb --ExecutePreprocessor.timeout=600
+================================
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+[NbClientApp] Save executed results to notebook.ipynb
+Total prompt tokens: 429108 + 1655
+Total completion tokens: 26701 + 682
+
+=========================================
+
+execute_command 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb --ExecutePreprocessor.timeout=600' (requires approval):
+Command executed successfully
+STDOUT:
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb
+
+STDERR:
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+[NbClientApp] Save executed results to notebook.ipynb
+
+=========================================
+
+Using model: openai/o4-mini-high
+Num. messages in conversation: 44
+Submitting completion request...
+Processing response...
+
+Tool: attempt_completion
+Params: {'result': 'The Jupytext notebook (`notebook.py`) has been created, converted to `notebook.ipynb`, and executed in-place without errors. It includes:\n\n- Title, disclaimer, and Dandiset overview with link  \n- Metadata retrieval and asset listing via the DANDI API  \n- Loading and inspecting the NWB file session (`sub-m11_ses-03`)  \n- A summary of the NWB file structure and a NeuroSift link  \n- Visualization of behavioral data (speed and position) for the first 2,000 samples  \n- A summary of findings and suggestions for future analyses  \n\nAll code cells ran successfully and generated the expected outputs and figures. You can now open `notebook.ipynb` to interactively explore the results.'}
+The Jupytext notebook (`notebook.py`) has been created, converted to `notebook.ipynb`, and executed in-place without errors. It includes:
+
+- Title, disclaimer, and Dandiset overview with link  
+- Metadata retrieval and asset listing via the DANDI API  
+- Loading and inspecting the NWB file session (`sub-m11_ses-03`)  
+- A summary of the NWB file structure and a NeuroSift link  
+- Visualization of behavioral data (speed and position) for the first 2,000 samples  
+- A summary of findings and suggestions for future analyses  
+
+All code cells ran successfully and generated the expected outputs and figures. You can now open `notebook.ipynb` to interactively explore the results.
+Total prompt tokens: 456276 + 1655
+Total completion tokens: 27337 + 682
+
