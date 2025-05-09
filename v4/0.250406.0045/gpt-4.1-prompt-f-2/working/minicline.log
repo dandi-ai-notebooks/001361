@@ -1,0 +1,2237 @@
+Using model: openai/gpt-4.1
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Step 1 is to gather Dandiset metadata using the specified CLI tool. This will help compose introductory notebook cells, fetch the Dandiset's title, description, modalities, and other metadata, and assist in understanding what the Dandiset contains (scope, modalities, etc.). 
+
+Tool: Execute `python tools_cli.py dandiset-info 001361 --version 0.250406.0045` and review the results. 
+This will let me collect necessary video/overview information for the notebook and guide further tasks.
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py dandiset-info 001361 --version 0.250406.0045', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py dandiset-info 001361 --version 0.250406.0045
+================================
+{
+  "results": {
+    "id": "DANDI:001361/0.250406.0045",
+    "name": "A flexible hippocampal population code for experience relative to reward",
+    "about": [
+      {
+        "name": "hippocampus",
+        "schemaKey": "Anatomy"
+      }
+    ],
+    "access": [
+      {
+        "status": "dandi:OpenAccess",
+        "schemaKey": "AccessRequirements"
+      }
+    ],
+    "license": [
+      "spdx:CC-BY-4.0"
+    ],
+    "version": "0.250406.0045",
+    "citation": "Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. (2025) A flexible hippocampal population code for experience relative to reward (Version 0.250406.0045) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001361/0.250406.0045",
+    "keywords": [
+      "hippocampus, navigation, learning, memory, 2-photon imaging, place cells"
+    ],
+    "protocol": [],
+    "identifier": "DANDI:001361",
+    "contributor": [
+      "National Institutes of Health (NIH)",
+      "Sosa, Marielena",
+      "Plitt, Mark H.",
+      "Giocomo, Lisa M."
+    ],
+    "dateCreated": "2025-03-13T06:23:11.234153+00:00",
+    "description": "2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. Included in Sosa, Plitt, & Giocomo, \"A flexible hippocampal population code for experience relative to reward,\" Nature Neuroscience.\n\nTo reinforce rewarding behaviors, events leading up to and following rewards must be remembered. Hippocampal place cell activity spans spatial and non-spatial episodes, but whether hippocampal activity encodes entire sequences of events relative to reward is unknown. To test this, we performed two-photon imaging of hippocampal CA1 as mice navigated virtual environments with changing hidden reward locations. When the reward moved, a subpopulation of neurons updated their firing fields to the same relative position with respect to reward, constructing behavioral timescale sequences spanning the entire task. Over learning, this reward-relative representation became more robust as additional neurons were recruited, and changes in reward-relative firing often preceded behavioral adaptations following reward relocation. Concurrently, the spatial environment code was maintained through a parallel, dynamic subpopulation rather than through dedicated cell classes. These findings reveal how hippocampal ensembles flexibly encode multiple aspects of experience while amplifying behaviorally relevant information.",
+    "variableMeasured": [
+      "TwoPhotonSeries",
+      "PlaneSegmentation",
+      "BehavioralTimeSeries",
+      "ProcessingModule",
+      "ImagingPlane",
+      "OpticalChannel"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  }
+}
+Total prompt tokens: 8828 + 0
+Total completion tokens: 158 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py dandiset-info 001361 --version 0.250406.0045' (requires approval):
+Command executed successfully
+STDOUT:
+{
+  "results": {
+    "id": "DANDI:001361/0.250406.0045",
+    "name": "A flexible hippocampal population code for experience relative to reward",
+    "about": [
+      {
+        "name": "hippocampus",
+        "schemaKey": "Anatomy"
+      }
+    ],
+    "access": [
+      {
+        "status": "dandi:OpenAccess",
+        "schemaKey": "AccessRequirements"
+      }
+    ],
+    "license": [
+      "spdx:CC-BY-4.0"
+    ],
+    "version": "0.250406.0045",
+    "citation": "Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. (2025) A flexible hippocampal population code for experience relative to reward (Version 0.250406.0045) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001361/0.250406.0045",
+    "keywords": [
+      "hippocampus, navigation, learning, memory, 2-photon imaging, place cells"
+    ],
+    "protocol": [],
+    "identifier": "DANDI:001361",
+    "contributor": [
+      "National Institutes of Health (NIH)",
+      "Sosa, Marielena",
+      "Plitt, Mark H.",
+      "Giocomo, Lisa M."
+    ],
+    "dateCreated": "2025-03-13T06:23:11.234153+00:00",
+    "description": "2-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. Included in Sosa, Plitt, & Giocomo, \"A flexible hippocampal population code for experience relative to reward,\" Nature Neuroscience.\n\nTo reinforce rewarding behaviors, events leading up to and following rewards must be remembered. Hippocampal place cell activity spans spatial and non-spatial episodes, but whether hippocampal activity encodes entire sequences of events relative to reward is unknown. To test this, we performed two-photon imaging of hippocampal CA1 as mice navigated virtual environments with changing hidden reward locations. When the reward moved, a subpopulation of neurons updated their firing fields to the same relative position with respect to reward, constructing behavioral timescale sequences spanning the entire task. Over learning, this reward-relative representation became more robust as additional neurons were recruited, and changes in reward-relative firing often preceded behavioral adaptations following reward relocation. Concurrently, the spatial environment code was maintained through a parallel, dynamic subpopulation rather than through dedicated cell classes. These findings reveal how hippocampal ensembles flexibly encode multiple aspects of experience while amplifying behaviorally relevant information.",
+    "variableMeasured": [
+      "TwoPhotonSeries",
+      "PlaneSegmentation",
+      "BehavioralTimeSeries",
+      "ProcessingModule",
+      "ImagingPlane",
+      "OpticalChannel"
+    ],
+    "measurementTechnique": [
+      {
+        "name": "two-photon microscopy technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "analytical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "behavioral technique",
+        "schemaKey": "MeasurementTechniqueType"
+      },
+      {
+        "name": "surgical technique",
+        "schemaKey": "MeasurementTechniqueType"
+      }
+    ]
+  }
+}
+
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 4
+Submitting completion request...
+Processing response...
+The metadata provides a solid overview: the Dandiset is titled "A flexible hippocampal population code for experience relative to reward" and contains 2-photon imaging and behavioral data from hippocampal CA1 in mice during virtual navigation. The variableMeasured field includes "TwoPhotonSeries", "PlaneSegmentation", and "BehavioralTimeSeries", indicating rich imaging and behavior data.
+
+Next, I need to gather information about the assets in the Dandiset—especially the NWB files. The assets list will show available files so I can select one for deep exploration and visualization later. I will run the next required tool to obtain asset information, focusing on finding and selecting a typical NWB file for further exploration.
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py dandiset-assets 001361 --version 0.250406.0045', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py dandiset-assets 001361 --version 0.250406.0045
+================================
+{
+  "results": {
+    "count": 152,
+    "results": [
+      {
+        "asset_id": "d77ea78a-8978-461d-9d11-3c5cef860d82",
+        "path": "sub-m11/sub-m11_ses-03_behavior+ophys.nwb",
+        "size": 93427620
+      },
+      {
+        "asset_id": "b53ef825-89ca-483e-abeb-b38a0ae9293c",
+        "path": "sub-m11/sub-m11_ses-04_behavior+ophys.nwb",
+        "size": 89674484
+      },
+      {
+        "asset_id": "a22cc1da-b5e8-4fea-a770-7b83a6e79656",
+        "path": "sub-m11/sub-m11_ses-05_behavior+ophys.nwb",
+        "size": 99311004
+      },
+      {
+        "asset_id": "5a5da0ea-5e7a-497b-a3aa-7e6ee1628bde",
+        "path": "sub-m11/sub-m11_ses-06_behavior+ophys.nwb",
+        "size": 94611388
+      },
+      {
+        "asset_id": "27481b95-aeb2-4108-b7ac-b3859892da7a",
+        "path": "sub-m11/sub-m11_ses-07_behavior+ophys.nwb",
+        "size": 119720332
+      },
+      {
+        "asset_id": "d4e069d6-40f6-4702-92d4-70abfd65c1bd",
+        "path": "sub-m11/sub-m11_ses-08_behavior+ophys.nwb",
+        "size": 128446344
+      },
+      {
+        "asset_id": "739f2b51-6fb2-4b3f-94e9-f49928b0b24f",
+        "path": "sub-m11/sub-m11_ses-09_behavior+ophys.nwb",
+        "size": 110016228
+      },
+      {
+        "asset_id": "ead36e91-9db7-482e-9ea9-bab69370a364",
+        "path": "sub-m11/sub-m11_ses-10_behavior+ophys.nwb",
+        "size": 110882776
+      },
+      {
+        "asset_id": "5910e145-9e31-4436-bcc9-264ab89684a1",
+        "path": "sub-m11/sub-m11_ses-11_behavior+ophys.nwb",
+        "size": 111621748
+      },
+      {
+        "asset_id": "303e5b99-348d-4dd7-bfac-e094817850e9",
+        "path": "sub-m11/sub-m11_ses-12_behavior+ophys.nwb",
+        "size": 120944548
+      },
+      {
+        "asset_id": "37be80e6-203e-4cd6-8e12-ad9354504117",
+        "path": "sub-m11/sub-m11_ses-13_behavior+ophys.nwb",
+        "size": 134787448
+      },
+      {
+        "asset_id": "ed84727c-a4d1-4347-adc2-18f614cd8903",
+        "path": "sub-m11/sub-m11_ses-14_behavior+ophys.nwb",
+        "size": 168882036
+      },
+      {
+        "asset_id": "538dc481-9341-4861-8552-591bffe8717e",
+        "path": "sub-m12/sub-m12_ses-01_behavior+ophys.nwb",
+        "size": 600071168
+      },
+      {
+        "asset_id": "a04698df-e49b-4fde-8d96-773f7dfa73ee",
+        "path": "sub-m12/sub-m12_ses-02_behavior+ophys.nwb",
+        "size": 423612572
+      },
+      {
+        "asset_id": "88817b3e-e56e-4dcf-9771-7f8a4cfc4ce7",
+        "path": "sub-m12/sub-m12_ses-03_behavior+ophys.nwb",
+        "size": 440515880
+      },
+      {
+        "asset_id": "934e4ae9-ecff-4c91-bb75-a8228d3f55b0",
+        "path": "sub-m12/sub-m12_ses-04_behavior+ophys.nwb",
+        "size": 391298732
+      },
+      {
+        "asset_id": "d3dcc85e-0b3c-4a7b-850b-f6209cfb5ef0",
+        "path": "sub-m12/sub-m12_ses-05_behavior+ophys.nwb",
+        "size": 538773212
+      },
+      {
+        "asset_id": "c3ff1e3b-d7e8-4b47-b027-0d796f33ae41",
+        "path": "sub-m12/sub-m12_ses-06_behavior+ophys.nwb",
+        "size": 388651092
+      },
+      {
+        "asset_id": "a6a69c98-37e5-4c1e-b255-e75d1aef178b",
+        "path": "sub-m12/sub-m12_ses-07_behavior+ophys.nwb",
+        "size": 560460572
+      },
+      {
+        "asset_id": "090c1e62-f386-46a2-8fd5-ac29c01de01b",
+        "path": "sub-m12/sub-m12_ses-08_behavior+ophys.nwb",
+        "size": 543039180
+      }
+    ]
+  }
+}
+Total prompt tokens: 18626 + 0
+Total completion tokens: 354 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py dandiset-assets 001361 --version 0.250406.0045' (requires approval):
+Command executed successfully
+STDOUT:
+{
+  "results": {
+    "count": 152,
+    "results": [
+      {
+        "asset_id": "d77ea78a-8978-461d-9d11-3c5cef860d82",
+        "path": "sub-m11/sub-m11_ses-03_behavior+ophys.nwb",
+        "size": 93427620
+      },
+      {
+        "asset_id": "b53ef825-89ca-483e-abeb-b38a0ae9293c",
+        "path": "sub-m11/sub-m11_ses-04_behavior+ophys.nwb",
+        "size": 89674484
+      },
+      {
+        "asset_id": "a22cc1da-b5e8-4fea-a770-7b83a6e79656",
+        "path": "sub-m11/sub-m11_ses-05_behavior+ophys.nwb",
+        "size": 99311004
+      },
+      {
+        "asset_id": "5a5da0ea-5e7a-497b-a3aa-7e6ee1628bde",
+        "path": "sub-m11/sub-m11_ses-06_behavior+ophys.nwb",
+        "size": 94611388
+      },
+      {
+        "asset_id": "27481b95-aeb2-4108-b7ac-b3859892da7a",
+        "path": "sub-m11/sub-m11_ses-07_behavior+ophys.nwb",
+        "size": 119720332
+      },
+      {
+        "asset_id": "d4e069d6-40f6-4702-92d4-70abfd65c1bd",
+        "path": "sub-m11/sub-m11_ses-08_behavior+ophys.nwb",
+        "size": 128446344
+      },
+      {
+        "asset_id": "739f2b51-6fb2-4b3f-94e9-f49928b0b24f",
+        "path": "sub-m11/sub-m11_ses-09_behavior+ophys.nwb",
+        "size": 110016228
+      },
+      {
+        "asset_id": "ead36e91-9db7-482e-9ea9-bab69370a364",
+        "path": "sub-m11/sub-m11_ses-10_behavior+ophys.nwb",
+        "size": 110882776
+      },
+      {
+        "asset_id": "5910e145-9e31-4436-bcc9-264ab89684a1",
+        "path": "sub-m11/sub-m11_ses-11_behavior+ophys.nwb",
+        "size": 111621748
+      },
+      {
+        "asset_id": "303e5b99-348d-4dd7-bfac-e094817850e9",
+        "path": "sub-m11/sub-m11_ses-12_behavior+ophys.nwb",
+        "size": 120944548
+      },
+      {
+        "asset_id": "37be80e6-203e-4cd6-8e12-ad9354504117",
+        "path": "sub-m11/sub-m11_ses-13_behavior+ophys.nwb",
+        "size": 134787448
+      },
+      {
+        "asset_id": "ed84727c-a4d1-4347-adc2-18f614cd8903",
+        "path": "sub-m11/sub-m11_ses-14_behavior+ophys.nwb",
+        "size": 168882036
+      },
+      {
+        "asset_id": "538dc481-9341-4861-8552-591bffe8717e",
+        "path": "sub-m12/sub-m12_ses-01_behavior+ophys.nwb",
+        "size": 600071168
+      },
+      {
+        "asset_id": "a04698df-e49b-4fde-8d96-773f7dfa73ee",
+        "path": "sub-m12/sub-m12_ses-02_behavior+ophys.nwb",
+        "size": 423612572
+      },
+      {
+        "asset_id": "88817b3e-e56e-4dcf-9771-7f8a4cfc4ce7",
+        "path": "sub-m12/sub-m12_ses-03_behavior+ophys.nwb",
+        "size": 440515880
+      },
+      {
+        "asset_id": "934e4ae9-ecff-4c91-bb75-a8228d3f55b0",
+        "path": "sub-m12/sub-m12_ses-04_behavior+ophys.nwb",
+        "size": 391298732
+      },
+      {
+        "asset_id": "d3dcc85e-0b3c-4a7b-850b-f6209cfb5ef0",
+        "path": "sub-m12/sub-m12_ses-05_behavior+ophys.nwb",
+        "size": 538773212
+      },
+      {
+        "asset_id": "c3ff1e3b-d7e8-4b47-b027-0d796f33ae41",
+        "path": "sub-m12/sub-m12_ses-06_behavior+ophys.nwb",
+        "size": 388651092
+      },
+      {
+        "asset_id": "a6a69c98-37e5-4c1e-b255-e75d1aef178b",
+        "path": "sub-m12/sub-m12_ses-07_behavior+ophys.nwb",
+        "size": 560460572
+      },
+      {
+        "asset_id": "090c1e62-f386-46a2-8fd5-ac29c01de01b",
+        "path": "sub-m12/sub-m12_ses-08_behavior+ophys.nwb",
+        "size": 543039180
+      }
+    ]
+  }
+}
+
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 6
+Submitting completion request...
+Processing response...
+The Dandiset includes at least 152 assets and the majority are NWB files structured as `sub-<subject>/sub-<subject>_ses-<session>_behavior+ophys.nwb`. For exploration, I'll choose the first NWB file listed: 
+
+- asset_id: `d77ea78a-8978-461d-9d11-3c5cef860d82`
+- path: `sub-m11/sub-m11_ses-03_behavior+ophys.nwb`
+- URL: `https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/`
+
+Next, per instructions, I'll use the tools_cli to extract NWB file info (usage details and contents) for this file. This will provide information on available groups, datasets, and recommended access patterns, crucial for both exploration scripts and notebook creation.
+
+I'll run:
+`python tools_cli.py nwb-file-info 001361 https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ --version 0.250406.0045`
+
+Tool: execute_command
+Params: {'command': 'python tools_cli.py nwb-file-info 001361 https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ --version 0.250406.0045', 'requires_approval': 'false'}
+================================
+Command to be executed
+python tools_cli.py nwb-file-info 001361 https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ --version 0.250406.0045
+================================
+/home/magland/miniconda3/envs/dev/lib/python3.12/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/home/magland/src/dandi-ai-notebooks-3/packages/get-nwbfile-info/src/get_nwbfile_info/core.py:346: UserWarning: Warning: Duplicate entries found in the results.
+  warnings.warn("Warning: Duplicate entries found in the results.")
+# This script shows how to load the NWB file at https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ in Python using PyNWB
+
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb # (NWBFile)
+nwb.session_description # (str) processed suite2p data
+nwb.identifier # (str) /data/InVivoDA/GCAMP11/23_02_2023/Env1_LocationB_to_A
+nwb.session_start_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.timestamps_reference_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.file_create_date # (list) [datetime.datetime(2025, 3, 12, 23, 45, 29, 830157, tzinfo=tzoffset(None, -25200))]
+nwb.experimenter # (tuple) ['Mari Sosa']
+nwb.acquisition # (LabelledDict)
+acquisition = nwb.acquisition
+TwoPhotonSeries = acquisition["TwoPhotonSeries"]
+TwoPhotonSeries # (TwoPhotonSeries)
+TwoPhotonSeries.starting_time # (float64) 0.0
+TwoPhotonSeries.rate # (float64) 15.5078125
+TwoPhotonSeries.resolution # (float64) -1.0
+TwoPhotonSeries.comments # (str) no comments
+TwoPhotonSeries.description # (str) no description
+TwoPhotonSeries.conversion # (float64) 1.0
+TwoPhotonSeries.offset # (float64) 0.0
+TwoPhotonSeries.unit # (str) volt
+TwoPhotonSeries.data # (Dataset) shape (1, 1, 1); dtype float64
+# TwoPhotonSeries.data[:, :, :] # Access all data
+# TwoPhotonSeries.data[0, :, :] # Access first plane
+TwoPhotonSeries.starting_time_unit # (str) seconds
+TwoPhotonSeries.dimension # (Dataset) shape (2,); dtype int64
+# TwoPhotonSeries.dimension[:] # Access all data
+# TwoPhotonSeries.dimension[0:n] # Access first n elements
+# First few values of TwoPhotonSeries.dimension: [512 796]
+TwoPhotonSeries.format # (str) raw
+TwoPhotonSeries.imaging_plane # (ImagingPlane)
+TwoPhotonSeries.imaging_plane.optical_channel # (list)
+TwoPhotonSeries.imaging_plane.description # (str) standard
+TwoPhotonSeries.imaging_plane.excitation_lambda # (float64) 920.0
+TwoPhotonSeries.imaging_plane.imaging_rate # (float64) 15.5078125
+TwoPhotonSeries.imaging_plane.indicator # (str) GCaMP7f
+TwoPhotonSeries.imaging_plane.location # (str) hippocampus, CA1
+TwoPhotonSeries.imaging_plane.conversion # (float) 1.0
+TwoPhotonSeries.imaging_plane.unit # (str) meters
+TwoPhotonSeries.imaging_plane.origin_coords_unit # (str) meters
+TwoPhotonSeries.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# TwoPhotonSeries.imaging_plane.grid_spacing[:] # Access all data
+# TwoPhotonSeries.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of TwoPhotonSeries.imaging_plane.grid_spacing: [2. 2.]
+TwoPhotonSeries.imaging_plane.grid_spacing_unit # (str) microns
+TwoPhotonSeries.imaging_plane.device # (Device)
+TwoPhotonSeries.imaging_plane.device.description # (str) My two-photon microscope
+TwoPhotonSeries.imaging_plane.device.manufacturer # (str) Neurolabware
+nwb.processing # (LabelledDict)
+processing = nwb.processing
+behavior = processing["behavior"]
+behavior # (ProcessingModule)
+behavior.description # (str) behavior data
+behavior.data_interfaces # (LabelledDict)
+data_interfaces = behavior.data_interfaces
+BehavioralTimeSeries = data_interfaces["BehavioralTimeSeries"]
+BehavioralTimeSeries # (BehavioralTimeSeries)
+BehavioralTimeSeries.time_series # (LabelledDict)
+time_series = BehavioralTimeSeries.time_series
+Reward = time_series["Reward"]
+Reward # (TimeSeries)
+Reward.resolution # (float64) -1.0
+Reward.comments # (str) no comments
+Reward.description # (str) reward delivery
+Reward.conversion # (float64) 1.0
+Reward.offset # (float64) 0.0
+Reward.unit # (str) mL
+Reward.data # (Dataset) shape (69,); dtype float64
+# Reward.data[:] # Access all data
+# Reward.data[0:n] # Access first n elements
+Reward.timestamps # (Dataset) shape (69,); dtype float64
+# Reward.timestamps[:] # Access all data
+# Reward.timestamps[0:n] # Access first n elements
+Reward.timestamps_unit # (str) seconds
+Reward.interval # (int) 1
+autoreward = time_series["autoreward"]
+autoreward # (TimeSeries)
+autoreward.resolution # (float64) -1.0
+autoreward.comments # (str) no comments
+autoreward.description # (str) whether trial was automatically rewarded if the subject failed to lick
+autoreward.conversion # (float64) 1.0
+autoreward.offset # (float64) 0.0
+autoreward.unit # (str) integer
+autoreward.data # (Dataset) shape (20684,); dtype float64
+# autoreward.data[:] # Access all data
+# autoreward.data[0:n] # Access first n elements
+autoreward.timestamps # (Dataset) shape (20684,); dtype float64
+# autoreward.timestamps[:] # Access all data
+# autoreward.timestamps[0:n] # Access first n elements
+autoreward.timestamps_unit # (str) seconds
+autoreward.interval # (int) 1
+environment = time_series["environment"]
+environment # (TimeSeries)
+environment.resolution # (float64) -1.0
+environment.comments # (str) no comments
+environment.description # (str) Virtual reality environment
+environment.conversion # (float64) 1.0
+environment.offset # (float64) 0.0
+environment.unit # (str) AU
+environment.data # (Dataset) shape (20684,); dtype float64
+# environment.data[:] # Access all data
+# environment.data[0:n] # Access first n elements
+environment.timestamps # (Dataset) shape (20684,); dtype float64
+# environment.timestamps[:] # Access all data
+# environment.timestamps[0:n] # Access first n elements
+environment.timestamps_unit # (str) seconds
+environment.interval # (int) 1
+lick = time_series["lick"]
+lick # (TimeSeries)
+lick.resolution # (float64) -1.0
+lick.comments # (str) no comments
+lick.description # (str) lick detection by capacitive sensor, cumulative per imaging frame
+lick.conversion # (float64) 1.0
+lick.offset # (float64) 0.0
+lick.unit # (str) AU
+lick.data # (Dataset) shape (20684,); dtype float64
+# lick.data[:] # Access all data
+# lick.data[0:n] # Access first n elements
+lick.timestamps # (Dataset) shape (20684,); dtype float64
+# lick.timestamps[:] # Access all data
+# lick.timestamps[0:n] # Access first n elements
+lick.timestamps_unit # (str) seconds
+lick.interval # (int) 1
+position = time_series["position"]
+position # (TimeSeries)
+position.resolution # (float64) -1.0
+position.comments # (str) no comments
+position.description # (str) Position in a virtual linear track
+position.conversion # (float64) 1.0
+position.offset # (float64) 0.0
+position.unit # (str) cm
+position.data # (Dataset) shape (20684,); dtype float64
+# position.data[:] # Access all data
+# position.data[0:n] # Access first n elements
+position.timestamps # (Dataset) shape (20684,); dtype float64
+# position.timestamps[:] # Access all data
+# position.timestamps[0:n] # Access first n elements
+position.timestamps_unit # (str) seconds
+position.interval # (int) 1
+reward_zone = time_series["reward_zone"]
+reward_zone # (TimeSeries)
+reward_zone.resolution # (float64) -1.0
+reward_zone.comments # (str) no comments
+reward_zone.description # (str) reward zone entry (binary)
+reward_zone.conversion # (float64) 1.0
+reward_zone.offset # (float64) 0.0
+reward_zone.unit # (str) integer
+reward_zone.data # (Dataset) shape (20684,); dtype float64
+# reward_zone.data[:] # Access all data
+# reward_zone.data[0:n] # Access first n elements
+reward_zone.timestamps # (Dataset) shape (20684,); dtype float64
+# reward_zone.timestamps[:] # Access all data
+# reward_zone.timestamps[0:n] # Access first n elements
+reward_zone.timestamps_unit # (str) seconds
+reward_zone.interval # (int) 1
+scanning = time_series["scanning"]
+scanning # (TimeSeries)
+scanning.resolution # (float64) -1.0
+scanning.comments # (str) no comments
+scanning.description # (str) whether scanning occurred to collect ophys data
+scanning.conversion # (float64) 1.0
+scanning.offset # (float64) 0.0
+scanning.unit # (str) integer
+scanning.data # (Dataset) shape (20684,); dtype float64
+# scanning.data[:] # Access all data
+# scanning.data[0:n] # Access first n elements
+scanning.timestamps # (Dataset) shape (20684,); dtype float64
+# scanning.timestamps[:] # Access all data
+# scanning.timestamps[0:n] # Access first n elements
+scanning.timestamps_unit # (str) seconds
+scanning.interval # (int) 1
+speed = time_series["speed"]
+speed # (TimeSeries)
+speed.resolution # (float64) -1.0
+speed.comments # (str) no comments
+speed.description # (str) the speed of the subject measured over time
+speed.conversion # (float64) 1.0
+speed.offset # (float64) 0.0
+speed.unit # (str) cm/s
+speed.data # (Dataset) shape (20684,); dtype float64
+# speed.data[:] # Access all data
+# speed.data[0:n] # Access first n elements
+speed.timestamps # (Dataset) shape (20684,); dtype float64
+# speed.timestamps[:] # Access all data
+# speed.timestamps[0:n] # Access first n elements
+speed.timestamps_unit # (str) seconds
+speed.interval # (int) 1
+teleport = time_series["teleport"]
+teleport # (TimeSeries)
+teleport.resolution # (float64) -1.0
+teleport.comments # (str) no comments
+teleport.description # (str) end of a trial, i.e. entry into the intertrial interval
+teleport.conversion # (float64) 1.0
+teleport.offset # (float64) 0.0
+teleport.unit # (str) integer
+teleport.data # (Dataset) shape (20684,); dtype float64
+# teleport.data[:] # Access all data
+# teleport.data[0:n] # Access first n elements
+teleport.timestamps # (Dataset) shape (20684,); dtype float64
+# teleport.timestamps[:] # Access all data
+# teleport.timestamps[0:n] # Access first n elements
+teleport.timestamps_unit # (str) seconds
+teleport.interval # (int) 1
+trial_number = time_series["trial number"]
+trial_number # (TimeSeries)
+trial_number.resolution # (float64) -1.0
+trial_number.comments # (str) no comments
+trial_number.description # (str) trial number, where each trial is a lap of the track
+trial_number.conversion # (float64) 1.0
+trial_number.offset # (float64) 0.0
+trial_number.unit # (str) integer
+trial_number.data # (Dataset) shape (20684,); dtype float64
+# trial_number.data[:] # Access all data
+# trial_number.data[0:n] # Access first n elements
+trial_number.timestamps # (Dataset) shape (20684,); dtype float64
+# trial_number.timestamps[:] # Access all data
+# trial_number.timestamps[0:n] # Access first n elements
+trial_number.timestamps_unit # (str) seconds
+trial_number.interval # (int) 1
+trial_start = time_series["trial_start"]
+trial_start # (TimeSeries)
+trial_start.resolution # (float64) -1.0
+trial_start.comments # (str) no comments
+trial_start.description # (str) start of a trial, i.e. entry to the linear track
+trial_start.conversion # (float64) 1.0
+trial_start.offset # (float64) 0.0
+trial_start.unit # (str) integer
+trial_start.data # (Dataset) shape (20684,); dtype float64
+# trial_start.data[:] # Access all data
+# trial_start.data[0:n] # Access first n elements
+trial_start.timestamps # (Dataset) shape (20684,); dtype float64
+# trial_start.timestamps[:] # Access all data
+# trial_start.timestamps[0:n] # Access first n elements
+trial_start.timestamps_unit # (str) seconds
+trial_start.interval # (int) 1
+ophys = processing["ophys"]
+ophys # (ProcessingModule)
+ophys.description # (str) optical physiology processed data
+ophys.data_interfaces # (LabelledDict)
+data_interfaces = ophys.data_interfaces
+Backgrounds_0 = data_interfaces["Backgrounds_0"]
+Backgrounds_0 # (Images)
+Backgrounds_0.description # (str) no description
+Backgrounds_0.images # (LabelledDict)
+images = Backgrounds_0.images
+Vcorr = images["Vcorr"]
+Vcorr # (GrayscaleImage)
+max_proj = images["max_proj"]
+max_proj # (GrayscaleImage)
+meanImg = images["meanImg"]
+meanImg # (GrayscaleImage)
+Deconvolved = data_interfaces["Deconvolved"]
+Deconvolved # (Fluorescence)
+Deconvolved.roi_response_series # (LabelledDict)
+roi_response_series = Deconvolved.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+Fluorescence = data_interfaces["Fluorescence"]
+Fluorescence # (Fluorescence)
+Fluorescence.roi_response_series # (LabelledDict)
+roi_response_series = Fluorescence.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+ImageSegmentation = data_interfaces["ImageSegmentation"]
+ImageSegmentation # (ImageSegmentation)
+ImageSegmentation.plane_segmentations # (LabelledDict)
+plane_segmentations = ImageSegmentation.plane_segmentations
+PlaneSegmentation = plane_segmentations["PlaneSegmentation"]
+PlaneSegmentation # (PlaneSegmentation)
+PlaneSegmentation.description # (str) suite2p output
+PlaneSegmentation.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+PlaneSegmentation.columns # (tuple)
+PlaneSegmentation.reference_images # (list)
+PlaneSegmentation.id # (ElementIdentifiers)
+PlaneSegmentation.imaging_plane # (ImagingPlane)
+PlaneSegmentation.imaging_plane.optical_channel # (list)
+PlaneSegmentation.imaging_plane.description # (str) standard
+PlaneSegmentation.imaging_plane.excitation_lambda # (float64) 920.0
+PlaneSegmentation.imaging_plane.imaging_rate # (float64) 15.5078125
+PlaneSegmentation.imaging_plane.indicator # (str) GCaMP7f
+PlaneSegmentation.imaging_plane.location # (str) hippocampus, CA1
+PlaneSegmentation.imaging_plane.conversion # (float) 1.0
+PlaneSegmentation.imaging_plane.unit # (str) meters
+PlaneSegmentation.imaging_plane.origin_coords_unit # (str) meters
+PlaneSegmentation.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# PlaneSegmentation.imaging_plane.grid_spacing[:] # Access all data
+# PlaneSegmentation.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of PlaneSegmentation.imaging_plane.grid_spacing: [2. 2.]
+PlaneSegmentation.imaging_plane.grid_spacing_unit # (str) microns
+PlaneSegmentation.imaging_plane.device # (Device)
+PlaneSegmentation.imaging_plane.device.description # (str) My two-photon microscope
+PlaneSegmentation.imaging_plane.device.manufacturer # (str) Neurolabware
+# PlaneSegmentation.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# PlaneSegmentation.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+PlaneSegmentation.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# PlaneSegmentation.pixel_mask_index[0] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[1] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[2] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[3] # (ndarray)
+# ...
+PlaneSegmentation.iscell # (VectorData) two columns - iscell & probcell
+PlaneSegmentation.planeIdx # (VectorData) rec plane for each roi
+Neuropil = data_interfaces["Neuropil"]
+Neuropil # (Fluorescence)
+Neuropil.roi_response_series # (LabelledDict)
+roi_response_series = Neuropil.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+nwb.devices # (LabelledDict)
+devices = nwb.devices
+Microscope = devices["Microscope"]
+Microscope # (Device)
+Microscope.description # (str) My two-photon microscope
+Microscope.manufacturer # (str) Neurolabware
+nwb.imaging_planes # (LabelledDict)
+imaging_planes = nwb.imaging_planes
+ImagingPlane = imaging_planes["ImagingPlane"]
+ImagingPlane # (ImagingPlane)
+ImagingPlane.optical_channel # (list)
+ImagingPlane.description # (str) standard
+ImagingPlane.excitation_lambda # (float64) 920.0
+ImagingPlane.imaging_rate # (float64) 15.5078125
+ImagingPlane.indicator # (str) GCaMP7f
+ImagingPlane.location # (str) hippocampus, CA1
+ImagingPlane.conversion # (float) 1.0
+ImagingPlane.unit # (str) meters
+ImagingPlane.origin_coords_unit # (str) meters
+ImagingPlane.grid_spacing # (Dataset) shape (2,); dtype float64
+# ImagingPlane.grid_spacing[:] # Access all data
+# ImagingPlane.grid_spacing[0:n] # Access first n elements
+# First few values of ImagingPlane.grid_spacing: [2. 2.]
+ImagingPlane.grid_spacing_unit # (str) microns
+ImagingPlane.device # (Device)
+ImagingPlane.device.description # (str) My two-photon microscope
+ImagingPlane.device.manufacturer # (str) Neurolabware
+nwb.session_id # (str) 03
+nwb.subject # (Subject)
+nwb.subject.age__reference # (str) birth
+nwb.subject.sex # (str) M
+nwb.subject.species # (str) Mus musculus
+nwb.subject.subject_id # (str) m11
+nwb.subject.date_of_birth # (datetime) 2022-09-20T00:00:00-07:00
+Total prompt tokens: 30016 + 0
+Total completion tokens: 696 + 0
+
+=========================================
+
+execute_command 'python tools_cli.py nwb-file-info 001361 https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ --version 0.250406.0045' (requires approval):
+Command executed successfully
+STDOUT:
+# This script shows how to load the NWB file at https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/ in Python using PyNWB
+
+import pynwb
+import h5py
+import remfile
+
+# Load
+url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+nwb # (NWBFile)
+nwb.session_description # (str) processed suite2p data
+nwb.identifier # (str) /data/InVivoDA/GCAMP11/23_02_2023/Env1_LocationB_to_A
+nwb.session_start_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.timestamps_reference_time # (datetime) 2023-02-23T00:00:00-08:00
+nwb.file_create_date # (list) [datetime.datetime(2025, 3, 12, 23, 45, 29, 830157, tzinfo=tzoffset(None, -25200))]
+nwb.experimenter # (tuple) ['Mari Sosa']
+nwb.acquisition # (LabelledDict)
+acquisition = nwb.acquisition
+TwoPhotonSeries = acquisition["TwoPhotonSeries"]
+TwoPhotonSeries # (TwoPhotonSeries)
+TwoPhotonSeries.starting_time # (float64) 0.0
+TwoPhotonSeries.rate # (float64) 15.5078125
+TwoPhotonSeries.resolution # (float64) -1.0
+TwoPhotonSeries.comments # (str) no comments
+TwoPhotonSeries.description # (str) no description
+TwoPhotonSeries.conversion # (float64) 1.0
+TwoPhotonSeries.offset # (float64) 0.0
+TwoPhotonSeries.unit # (str) volt
+TwoPhotonSeries.data # (Dataset) shape (1, 1, 1); dtype float64
+# TwoPhotonSeries.data[:, :, :] # Access all data
+# TwoPhotonSeries.data[0, :, :] # Access first plane
+TwoPhotonSeries.starting_time_unit # (str) seconds
+TwoPhotonSeries.dimension # (Dataset) shape (2,); dtype int64
+# TwoPhotonSeries.dimension[:] # Access all data
+# TwoPhotonSeries.dimension[0:n] # Access first n elements
+# First few values of TwoPhotonSeries.dimension: [512 796]
+TwoPhotonSeries.format # (str) raw
+TwoPhotonSeries.imaging_plane # (ImagingPlane)
+TwoPhotonSeries.imaging_plane.optical_channel # (list)
+TwoPhotonSeries.imaging_plane.description # (str) standard
+TwoPhotonSeries.imaging_plane.excitation_lambda # (float64) 920.0
+TwoPhotonSeries.imaging_plane.imaging_rate # (float64) 15.5078125
+TwoPhotonSeries.imaging_plane.indicator # (str) GCaMP7f
+TwoPhotonSeries.imaging_plane.location # (str) hippocampus, CA1
+TwoPhotonSeries.imaging_plane.conversion # (float) 1.0
+TwoPhotonSeries.imaging_plane.unit # (str) meters
+TwoPhotonSeries.imaging_plane.origin_coords_unit # (str) meters
+TwoPhotonSeries.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# TwoPhotonSeries.imaging_plane.grid_spacing[:] # Access all data
+# TwoPhotonSeries.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of TwoPhotonSeries.imaging_plane.grid_spacing: [2. 2.]
+TwoPhotonSeries.imaging_plane.grid_spacing_unit # (str) microns
+TwoPhotonSeries.imaging_plane.device # (Device)
+TwoPhotonSeries.imaging_plane.device.description # (str) My two-photon microscope
+TwoPhotonSeries.imaging_plane.device.manufacturer # (str) Neurolabware
+nwb.processing # (LabelledDict)
+processing = nwb.processing
+behavior = processing["behavior"]
+behavior # (ProcessingModule)
+behavior.description # (str) behavior data
+behavior.data_interfaces # (LabelledDict)
+data_interfaces = behavior.data_interfaces
+BehavioralTimeSeries = data_interfaces["BehavioralTimeSeries"]
+BehavioralTimeSeries # (BehavioralTimeSeries)
+BehavioralTimeSeries.time_series # (LabelledDict)
+time_series = BehavioralTimeSeries.time_series
+Reward = time_series["Reward"]
+Reward # (TimeSeries)
+Reward.resolution # (float64) -1.0
+Reward.comments # (str) no comments
+Reward.description # (str) reward delivery
+Reward.conversion # (float64) 1.0
+Reward.offset # (float64) 0.0
+Reward.unit # (str) mL
+Reward.data # (Dataset) shape (69,); dtype float64
+# Reward.data[:] # Access all data
+# Reward.data[0:n] # Access first n elements
+Reward.timestamps # (Dataset) shape (69,); dtype float64
+# Reward.timestamps[:] # Access all data
+# Reward.timestamps[0:n] # Access first n elements
+Reward.timestamps_unit # (str) seconds
+Reward.interval # (int) 1
+autoreward = time_series["autoreward"]
+autoreward # (TimeSeries)
+autoreward.resolution # (float64) -1.0
+autoreward.comments # (str) no comments
+autoreward.description # (str) whether trial was automatically rewarded if the subject failed to lick
+autoreward.conversion # (float64) 1.0
+autoreward.offset # (float64) 0.0
+autoreward.unit # (str) integer
+autoreward.data # (Dataset) shape (20684,); dtype float64
+# autoreward.data[:] # Access all data
+# autoreward.data[0:n] # Access first n elements
+autoreward.timestamps # (Dataset) shape (20684,); dtype float64
+# autoreward.timestamps[:] # Access all data
+# autoreward.timestamps[0:n] # Access first n elements
+autoreward.timestamps_unit # (str) seconds
+autoreward.interval # (int) 1
+environment = time_series["environment"]
+environment # (TimeSeries)
+environment.resolution # (float64) -1.0
+environment.comments # (str) no comments
+environment.description # (str) Virtual reality environment
+environment.conversion # (float64) 1.0
+environment.offset # (float64) 0.0
+environment.unit # (str) AU
+environment.data # (Dataset) shape (20684,); dtype float64
+# environment.data[:] # Access all data
+# environment.data[0:n] # Access first n elements
+environment.timestamps # (Dataset) shape (20684,); dtype float64
+# environment.timestamps[:] # Access all data
+# environment.timestamps[0:n] # Access first n elements
+environment.timestamps_unit # (str) seconds
+environment.interval # (int) 1
+lick = time_series["lick"]
+lick # (TimeSeries)
+lick.resolution # (float64) -1.0
+lick.comments # (str) no comments
+lick.description # (str) lick detection by capacitive sensor, cumulative per imaging frame
+lick.conversion # (float64) 1.0
+lick.offset # (float64) 0.0
+lick.unit # (str) AU
+lick.data # (Dataset) shape (20684,); dtype float64
+# lick.data[:] # Access all data
+# lick.data[0:n] # Access first n elements
+lick.timestamps # (Dataset) shape (20684,); dtype float64
+# lick.timestamps[:] # Access all data
+# lick.timestamps[0:n] # Access first n elements
+lick.timestamps_unit # (str) seconds
+lick.interval # (int) 1
+position = time_series["position"]
+position # (TimeSeries)
+position.resolution # (float64) -1.0
+position.comments # (str) no comments
+position.description # (str) Position in a virtual linear track
+position.conversion # (float64) 1.0
+position.offset # (float64) 0.0
+position.unit # (str) cm
+position.data # (Dataset) shape (20684,); dtype float64
+# position.data[:] # Access all data
+# position.data[0:n] # Access first n elements
+position.timestamps # (Dataset) shape (20684,); dtype float64
+# position.timestamps[:] # Access all data
+# position.timestamps[0:n] # Access first n elements
+position.timestamps_unit # (str) seconds
+position.interval # (int) 1
+reward_zone = time_series["reward_zone"]
+reward_zone # (TimeSeries)
+reward_zone.resolution # (float64) -1.0
+reward_zone.comments # (str) no comments
+reward_zone.description # (str) reward zone entry (binary)
+reward_zone.conversion # (float64) 1.0
+reward_zone.offset # (float64) 0.0
+reward_zone.unit # (str) integer
+reward_zone.data # (Dataset) shape (20684,); dtype float64
+# reward_zone.data[:] # Access all data
+# reward_zone.data[0:n] # Access first n elements
+reward_zone.timestamps # (Dataset) shape (20684,); dtype float64
+# reward_zone.timestamps[:] # Access all data
+# reward_zone.timestamps[0:n] # Access first n elements
+reward_zone.timestamps_unit # (str) seconds
+reward_zone.interval # (int) 1
+scanning = time_series["scanning"]
+scanning # (TimeSeries)
+scanning.resolution # (float64) -1.0
+scanning.comments # (str) no comments
+scanning.description # (str) whether scanning occurred to collect ophys data
+scanning.conversion # (float64) 1.0
+scanning.offset # (float64) 0.0
+scanning.unit # (str) integer
+scanning.data # (Dataset) shape (20684,); dtype float64
+# scanning.data[:] # Access all data
+# scanning.data[0:n] # Access first n elements
+scanning.timestamps # (Dataset) shape (20684,); dtype float64
+# scanning.timestamps[:] # Access all data
+# scanning.timestamps[0:n] # Access first n elements
+scanning.timestamps_unit # (str) seconds
+scanning.interval # (int) 1
+speed = time_series["speed"]
+speed # (TimeSeries)
+speed.resolution # (float64) -1.0
+speed.comments # (str) no comments
+speed.description # (str) the speed of the subject measured over time
+speed.conversion # (float64) 1.0
+speed.offset # (float64) 0.0
+speed.unit # (str) cm/s
+speed.data # (Dataset) shape (20684,); dtype float64
+# speed.data[:] # Access all data
+# speed.data[0:n] # Access first n elements
+speed.timestamps # (Dataset) shape (20684,); dtype float64
+# speed.timestamps[:] # Access all data
+# speed.timestamps[0:n] # Access first n elements
+speed.timestamps_unit # (str) seconds
+speed.interval # (int) 1
+teleport = time_series["teleport"]
+teleport # (TimeSeries)
+teleport.resolution # (float64) -1.0
+teleport.comments # (str) no comments
+teleport.description # (str) end of a trial, i.e. entry into the intertrial interval
+teleport.conversion # (float64) 1.0
+teleport.offset # (float64) 0.0
+teleport.unit # (str) integer
+teleport.data # (Dataset) shape (20684,); dtype float64
+# teleport.data[:] # Access all data
+# teleport.data[0:n] # Access first n elements
+teleport.timestamps # (Dataset) shape (20684,); dtype float64
+# teleport.timestamps[:] # Access all data
+# teleport.timestamps[0:n] # Access first n elements
+teleport.timestamps_unit # (str) seconds
+teleport.interval # (int) 1
+trial_number = time_series["trial number"]
+trial_number # (TimeSeries)
+trial_number.resolution # (float64) -1.0
+trial_number.comments # (str) no comments
+trial_number.description # (str) trial number, where each trial is a lap of the track
+trial_number.conversion # (float64) 1.0
+trial_number.offset # (float64) 0.0
+trial_number.unit # (str) integer
+trial_number.data # (Dataset) shape (20684,); dtype float64
+# trial_number.data[:] # Access all data
+# trial_number.data[0:n] # Access first n elements
+trial_number.timestamps # (Dataset) shape (20684,); dtype float64
+# trial_number.timestamps[:] # Access all data
+# trial_number.timestamps[0:n] # Access first n elements
+trial_number.timestamps_unit # (str) seconds
+trial_number.interval # (int) 1
+trial_start = time_series["trial_start"]
+trial_start # (TimeSeries)
+trial_start.resolution # (float64) -1.0
+trial_start.comments # (str) no comments
+trial_start.description # (str) start of a trial, i.e. entry to the linear track
+trial_start.conversion # (float64) 1.0
+trial_start.offset # (float64) 0.0
+trial_start.unit # (str) integer
+trial_start.data # (Dataset) shape (20684,); dtype float64
+# trial_start.data[:] # Access all data
+# trial_start.data[0:n] # Access first n elements
+trial_start.timestamps # (Dataset) shape (20684,); dtype float64
+# trial_start.timestamps[:] # Access all data
+# trial_start.timestamps[0:n] # Access first n elements
+trial_start.timestamps_unit # (str) seconds
+trial_start.interval # (int) 1
+ophys = processing["ophys"]
+ophys # (ProcessingModule)
+ophys.description # (str) optical physiology processed data
+ophys.data_interfaces # (LabelledDict)
+data_interfaces = ophys.data_interfaces
+Backgrounds_0 = data_interfaces["Backgrounds_0"]
+Backgrounds_0 # (Images)
+Backgrounds_0.description # (str) no description
+Backgrounds_0.images # (LabelledDict)
+images = Backgrounds_0.images
+Vcorr = images["Vcorr"]
+Vcorr # (GrayscaleImage)
+max_proj = images["max_proj"]
+max_proj # (GrayscaleImage)
+meanImg = images["meanImg"]
+meanImg # (GrayscaleImage)
+Deconvolved = data_interfaces["Deconvolved"]
+Deconvolved # (Fluorescence)
+Deconvolved.roi_response_series # (LabelledDict)
+roi_response_series = Deconvolved.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+Fluorescence = data_interfaces["Fluorescence"]
+Fluorescence # (Fluorescence)
+Fluorescence.roi_response_series # (LabelledDict)
+roi_response_series = Fluorescence.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+ImageSegmentation = data_interfaces["ImageSegmentation"]
+ImageSegmentation # (ImageSegmentation)
+ImageSegmentation.plane_segmentations # (LabelledDict)
+plane_segmentations = ImageSegmentation.plane_segmentations
+PlaneSegmentation = plane_segmentations["PlaneSegmentation"]
+PlaneSegmentation # (PlaneSegmentation)
+PlaneSegmentation.description # (str) suite2p output
+PlaneSegmentation.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+PlaneSegmentation.columns # (tuple)
+PlaneSegmentation.reference_images # (list)
+PlaneSegmentation.id # (ElementIdentifiers)
+PlaneSegmentation.imaging_plane # (ImagingPlane)
+PlaneSegmentation.imaging_plane.optical_channel # (list)
+PlaneSegmentation.imaging_plane.description # (str) standard
+PlaneSegmentation.imaging_plane.excitation_lambda # (float64) 920.0
+PlaneSegmentation.imaging_plane.imaging_rate # (float64) 15.5078125
+PlaneSegmentation.imaging_plane.indicator # (str) GCaMP7f
+PlaneSegmentation.imaging_plane.location # (str) hippocampus, CA1
+PlaneSegmentation.imaging_plane.conversion # (float) 1.0
+PlaneSegmentation.imaging_plane.unit # (str) meters
+PlaneSegmentation.imaging_plane.origin_coords_unit # (str) meters
+PlaneSegmentation.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# PlaneSegmentation.imaging_plane.grid_spacing[:] # Access all data
+# PlaneSegmentation.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of PlaneSegmentation.imaging_plane.grid_spacing: [2. 2.]
+PlaneSegmentation.imaging_plane.grid_spacing_unit # (str) microns
+PlaneSegmentation.imaging_plane.device # (Device)
+PlaneSegmentation.imaging_plane.device.description # (str) My two-photon microscope
+PlaneSegmentation.imaging_plane.device.manufacturer # (str) Neurolabware
+# PlaneSegmentation.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# PlaneSegmentation.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+PlaneSegmentation.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# PlaneSegmentation.pixel_mask_index[0] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[1] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[2] # (ndarray)
+# PlaneSegmentation.pixel_mask_index[3] # (ndarray)
+# ...
+PlaneSegmentation.iscell # (VectorData) two columns - iscell & probcell
+PlaneSegmentation.planeIdx # (VectorData) rec plane for each roi
+Neuropil = data_interfaces["Neuropil"]
+Neuropil # (Fluorescence)
+Neuropil.roi_response_series # (LabelledDict)
+roi_response_series = Neuropil.roi_response_series
+plane0 = roi_response_series["plane0"]
+plane0 # (RoiResponseSeries)
+plane0.starting_time # (float64) 0.0
+plane0.rate # (float64) 15.5078125
+plane0.resolution # (float64) -1.0
+plane0.comments # (str) no comments
+plane0.description # (str) no description
+plane0.conversion # (float64) 1.0
+plane0.offset # (float64) 0.0
+plane0.unit # (str) lumens
+plane0.data # (Dataset) shape (19818, 349); dtype float32
+# plane0.data[:, :] # Access all data
+# plane0.data[0:n, :] # Access first n rows
+# plane0.data[:, 0:n] # Access first n columns
+plane0.starting_time_unit # (str) seconds
+plane0.rois # (DynamicTableRegion)
+plane0.rois.description # (str) ROIs for plane0
+plane0.rois.table # (PlaneSegmentation)
+plane0.rois.table.description # (str) suite2p output
+plane0.rois.table.colnames # (tuple) ['pixel_mask', 'iscell', 'planeIdx']
+plane0.rois.table.columns # (tuple)
+plane0.rois.table.reference_images # (list)
+plane0.rois.table.id # (ElementIdentifiers)
+plane0.rois.table.imaging_plane # (ImagingPlane)
+plane0.rois.table.imaging_plane.optical_channel # (list)
+plane0.rois.table.imaging_plane.description # (str) standard
+plane0.rois.table.imaging_plane.excitation_lambda # (float64) 920.0
+plane0.rois.table.imaging_plane.imaging_rate # (float64) 15.5078125
+plane0.rois.table.imaging_plane.indicator # (str) GCaMP7f
+plane0.rois.table.imaging_plane.location # (str) hippocampus, CA1
+plane0.rois.table.imaging_plane.conversion # (float) 1.0
+plane0.rois.table.imaging_plane.unit # (str) meters
+plane0.rois.table.imaging_plane.origin_coords_unit # (str) meters
+plane0.rois.table.imaging_plane.grid_spacing # (Dataset) shape (2,); dtype float64
+# plane0.rois.table.imaging_plane.grid_spacing[:] # Access all data
+# plane0.rois.table.imaging_plane.grid_spacing[0:n] # Access first n elements
+# First few values of plane0.rois.table.imaging_plane.grid_spacing: [2. 2.]
+plane0.rois.table.imaging_plane.grid_spacing_unit # (str) microns
+plane0.rois.table.imaging_plane.device # (Device)
+plane0.rois.table.imaging_plane.device.description # (str) My two-photon microscope
+plane0.rois.table.imaging_plane.device.manufacturer # (str) Neurolabware
+# plane0.rois.table.to_dataframe() # (DataFrame) Convert to a pandas DataFrame with 349 rows and 4 columns
+# plane0.rois.table.to_dataframe().head() # (DataFrame) Show the first few rows of the pandas DataFrame
+plane0.rois.table.pixel_mask # (VectorIndex) Index for VectorData 'pixel_mask'
+# plane0.rois.table.pixel_mask_index[0] # (ndarray)
+# plane0.rois.table.pixel_mask_index[1] # (ndarray)
+# plane0.rois.table.pixel_mask_index[2] # (ndarray)
+# plane0.rois.table.pixel_mask_index[3] # (ndarray)
+# ...
+plane0.rois.table.iscell # (VectorData) two columns - iscell & probcell
+plane0.rois.table.planeIdx # (VectorData) rec plane for each roi
+nwb.devices # (LabelledDict)
+devices = nwb.devices
+Microscope = devices["Microscope"]
+Microscope # (Device)
+Microscope.description # (str) My two-photon microscope
+Microscope.manufacturer # (str) Neurolabware
+nwb.imaging_planes # (LabelledDict)
+imaging_planes = nwb.imaging_planes
+ImagingPlane = imaging_planes["ImagingPlane"]
+ImagingPlane # (ImagingPlane)
+ImagingPlane.optical_channel # (list)
+ImagingPlane.description # (str) standard
+ImagingPlane.excitation_lambda # (float64) 920.0
+ImagingPlane.imaging_rate # (float64) 15.5078125
+ImagingPlane.indicator # (str) GCaMP7f
+ImagingPlane.location # (str) hippocampus, CA1
+ImagingPlane.conversion # (float) 1.0
+ImagingPlane.unit # (str) meters
+ImagingPlane.origin_coords_unit # (str) meters
+ImagingPlane.grid_spacing # (Dataset) shape (2,); dtype float64
+# ImagingPlane.grid_spacing[:] # Access all data
+# ImagingPlane.grid_spacing[0:n] # Access first n elements
+# First few values of ImagingPlane.grid_spacing: [2. 2.]
+ImagingPlane.grid_spacing_unit # (str) microns
+ImagingPlane.device # (Device)
+ImagingPlane.device.description # (str) My two-photon microscope
+ImagingPlane.device.manufacturer # (str) Neurolabware
+nwb.session_id # (str) 03
+nwb.subject # (Subject)
+nwb.subject.age__reference # (str) birth
+nwb.subject.sex # (str) M
+nwb.subject.species # (str) Mus musculus
+nwb.subject.subject_id # (str) m11
+nwb.subject.date_of_birth # (datetime) 2022-09-20T00:00:00-07:00
+
+STDERR:
+/home/magland/miniconda3/envs/dev/lib/python3.12/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+/home/magland/src/dandi-ai-notebooks-3/packages/get-nwbfile-info/src/get_nwbfile_info/core.py:346: UserWarning: Warning: Duplicate entries found in the results.
+  warnings.warn("Warning: Duplicate entries found in the results.")
+
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 8
+Submitting completion request...
+Processing response...
+I now have a highly detailed exploration of the NWB file's structure, groups, and datasets, as well as its recommended loading code and shapes of key data arrays. This is sufficient for both exploratory script creation and for designing high-quality, well-annotated notebook cells.
+
+Next, I need to explore the contents further — especially to examine shapes/summary/statistics/plots from a few datasets (e.g., behavioral position, speed, reward data; cell fluorescence response and segmentation data). This will be accomplished by authoring and executing Python scripts in the explore/ directory, which generate both summary text and well-designed plots (as PNGs) for review.
+
+First, I will create a script that loads this NWB file and outputs summary information about:
+- Overall session metadata (subject, session, description, timestamps, etc)
+- Summary stats (shape, min, max, mean) for behavioral datasets: position, speed, reward
+- Shape of the key imaging (fluorescence) datasets and their ROIs
+
+This will help decide what is worth plotting in more detail. I will begin by creating such a script.
+
+Tool: write_to_file
+Params: {'path': 'explore/summary_info.py', 'content': '"""\nSummary information for NWB file sub-m11_ses-03_behavior+ophys.nwb\nFetches basic session metadata, explores key behavioral time series (position, speed, reward, etc.), and reports overall shape of ROI/fluorescence data.\nThis script is a precursor to plotting and deep dives.\n"""\n\nimport pynwb\nimport h5py\nimport remfile\nimport numpy as np\n\n# -- NWB file parameters --\nnwb_url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\n\nprint("# Loading remote NWB file:", nwb_url)\nremote_file = remfile.File(nwb_url)\nh5_file = h5py.File(remote_file)\nio = pynwb.NWBHDF5IO(file=h5_file)\nnwb = io.read()\n\n# --- Session metadata ---\nprint(f"Session ID: {nwb.session_id}")\nprint(f"Subject ID: {nwb.subject.subject_id}, Age: {getattr(nwb.subject, \'age__reference\', \'n/a\')}, Sex: {nwb.subject.sex}, Species: {nwb.subject.species}")\nprint(f"Session Description: {nwb.session_description}")\nprint(f"Session Start Time: {nwb.session_start_time}")\nprint(f"Experimenter: {nwb.experimenter}")\nprint("-"*40)\n\n# --- BehavioralTimeSeries (behavior) ---\nbehavior = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series\nfor k in behavior:\n    ts = behavior[k]\n    print(f"Behavioral Timeseries \'{k}\': {ts.description}; Unit: {ts.unit}; Data shape: {ts.data.shape}")\n    # summary statistics for data\n    try:\n        arr = ts.data[:]\n        min_v = np.nanmin(arr)\n        max_v = np.nanmax(arr)\n        mean_v = np.nanmean(arr)\n        print(f"  Min: {min_v:.4f}, Max: {max_v:.4f}, Mean: {mean_v:.4f}")\n    except Exception as e:\n        print(f"  Could not compute stats for \'{k}\': {e}")\n    # summary stats for timestamps\n    try:\n        tarr = ts.timestamps[:]\n        print(f"  Timestamps: start={tarr[:1]}, end={tarr[-1:]}, count={tarr.size}")\n    except Exception as e:\n        print(f"  Could not access timestamps for \'{k}\': {e}")\n    print("-"*30)\n\n# --- Fluorescence data ---\ntry:\n    fluorescence = nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"]\n    print(f"Fluorescence \'plane0\' data shape: {fluorescence.data.shape}, unit: {fluorescence.unit}")\n    print(f"ROI count: {fluorescence.data.shape[1]}, Frames: {fluorescence.data.shape[0]}")\nexcept Exception as e:\n    print("Could not load fluorescence data:", e)\n\n# --- ROI summary (PlaneSegmentation dynamic table) ---\ntry:\n    ps_table = nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table\n    df_head = ps_table.to_dataframe().head()\n    print("ROI Segmentation table (first few rows):")\n    print(df_head)\nexcept Exception as e:\n    print("Could not load ROI segmentation table:", e)\n\nio.close()'}
+================================
+Content to be written to explore/summary_info.py:
+"""
+Summary information for NWB file sub-m11_ses-03_behavior+ophys.nwb
+Fetches basic session metadata, explores key behavioral time series (position, speed, reward, etc.), and reports overall shape of ROI/fluorescence data.
+This script is a precursor to plotting and deep dives.
+"""
+
+import pynwb
+import h5py
+import remfile
+import numpy as np
+
+# -- NWB file parameters --
+nwb_url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+
+print("# Loading remote NWB file:", nwb_url)
+remote_file = remfile.File(nwb_url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+# --- Session metadata ---
+print(f"Session ID: {nwb.session_id}")
+print(f"Subject ID: {nwb.subject.subject_id}, Age: {getattr(nwb.subject, 'age__reference', 'n/a')}, Sex: {nwb.subject.sex}, Species: {nwb.subject.species}")
+print(f"Session Description: {nwb.session_description}")
+print(f"Session Start Time: {nwb.session_start_time}")
+print(f"Experimenter: {nwb.experimenter}")
+print("-"*40)
+
+# --- BehavioralTimeSeries (behavior) ---
+behavior = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series
+for k in behavior:
+    ts = behavior[k]
+    print(f"Behavioral Timeseries '{k}': {ts.description}; Unit: {ts.unit}; Data shape: {ts.data.shape}")
+    # summary statistics for data
+    try:
+        arr = ts.data[:]
+        min_v = np.nanmin(arr)
+        max_v = np.nanmax(arr)
+        mean_v = np.nanmean(arr)
+        print(f"  Min: {min_v:.4f}, Max: {max_v:.4f}, Mean: {mean_v:.4f}")
+    except Exception as e:
+        print(f"  Could not compute stats for '{k}': {e}")
+    # summary stats for timestamps
+    try:
+        tarr = ts.timestamps[:]
+        print(f"  Timestamps: start={tarr[:1]}, end={tarr[-1:]}, count={tarr.size}")
+    except Exception as e:
+        print(f"  Could not access timestamps for '{k}': {e}")
+    print("-"*30)
+
+# --- Fluorescence data ---
+try:
+    fluorescence = nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"]
+    print(f"Fluorescence 'plane0' data shape: {fluorescence.data.shape}, unit: {fluorescence.unit}")
+    print(f"ROI count: {fluorescence.data.shape[1]}, Frames: {fluorescence.data.shape[0]}")
+except Exception as e:
+    print("Could not load fluorescence data:", e)
+
+# --- ROI summary (PlaneSegmentation dynamic table) ---
+try:
+    ps_table = nwb.processing["ophys"].data_interfaces["Fluorescence"].roi_response_series["plane0"].rois.table
+    df_head = ps_table.to_dataframe().head()
+    print("ROI Segmentation table (first few rows):")
+    print(df_head)
+except Exception as e:
+    print("Could not load ROI segmentation table:", e)
+
+io.close()
+================================
+Total prompt tokens: 48771 + 0
+Total completion tokens: 1696 + 0
+
+=========================================
+
+write_to_file for 'explore/summary_info.py':
+Successfully wrote 2688 characters to explore/summary_info.py
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 10
+Submitting completion request...
+Processing response...
+Now I will execute the summary script to output text-based information about the NWB file: session metadata, behavioral series summaries, and ROI/fluorescence data shapes. This helps determine which variables are well-populated and suitable for visualization in the next exploratory scripts.
+
+Tool: execute_command
+Params: {'command': 'python explore/summary_info.py', 'requires_approval': 'false', 'timeout': '90'}
+================================
+Command to be executed
+python explore/summary_info.py
+================================
+/home/magland/miniconda3/envs/dev/lib/python3.12/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+# Loading remote NWB file: https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/
+Session ID: 03
+Subject ID: m11, Age: birth, Sex: M, Species: Mus musculus
+Session Description: processed suite2p data
+Session Start Time: 2023-02-23 00:00:00-08:00
+Experimenter: ('Mari Sosa',)
+----------------------------------------
+Behavioral Timeseries 'Reward': reward delivery; Unit: mL; Data shape: (69,)
+  Min: 0.0040, Max: 0.0040, Mean: 0.0040
+  Timestamps: start=[53.77934509], end=[1329.52342569], count=69
+------------------------------
+Behavioral Timeseries 'autoreward': whether trial was automatically rewarded if the subject failed to lick; Unit: integer; Data shape: (20684,)
+  Min: 0.0000, Max: 0.0000, Mean: 0.0000
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'environment': Virtual reality environment; Unit: AU; Data shape: (20684,)
+  Min: -1.0000, Max: 0.0000, Mean: -0.0064
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'lick': lick detection by capacitive sensor, cumulative per imaging frame; Unit: AU; Data shape: (20684,)
+  Min: 0.0000, Max: 5.0000, Mean: 0.3555
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'position': Position in a virtual linear track; Unit: cm; Data shape: (20684,)
+  Min: -500.0000, Max: 450.5672, Mean: 141.2249
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'reward_zone': reward zone entry (binary); Unit: integer; Data shape: (20684,)
+  Min: 0.0000, Max: 6.0000, Mean: 0.0417
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'scanning': whether scanning occurred to collect ophys data; Unit: integer; Data shape: (20684,)
+  Min: -1.0000, Max: 1.0000, Mean: 0.9872
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'speed': the speed of the subject measured over time; Unit: cm/s; Data shape: (20684,)
+  Min: -2.0807, Max: 76.3613, Mean: 44.3543
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'teleport': end of a trial, i.e. entry into the intertrial interval; Unit: integer; Data shape: (20684,)
+  Min: 0.0000, Max: 1.0000, Mean: 0.0039
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'trial number': trial number, where each trial is a lap of the track; Unit: integer; Data shape: (20684,)
+  Min: -1.0000, Max: 79.0000, Mean: 38.4635
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'trial_start': start of a trial, i.e. entry to the linear track; Unit: integer; Data shape: (20684,)
+  Min: 0.0000, Max: 1.0000, Mean: 0.0039
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Fluorescence 'plane0' data shape: (19818, 349), unit: lumens
+ROI count: 349, Frames: 19818
+ROI Segmentation table (first few rows):
+                                           pixel_mask  ... planeIdx
+id                                                     ...         
+0   [[136, 471, 11.239327], [136, 472, 12.38877], ...  ...        0
+1   [[164, 400, 15.628908], [164, 401, 17.650463],...  ...        0
+2   [[209, 552, 16.836023], [209, 553, 18.55048], ...  ...        0
+3   [[161, 537, 13.172347], [161, 538, 12.249123],...  ...        0
+4   [[148, 458, 13.488646], [148, 459, 21.197554],...  ...        0
+
+[5 rows x 3 columns]
+Total prompt tokens: 68600 + 0
+Total completion tokens: 1793 + 0
+
+=========================================
+
+execute_command 'python explore/summary_info.py' (requires approval):
+Command executed successfully
+STDOUT:
+# Loading remote NWB file: https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/
+Session ID: 03
+Subject ID: m11, Age: birth, Sex: M, Species: Mus musculus
+Session Description: processed suite2p data
+Session Start Time: 2023-02-23 00:00:00-08:00
+Experimenter: ('Mari Sosa',)
+----------------------------------------
+Behavioral Timeseries 'Reward': reward delivery; Unit: mL; Data shape: (69,)
+  Min: 0.0040, Max: 0.0040, Mean: 0.0040
+  Timestamps: start=[53.77934509], end=[1329.52342569], count=69
+------------------------------
+Behavioral Timeseries 'autoreward': whether trial was automatically rewarded if the subject failed to lick; Unit: integer; Data shape: (20684,)
+  Min: 0.0000, Max: 0.0000, Mean: 0.0000
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'environment': Virtual reality environment; Unit: AU; Data shape: (20684,)
+  Min: -1.0000, Max: 0.0000, Mean: -0.0064
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'lick': lick detection by capacitive sensor, cumulative per imaging frame; Unit: AU; Data shape: (20684,)
+  Min: 0.0000, Max: 5.0000, Mean: 0.3555
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'position': Position in a virtual linear track; Unit: cm; Data shape: (20684,)
+  Min: -500.0000, Max: 450.5672, Mean: 141.2249
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'reward_zone': reward zone entry (binary); Unit: integer; Data shape: (20684,)
+  Min: 0.0000, Max: 6.0000, Mean: 0.0417
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'scanning': whether scanning occurred to collect ophys data; Unit: integer; Data shape: (20684,)
+  Min: -1.0000, Max: 1.0000, Mean: 0.9872
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'speed': the speed of the subject measured over time; Unit: cm/s; Data shape: (20684,)
+  Min: -2.0807, Max: 76.3613, Mean: 44.3543
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'teleport': end of a trial, i.e. entry into the intertrial interval; Unit: integer; Data shape: (20684,)
+  Min: 0.0000, Max: 1.0000, Mean: 0.0039
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'trial number': trial number, where each trial is a lap of the track; Unit: integer; Data shape: (20684,)
+  Min: -1.0000, Max: 79.0000, Mean: 38.4635
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Behavioral Timeseries 'trial_start': start of a trial, i.e. entry to the linear track; Unit: integer; Data shape: (20684,)
+  Min: 0.0000, Max: 1.0000, Mean: 0.0039
+  Timestamps: start=[0.], end=[1333.71486146], count=20684
+------------------------------
+Fluorescence 'plane0' data shape: (19818, 349), unit: lumens
+ROI count: 349, Frames: 19818
+ROI Segmentation table (first few rows):
+                                           pixel_mask  ... planeIdx
+id                                                     ...         
+0   [[136, 471, 11.239327], [136, 472, 12.38877], ...  ...        0
+1   [[164, 400, 15.628908], [164, 401, 17.650463],...  ...        0
+2   [[209, 552, 16.836023], [209, 553, 18.55048], ...  ...        0
+3   [[161, 537, 13.172347], [161, 538, 12.249123],...  ...        0
+4   [[148, 458, 13.488646], [148, 459, 21.197554],...  ...        0
+
+[5 rows x 3 columns]
+
+STDERR:
+/home/magland/miniconda3/envs/dev/lib/python3.12/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 12
+Submitting completion request...
+Processing response...
+The summary script ran successfully. Key insights:
+- Behavioral TimeSeries have shapes (20684,) for most signals; Reward has (69,).
+- Behavioral series like position, speed, and lick have reasonable min/max/mean, suggesting good data for plotting.
+- The fluorescence data has shape (19818, 349): frames x ROIs, with 349 ROIs.
+- The ROI segmentation table loads successfully.
+
+Next, I will write a script to generate plots of behavioral variables:
+1. Line plots for position, speed, and lick over time (using only the first 10,000 points for plotting if necessary for clarity/speed).
+2. Histograms for reward delivery times and reward zone entries.
+3. All plots will be saved as PNGs to explore/, not displayed.
+
+After running, I’ll use read_image to examine if the plots are informative enough to potentially include in the notebook.
+
+Tool: write_to_file
+Params: {'path': 'explore/plot_behavior.py', 'content': '"""\nPlots for behavioral variables from sub-m11_ses-03_behavior+ophys.nwb\nIncludes (1) line plots for position, speed, lick over time, (2) histograms for reward and reward zone entries\nPlots are saved to PNG files in the explore/ directory.\n"""\n\nimport pynwb\nimport h5py\nimport remfile\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nnwb_url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\nremote_file = remfile.File(nwb_url)\nh5_file = h5py.File(remote_file)\nio = pynwb.NWBHDF5IO(file=h5_file)\nnwb = io.read()\n\nbehavior = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series\n\n# Helper for timeseries plot\ndef plot_behavior_ts(name, ts, max_points=10000):\n    data = ts.data[:max_points]\n    t = ts.timestamps[:max_points]\n    plt.figure(figsize=(10, 4))\n    plt.plot(t, data, lw=0.75)\n    plt.xlabel("Time (s)")\n    plt.ylabel(f"{name} ({ts.unit})")\n    plt.title(f"{name} timeseries (first {len(data)} points)")\n    plt.tight_layout()\n    plt.savefig(f"explore/behavior_{name}_timeseries.png")\n    plt.close()\n\n# Position\nplot_behavior_ts("position", behavior["position"])\n# Speed\nplot_behavior_ts("speed", behavior["speed"])\n# Lick\nplot_behavior_ts("lick", behavior["lick"])\n\n# Histograms\nplt.figure(figsize=(6, 3))\nplt.hist(behavior["reward_zone"].data[:], bins=np.arange(-0.5, np.max(behavior["reward_zone"].data[:])+1.5, 1), color="tab:blue", rwidth=0.85)\nplt.xlabel("Reward zone entry value")\nplt.ylabel("Count")\nplt.title("Reward zone entries")\nplt.tight_layout()\nplt.savefig("explore/behavior_reward_zone_hist.png")\nplt.close()\n\nplt.figure(figsize=(6, 3))\nplt.hist(behavior["Reward"].timestamps[:], bins=20, color="tab:orange", rwidth=0.85)\nplt.xlabel("Reward delivery time (s)")\nplt.ylabel("Count")\nplt.title("Reward delivery times")\nplt.tight_layout()\nplt.savefig("explore/behavior_reward_time_hist.png")\nplt.close()\n\nio.close()'}
+================================
+Content to be written to explore/plot_behavior.py:
+"""
+Plots for behavioral variables from sub-m11_ses-03_behavior+ophys.nwb
+Includes (1) line plots for position, speed, lick over time, (2) histograms for reward and reward zone entries
+Plots are saved to PNG files in the explore/ directory.
+"""
+
+import pynwb
+import h5py
+import remfile
+import numpy as np
+import matplotlib.pyplot as plt
+
+nwb_url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(nwb_url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+behavior = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series
+
+# Helper for timeseries plot
+def plot_behavior_ts(name, ts, max_points=10000):
+    data = ts.data[:max_points]
+    t = ts.timestamps[:max_points]
+    plt.figure(figsize=(10, 4))
+    plt.plot(t, data, lw=0.75)
+    plt.xlabel("Time (s)")
+    plt.ylabel(f"{name} ({ts.unit})")
+    plt.title(f"{name} timeseries (first {len(data)} points)")
+    plt.tight_layout()
+    plt.savefig(f"explore/behavior_{name}_timeseries.png")
+    plt.close()
+
+# Position
+plot_behavior_ts("position", behavior["position"])
+# Speed
+plot_behavior_ts("speed", behavior["speed"])
+# Lick
+plot_behavior_ts("lick", behavior["lick"])
+
+# Histograms
+plt.figure(figsize=(6, 3))
+plt.hist(behavior["reward_zone"].data[:], bins=np.arange(-0.5, np.max(behavior["reward_zone"].data[:])+1.5, 1), color="tab:blue", rwidth=0.85)
+plt.xlabel("Reward zone entry value")
+plt.ylabel("Count")
+plt.title("Reward zone entries")
+plt.tight_layout()
+plt.savefig("explore/behavior_reward_zone_hist.png")
+plt.close()
+
+plt.figure(figsize=(6, 3))
+plt.hist(behavior["Reward"].timestamps[:], bins=20, color="tab:orange", rwidth=0.85)
+plt.xlabel("Reward delivery time (s)")
+plt.ylabel("Count")
+plt.title("Reward delivery times")
+plt.tight_layout()
+plt.savefig("explore/behavior_reward_time_hist.png")
+plt.close()
+
+io.close()
+================================
+Total prompt tokens: 89877 + 0
+Total completion tokens: 2539 + 0
+
+=========================================
+
+write_to_file for 'explore/plot_behavior.py':
+Successfully wrote 1911 characters to explore/plot_behavior.py
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 14
+Submitting completion request...
+Processing response...
+Now I will execute the behavioral plotting script to create PNG plots of position, speed, and lick timeseries, and histograms for reward zones and delivery times. These images will be saved in the explore/ directory. Afterward, I will examine these plots using the read_image tool to determine their quality and informativeness for inclusion in the notebook.
+
+Tool: execute_command
+Params: {'command': 'python explore/plot_behavior.py', 'requires_approval': 'false', 'timeout': '90'}
+================================
+Command to be executed
+python explore/plot_behavior.py
+================================
+/home/magland/miniconda3/envs/dev/lib/python3.12/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+Total prompt tokens: 111981 + 0
+Total completion tokens: 2652 + 0
+
+=========================================
+
+execute_command 'python explore/plot_behavior.py' (requires approval):
+Command executed successfully
+STDERR:
+/home/magland/miniconda3/envs/dev/lib/python3.12/site-packages/hdmf/spec/namespace.py:535: UserWarning: Ignoring cached namespace 'core' version 2.8.0 because version 2.7.0 is already loaded.
+  warn("Ignoring cached namespace '%s' version %s because version %s is already loaded."
+
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 16
+Submitting completion request...
+Processing response...
+Plots were generated as expected:
+- explore/behavior_position_timeseries.png
+- explore/behavior_speed_timeseries.png
+- explore/behavior_lick_timeseries.png
+- explore/behavior_reward_zone_hist.png
+- explore/behavior_reward_time_hist.png
+
+I'll now inspect position_timeseries.png to evaluate its clarity and informativeness for potential notebook inclusion, providing instructions to describe the distribution, visible features, and whether the trace is plausible and not empty/noisy.
+
+Tool: read_image
+Params: {'path': 'explore/behavior_position_timeseries.png', 'instructions': 'Describe the trace’s features, visible changes, overall structure, and whether the plot appears to depict plausible behavioral position data over time. Note any axis labeling issues, missing/empty traces, or noise. Does it look suitable and informative for inclusion in a scientific notebook?'}
+Using model: openai/gpt-4.1
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Total prompt tokens: 134400 + 516
+Total completion tokens: 2833 + 117
+
+=========================================
+
+read_image for 'explore/behavior_position_timeseries.png':
+The image for explore/behavior_position_timeseries.png is attached. AI description: The plot shows a single continuous trace with clear, repetitive, ramp-like patterns, suggesting regular movement between two endpoints (e.g., shuttling behavior). There is an initial sharp transition at the start, possibly reflecting a reset or start of tracking. No significant noise or missing/empty traces are visible. The axes are labeled appropriately with units ("Time (s)" and "position (cm)"), and the title specifies the data subset. Overall, the structure and data appear plausible for behavioral position over time, and the plot is suitable and informative for inclusion in a scientific notebook.
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 18
+Submitting completion request...
+Processing response...
+The position timeseries plot is of good scientific quality: clear, labeled, showing plausible animal movement patterns (ramp-like shuttling). Now I will examine the speed timeseries plot next, checking for quality, labeling, empty/missing data, expected behavioral dynamics, and interpretability, for potential notebook inclusion.
+
+Tool: read_image
+Params: {'path': 'explore/behavior_speed_timeseries.png', 'instructions': 'Evaluate whether the speed trace is non-empty, well-labeled, and whether the data shows plausible temporal dynamics (periodic speed changes, motion/rest, etc). Identify artifacts or noise that would suggest the plot should be excluded. Is this suitable for scientific inclusion?'}
+Using model: openai/gpt-4.1
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Total prompt tokens: 157672 + 1031
+Total completion tokens: 2983 + 287
+
+=========================================
+
+read_image for 'explore/behavior_speed_timeseries.png':
+The image for explore/behavior_speed_timeseries.png is attached. AI description: **Analysis:**
+- **Non-empty:** The speed trace is clearly non-empty, showing continuous data.
+- **Well-labeled:** Axes are clearly labeled with units (speed in cm/s, time in seconds); the title specifies data content and subset ("first 10,000 points").
+- **Plausible dynamics:** The trace displays periodic changes between high and low speeds, consistent with natural locomotion/rest cycles. Speed ranges are plausible for animal or robotic movement.
+- **Artifacts/noise:** No obvious artifacts (abrupt spikes, discontinuities, or sustained improbable values). The zero crossings likely correspond to periods of rest. Some high-frequency fluctuations could be noise, but not excessive.
+
+**Conclusion:**  
+The plot appears plausible, well-labeled, contains meaningful temporal dynamics, and lacks clear artifacts. It is suitable for scientific inclusion.
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 20
+Submitting completion request...
+Processing response...
+The speed timeseries plot is also informative, with good labeling and plausible behavioral features, and is suitable for a notebook. I will now check the lick timeseries plot, to ensure the signal is non-empty, well-structured, and has scientific value (features, variability, events) before notebook inclusion.
+
+Tool: read_image
+Params: {'path': 'explore/behavior_lick_timeseries.png', 'instructions': 'Assess whether the lick data trace is non-empty, labeled, and shows plausible behavioral events or count increases. Point out if the trace is monotonic, flat, or data-free. Is it interpretable and valid for scientific review in a notebook?'}
+Using model: openai/gpt-4.1
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Total prompt tokens: 181819 + 1543
+Total completion tokens: 3129 + 353
+
+=========================================
+
+read_image for 'explore/behavior_lick_timeseries.png':
+The image for explore/behavior_lick_timeseries.png is attached. AI description: The lick data trace is non-empty, clearly labeled (axes and title), and shows discrete, step-like increases suggestive of behavioral lick events. The trace is neither monotonic nor flat; it displays variability consistent with event-driven data. The pattern and labeling make the data interpretable and plausible for scientific review in a notebook.
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 22
+Submitting completion request...
+Processing response...
+The lick trace is informative, with clear step-like increases indicating event-driven behavior; axes are correct. This is suitable for inclusion. I'll now examine one of the histogram plots: behavior_reward_time_hist.png, to check if reward delivery event timing is represented with reasonable distribution and labeling (so users can interpret reward frequency/timing).
+
+Tool: read_image
+Params: {'path': 'explore/behavior_reward_time_hist.png', 'instructions': 'Evaluate if reward delivery times are distributed plausibly and not all zero, if binning shows patterns or event spread, and if the labeling and axes make the plot interpretable. Is the data biologically plausible? Any issues precluding its use in a scientific notebook?'}
+Using model: openai/gpt-4.1
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Total prompt tokens: 206735 + 2059
+Total completion tokens: 3282 + 536
+
+=========================================
+
+read_image for 'explore/behavior_reward_time_hist.png':
+The image for explore/behavior_reward_time_hist.png is attached. AI description: **Analysis:**
+- **Reward delivery times** are broadly distributed, with counts ranging from 3 to 5 across the x-axis (0–1400 seconds).
+- **No bins show a count of zero,** and delivery times are not all the same, indicating plausible variation.
+- **Binning** reveals a roughly uniform distribution with slight peaks and troughs rather than obvious clustering or gaps.
+- **Axes and labels** (Reward delivery time (s), Count, and the title) are clear and interpretable.
+- The data appear **biologically plausible:** rewards are spaced over a plausible time frame, not occurring all at once or never.
+- **No major issues are present** that would preclude scientific use; the plot is clear, labeled, and supports interpretation.
+
+**Summary:**  
+The distribution is plausible, well-labeled, and suitable for scientific reporting. No critical problems observed.
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 24
+Submitting completion request...
+Processing response...
+The reward delivery times histogram is informative: events are spread over the session, labels are clear, and it shows plausible experimental distribution. For completeness, I will review the behavior_reward_zone_hist.png (reward zone entry values) to confirm it's not trivial, empty, or misleading, then proceed if valid.
+
+Tool: read_image
+Params: {'path': 'explore/behavior_reward_zone_hist.png', 'instructions': 'Evaluate whether reward zone entry values are plausibly distributed (not all zero, not empty), bins/labels are clear, and the data reflects expected experimental variability. Note any misleading features, artifacts, or issues with labeling that would render the image unsuitable for a scientific notebook.'}
+Using model: openai/gpt-4.1
+Num. messages in conversation: 2
+Submitting completion request...
+Processing response...
+Total prompt tokens: 232542 + 2576
+Total completion tokens: 3431 + 771
+
+=========================================
+
+read_image for 'explore/behavior_reward_zone_hist.png':
+The image for explore/behavior_reward_zone_hist.png is attached. AI description: **Analysis:**
+
+- **Distribution:** The reward zone entry values are overwhelmingly 0, with almost no entries above 0. This suggests values are not plausibly distributed; the data is highly skewed and may be dominated by zeros.
+- **Labels/Bins:** Axis labels ("Reward zone entry value", "Count") and the bins themselves are clear, but the x-axis includes bins (1–6) that have negligible counts, rendering them almost irrelevant in this context.
+- **Experimental Variability:** There is almost no variability—almost all values are zero, conflicting with expectations for typical experimental data where some nonzero entries would be anticipated.
+- **Potential Issues:** This image may mislead, suggesting either a data collection issue (e.g., failure to record entries) or misrepresentation of expected outcomes. The dominance of zeros and lack of variability make it unsuitable for a scientific notebook unless justified; it fails to inform about reward zone entries meaningfully.
+
+**Conclusion:**  
+The plot is unsuitable for scientific reporting due to overwhelming zeros, lack of expected variability, and potential misrepresentation of experimental results. Proper context, data selection, or additional explanation would be needed.
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 26
+Submitting completion request...
+Processing response...
+The reward zone entry histogram is not scientifically informative (dominance of zeros, almost no meaningful nonzero entries). I will NOT include this plot in the notebook.
+
+Now, to create a complete and excellent Jupytext notebook, I'll include:
+- Overview/title/metadata, AI-generated warning
+- Dandiset and NWB loading demo
+- Dandiset and NWB metadata summary (using info from summary_info.py)
+- Asset listing/sample asset explanation
+- Demonstration of how to access/describe key groups and data series
+- Plots: behavioral position, speed, lick, and reward delivery time (all previously validated as informative)
+- Instructions for further analysis and data access
+
+Now, I will write the full notebook source as notebook.py using Jupytext format.
+
+Tool: write_to_file
+Params: {'path': 'notebook.py', 'content': '# %% [markdown]\n# # Exploring Dandiset 001361: A flexible hippocampal population code for experience relative to reward\n#\n# **AI-generated notebook**  \n# *This notebook was automatically generated and has not been fully verified. Please use caution and independently verify any code or results before drawing conclusions.*\n#\n# ---\n#\n# Dandiset 001361: [A flexible hippocampal population code for experience relative to reward](https://dandiarchive.org/dandiset/001361/0.250406.0045)  \n# *Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. (2025)*\n#\n# **Citation:**  \n# Sosa, M.; Plitt, M. H.; Giocomo, L. M. (2025). A flexible hippocampal population code for experience relative to reward (Version 0.250406.0045) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001361/0.250406.0045\n#\n# ---\n#\n# ## Overview\n#\n# This notebook helps users explore and analyze Dandiset 001361, which contains two-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. The data enable study of how hippocampal activity relates to reward and spatial experience. \n#\n# **We\'ll cover:**\n# - Accessing Dandiset metadata and listing its files\n# - Loading an NWB file from the DANDI archive\n# - Summarizing the file\'s structure and metadata\n# - Visualizing behavioral data such as position, speed, lick, and reward delivery\n# - Guidance for further exploration and suggestions for next steps\n#\n# ---\n#\n# ### Required packages\n#\n# This notebook assumes the following packages are installed:\n# - `dandi`\n# - `pynwb`\n# - `remfile`\n# - `h5py`\n# - `matplotlib`\n# - `pandas`\n# - `numpy`\n#\n# (No installation commands are included here; please install these in your environment as needed.)\n#\n# ---\n\n# %% [markdown]\n# ## Dandiset metadata and file listing\n# \n# Let\'s connect to the DANDI archive and retrieve some details and a list of files.\n\n# %%\nfrom itertools import islice\nfrom dandi.dandiapi import DandiAPIClient\n\nclient = DandiAPIClient()\ndandiset = client.get_dandiset("001361", "0.250406.0045")\n\nmetadata = dandiset.get_raw_metadata()\nprint(f"Dandiset name: {metadata[\'name\']}")\nprint(f"Dandiset URL: {metadata[\'url\']}\\n")\nprint("Dandiset description:")\nprint(metadata[\'description\'])\nprint("\\nFirst 5 assets in Dandiset:")\nassets = dandiset.get_assets()\nfor asset in islice(assets, 5):\n    print(f"- {asset.path} (ID: {asset.identifier})")\n\n# %% [markdown]\n# ## Selecting and loading an NWB file\n#\n# We\'ll explore the following NWB file:\n#\n# ```\n# sub-m11/sub-m11_ses-03_behavior+ophys.nwb\n# ```\n#\n# Direct download URL:  \n# [https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/](https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/)\n#\n# You can also explore this NWB file on [neurosift](https://neurosift.app/nwb?url=https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/&dandisetId=001361&dandisetVersion=0.250406.0045).\n#\n# We\'ll demonstrate how to load and explore this file using PyNWB and remfile for remote access.\n\n# %%\nimport pynwb\nimport h5py\nimport remfile\n\nnwb_url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"\nremote_file = remfile.File(nwb_url)\nh5_file = h5py.File(remote_file)\nio = pynwb.NWBHDF5IO(file=h5_file)\nnwb = io.read()\n\nprint(f"Session ID: {nwb.session_id}")\nprint(f"Subject ID: {nwb.subject.subject_id}, Sex: {nwb.subject.sex}, Species: {nwb.subject.species}")\nprint(f"Session Description: {nwb.session_description}")\nprint(f"Session Start Time: {nwb.session_start_time}")\nprint(f"Experimenter: {nwb.experimenter}")\n\n# %% [markdown]\n# ## Structure of the NWB file\n#\n# The NWB file contains a number of behavioral time series and imaging data. Here is a summary tree of the major groups (flattened for clarity):\n#\n# ```\n# /acquisition/TwoPhotonSeries\n# /processing/behavior/BehavioralTimeSeries/time_series:\n#   - Reward, autoreward, environment, lick, position, reward_zone, scanning, speed, teleport, trial number, trial_start\n# /processing/ophys/Fluorescence/roi_response_series/plane0\n# /processing/ophys/Deconvolved/roi_response_series/plane0\n# /processing/ophys/ImageSegmentation/plane_segmentations/PlaneSegmentation\n# /processing/ophys/Neuropil/roi_response_series/plane0\n# ```\n#\n# | Behavioral TS | Description                        | Unit      | Shape     |\n# |---------------|------------------------------------|-----------|-----------|\n# | Reward        | reward delivery                    | mL        | (69,)     |\n# | autoreward    | auto reward marker                 | integer   | (20684,)  |\n# | environment   | VR environment                     | AU        | (20684,)  |\n# | lick          | Capacitive sensor cumulative lick  | AU        | (20684,)  |\n# | position      | Position on linear track           | cm        | (20684,)  |\n# | reward_zone   | Reward zone entry (binary)         | integer   | (20684,)  |\n# | scanning      | Ophys scanner flag                 | integer   | (20684,)  |\n# | speed         | Speed over time                    | cm/s      | (20684,)  |\n# | teleport      | Trial end/teleport marker          | integer   | (20684,)  |\n# | trial number  | Trial ID                           | integer   | (20684,)  |\n# | trial_start   | Trial start event                  | integer   | (20684,)  |\n#\n# Fluorescence/Deconvolved/Neuropil are all per-ROI timeseries datasets for calcium imaging data.\n#\n# ROI segmentation table (first 5 rows):\n#\n# | id | pixel_mask | iscell | planeIdx |\n# |----|------------|--------|----------|\n# | 0  | [...]      | [...]  | 0        |\n# | 1  | [...]      | [...]  | 0        |\n# | 2  | [...]      | [...]  | 0        |\n# | 3  | [...]      | [...]  | 0        |\n# | 4  | [...]      | [...]  | 0        |\n#\n# ---\n\n# %% [markdown]\n# ## Loading and visualizing behavioral data\n#\n# We\'ll load and plot a few key behavioral signals—position, speed, and lick events—over the first 10,000 timepoints for clarity.\n\n# %%\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Helper to access behavioral time series\nbehavior = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series\n\ndef plot_behavior_timeseries(ts_key, ylabel, max_points=10000):\n    ts = behavior[ts_key]\n    data = ts.data[:max_points]\n    t = ts.timestamps[:max_points]\n    plt.figure(figsize=(10, 4))\n    plt.plot(t, data, lw=0.75)\n    plt.xlabel("Time (s)")\n    plt.ylabel(ylabel)\n    plt.title(f"{ts_key} timeseries (first {len(data)} points)")\n    plt.tight_layout()\n    plt.show()\n\nplot_behavior_timeseries("position", "position (cm)")\nplot_behavior_timeseries("speed", "speed (cm/s)")\nplot_behavior_timeseries("lick", "lick (AU)")\n\n# %% [markdown]\n# ### Reward delivery times\n#\n# Now, let\'s visualize when rewards were delivered during the session.\n\n# %%\nreward_ts = behavior["Reward"].timestamps[:]\nplt.figure(figsize=(6, 3))\nplt.hist(reward_ts, bins=20, color="tab:orange", rwidth=0.85)\nplt.xlabel("Reward delivery time (s)")\nplt.ylabel("Count")\nplt.title("Reward delivery times")\nplt.tight_layout()\nplt.show()\n\n# %% [markdown]\n# ## Guidance for further analysis\n#\n# This notebook demonstrated:\n# - How to access Dandiset and NWB metadata programmatically\n# - Listing assets and selecting a file\n# - How to load the NWB file remotely and explore session structure\n# - How to visualize behavioral timeseries signals and reward events\n#\n# **Suggestions for further analysis:**\n# - Explore imaging datasets (e.g., calcium fluorescence or deconvolved traces)\n# - Analyze ROI segmentation and cell properties\n# - Align events (licks, rewards, etc.) with neural signal features\n# - Study speed and position in relation to reward zone or trial number\n# - Aggregate/compare trials across sessions or subjects\n#\n# For more, see the [DANDI Dandiset landing page](https://dandiarchive.org/dandiset/001361/0.250406.0045) or experiment interactively using [Neurosift](https://neurosift.app/nwb?url=https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/&dandisetId=001361&dandisetVersion=0.250406.0045).\n#\n# ---\n#\n# *Remember: This notebook is AI-generated and not fully verified. Review all steps, and adapt code and plots to your scientific needs!*'}
+================================
+Content to be written to notebook.py:
+# %% [markdown]
+# # Exploring Dandiset 001361: A flexible hippocampal population code for experience relative to reward
+#
+# **AI-generated notebook**  
+# *This notebook was automatically generated and has not been fully verified. Please use caution and independently verify any code or results before drawing conclusions.*
+#
+# ---
+#
+# Dandiset 001361: [A flexible hippocampal population code for experience relative to reward](https://dandiarchive.org/dandiset/001361/0.250406.0045)  
+# *Sosa, Marielena; Plitt, Mark H.; Giocomo, Lisa M. (2025)*
+#
+# **Citation:**  
+# Sosa, M.; Plitt, M. H.; Giocomo, L. M. (2025). A flexible hippocampal population code for experience relative to reward (Version 0.250406.0045) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001361/0.250406.0045
+#
+# ---
+#
+# ## Overview
+#
+# This notebook helps users explore and analyze Dandiset 001361, which contains two-photon imaging and behavioral data from hippocampal area CA1 during virtual reality navigation in mice. The data enable study of how hippocampal activity relates to reward and spatial experience. 
+#
+# **We'll cover:**
+# - Accessing Dandiset metadata and listing its files
+# - Loading an NWB file from the DANDI archive
+# - Summarizing the file's structure and metadata
+# - Visualizing behavioral data such as position, speed, lick, and reward delivery
+# - Guidance for further exploration and suggestions for next steps
+#
+# ---
+#
+# ### Required packages
+#
+# This notebook assumes the following packages are installed:
+# - `dandi`
+# - `pynwb`
+# - `remfile`
+# - `h5py`
+# - `matplotlib`
+# - `pandas`
+# - `numpy`
+#
+# (No installation commands are included here; please install these in your environment as needed.)
+#
+# ---
+
+# %% [markdown]
+# ## Dandiset metadata and file listing
+# 
+# Let's connect to the DANDI archive and retrieve some details and a list of files.
+
+# %%
+from itertools import islice
+from dandi.dandiapi import DandiAPIClient
+
+client = DandiAPIClient()
+dandiset = client.get_dandiset("001361", "0.250406.0045")
+
+metadata = dandiset.get_raw_metadata()
+print(f"Dandiset name: {metadata['name']}")
+print(f"Dandiset URL: {metadata['url']}\n")
+print("Dandiset description:")
+print(metadata['description'])
+print("\nFirst 5 assets in Dandiset:")
+assets = dandiset.get_assets()
+for asset in islice(assets, 5):
+    print(f"- {asset.path} (ID: {asset.identifier})")
+
+# %% [markdown]
+# ## Selecting and loading an NWB file
+#
+# We'll explore the following NWB file:
+#
+# ```
+# sub-m11/sub-m11_ses-03_behavior+ophys.nwb
+# ```
+#
+# Direct download URL:  
+# [https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/](https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/)
+#
+# You can also explore this NWB file on [neurosift](https://neurosift.app/nwb?url=https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/&dandisetId=001361&dandisetVersion=0.250406.0045).
+#
+# We'll demonstrate how to load and explore this file using PyNWB and remfile for remote access.
+
+# %%
+import pynwb
+import h5py
+import remfile
+
+nwb_url = "https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/"
+remote_file = remfile.File(nwb_url)
+h5_file = h5py.File(remote_file)
+io = pynwb.NWBHDF5IO(file=h5_file)
+nwb = io.read()
+
+print(f"Session ID: {nwb.session_id}")
+print(f"Subject ID: {nwb.subject.subject_id}, Sex: {nwb.subject.sex}, Species: {nwb.subject.species}")
+print(f"Session Description: {nwb.session_description}")
+print(f"Session Start Time: {nwb.session_start_time}")
+print(f"Experimenter: {nwb.experimenter}")
+
+# %% [markdown]
+# ## Structure of the NWB file
+#
+# The NWB file contains a number of behavioral time series and imaging data. Here is a summary tree of the major groups (flattened for clarity):
+#
+# ```
+# /acquisition/TwoPhotonSeries
+# /processing/behavior/BehavioralTimeSeries/time_series:
+#   - Reward, autoreward, environment, lick, position, reward_zone, scanning, speed, teleport, trial number, trial_start
+# /processing/ophys/Fluorescence/roi_response_series/plane0
+# /processing/ophys/Deconvolved/roi_response_series/plane0
+# /processing/ophys/ImageSegmentation/plane_segmentations/PlaneSegmentation
+# /processing/ophys/Neuropil/roi_response_series/plane0
+# ```
+#
+# | Behavioral TS | Description                        | Unit      | Shape     |
+# |---------------|------------------------------------|-----------|-----------|
+# | Reward        | reward delivery                    | mL        | (69,)     |
+# | autoreward    | auto reward marker                 | integer   | (20684,)  |
+# | environment   | VR environment                     | AU        | (20684,)  |
+# | lick          | Capacitive sensor cumulative lick  | AU        | (20684,)  |
+# | position      | Position on linear track           | cm        | (20684,)  |
+# | reward_zone   | Reward zone entry (binary)         | integer   | (20684,)  |
+# | scanning      | Ophys scanner flag                 | integer   | (20684,)  |
+# | speed         | Speed over time                    | cm/s      | (20684,)  |
+# | teleport      | Trial end/teleport marker          | integer   | (20684,)  |
+# | trial number  | Trial ID                           | integer   | (20684,)  |
+# | trial_start   | Trial start event                  | integer   | (20684,)  |
+#
+# Fluorescence/Deconvolved/Neuropil are all per-ROI timeseries datasets for calcium imaging data.
+#
+# ROI segmentation table (first 5 rows):
+#
+# | id | pixel_mask | iscell | planeIdx |
+# |----|------------|--------|----------|
+# | 0  | [...]      | [...]  | 0        |
+# | 1  | [...]      | [...]  | 0        |
+# | 2  | [...]      | [...]  | 0        |
+# | 3  | [...]      | [...]  | 0        |
+# | 4  | [...]      | [...]  | 0        |
+#
+# ---
+
+# %% [markdown]
+# ## Loading and visualizing behavioral data
+#
+# We'll load and plot a few key behavioral signals—position, speed, and lick events—over the first 10,000 timepoints for clarity.
+
+# %%
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Helper to access behavioral time series
+behavior = nwb.processing["behavior"].data_interfaces["BehavioralTimeSeries"].time_series
+
+def plot_behavior_timeseries(ts_key, ylabel, max_points=10000):
+    ts = behavior[ts_key]
+    data = ts.data[:max_points]
+    t = ts.timestamps[:max_points]
+    plt.figure(figsize=(10, 4))
+    plt.plot(t, data, lw=0.75)
+    plt.xlabel("Time (s)")
+    plt.ylabel(ylabel)
+    plt.title(f"{ts_key} timeseries (first {len(data)} points)")
+    plt.tight_layout()
+    plt.show()
+
+plot_behavior_timeseries("position", "position (cm)")
+plot_behavior_timeseries("speed", "speed (cm/s)")
+plot_behavior_timeseries("lick", "lick (AU)")
+
+# %% [markdown]
+# ### Reward delivery times
+#
+# Now, let's visualize when rewards were delivered during the session.
+
+# %%
+reward_ts = behavior["Reward"].timestamps[:]
+plt.figure(figsize=(6, 3))
+plt.hist(reward_ts, bins=20, color="tab:orange", rwidth=0.85)
+plt.xlabel("Reward delivery time (s)")
+plt.ylabel("Count")
+plt.title("Reward delivery times")
+plt.tight_layout()
+plt.show()
+
+# %% [markdown]
+# ## Guidance for further analysis
+#
+# This notebook demonstrated:
+# - How to access Dandiset and NWB metadata programmatically
+# - Listing assets and selecting a file
+# - How to load the NWB file remotely and explore session structure
+# - How to visualize behavioral timeseries signals and reward events
+#
+# **Suggestions for further analysis:**
+# - Explore imaging datasets (e.g., calcium fluorescence or deconvolved traces)
+# - Analyze ROI segmentation and cell properties
+# - Align events (licks, rewards, etc.) with neural signal features
+# - Study speed and position in relation to reward zone or trial number
+# - Aggregate/compare trials across sessions or subjects
+#
+# For more, see the [DANDI Dandiset landing page](https://dandiarchive.org/dandiset/001361/0.250406.0045) or experiment interactively using [Neurosift](https://neurosift.app/nwb?url=https://api.dandiarchive.org/api/assets/d77ea78a-8978-461d-9d11-3c5cef860d82/download/&dandisetId=001361&dandisetVersion=0.250406.0045).
+#
+# ---
+#
+# *Remember: This notebook is AI-generated and not fully verified. Review all steps, and adapt code and plots to your scientific needs!*
+================================
+Total prompt tokens: 259288 + 2576
+Total completion tokens: 5844 + 771
+
+=========================================
+
+write_to_file for 'notebook.py':
+Successfully wrote 8237 characters to notebook.py
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 28
+Submitting completion request...
+Processing response...
+The notebook.py file has been written and should now be converted to a Jupyter notebook and executed to check for errors and verify output. I will run `jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb` with a 600s timeout. If execution fails, I will inspect and fix notebook.py accordingly.
+
+Tool: execute_command
+Params: {'command': 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb', 'requires_approval': 'false', 'timeout': '600'}
+================================
+Command to be executed
+jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb
+================================
+/home/magland/.local/lib/python3.12/site-packages/jupytext/cell_reader.py:20: UserWarning: Sphinx Gallery in version 0.19.0 is not supported by Jupytext. Please use sphinx-gallery<=0.7.0 instead. If that is an issue, feel free to report it at https://github.com/mwouts/jupytext/issues, or even better, prepare a PR to handle the new signature of sphinx_gallery.notebook.rst2md.
+  warnings.warn(
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+[NbClientApp] Save executed results to notebook.ipynb
+Total prompt tokens: 288572 + 2576
+Total completion tokens: 5972 + 771
+
+=========================================
+
+execute_command 'jupytext --to notebook notebook.py && jupyter execute --inplace notebook.ipynb' (requires approval):
+Command executed successfully
+STDOUT:
+[jupytext] Reading notebook.py in format py
+[jupytext] Writing notebook.ipynb
+
+STDERR:
+/home/magland/.local/lib/python3.12/site-packages/jupytext/cell_reader.py:20: UserWarning: Sphinx Gallery in version 0.19.0 is not supported by Jupytext. Please use sphinx-gallery<=0.7.0 instead. If that is an issue, feel free to report it at https://github.com/mwouts/jupytext/issues, or even better, prepare a PR to handle the new signature of sphinx_gallery.notebook.rst2md.
+  warnings.warn(
+[NbClientApp] Executing notebook.ipynb
+[NbClientApp] Executing notebook with kernel: 
+[NbClientApp] Save executed results to notebook.ipynb
+
+=========================================
+
+Using model: openai/gpt-4.1
+Num. messages in conversation: 30
+Submitting completion request...
+Processing response...
+The notebook was successfully converted and executed without errors, with the expected outputs embedded. All requested features are present, and the included visualizations were confirmed as scientifically informative.
+
+Per instructions, I have confirmed from the user (via execution result) that all previous tool uses were successful. Now I will present the task as complete.
+
+Tool: attempt_completion
+Params: {'result': 'A Jupytext notebook (notebook.py) and corresponding Jupyter notebook (notebook.ipynb) were created to guide scientific exploration of Dandiset 001361 version 0.250406.0045. The notebook:\n- Includes a prominent AI-generated warning and overview\n- Summarizes Dandiset metadata, contributors, and experimental protocol\n- Programmatically lists and loads files using the DANDI API\n- Demonstrates loading and populating an NWB file remotely\n- Summarizes major dataset groups, behavioral and imaging variables, and ROI structure with tables and markdown\n- Provides high-quality visualizations of behavioral position, speed, lick events, and reward delivery timing\n- Supplies markdown guidance and references for further analysis\n- Avoids overanalysis and focuses on clarity, reproducibility, and extensibility\n\nAll code was executed and verified in notebook.ipynb, producing output without errors.'}
+A Jupytext notebook (notebook.py) and corresponding Jupyter notebook (notebook.ipynb) were created to guide scientific exploration of Dandiset 001361 version 0.250406.0045. The notebook:
+- Includes a prominent AI-generated warning and overview
+- Summarizes Dandiset metadata, contributors, and experimental protocol
+- Programmatically lists and loads files using the DANDI API
+- Demonstrates loading and populating an NWB file remotely
+- Summarizes major dataset groups, behavioral and imaging variables, and ROI structure with tables and markdown
+- Provides high-quality visualizations of behavioral position, speed, lick events, and reward delivery timing
+- Supplies markdown guidance and references for further analysis
+- Avoids overanalysis and focuses on clarity, reproducibility, and extensibility
+
+All code was executed and verified in notebook.ipynb, producing output without errors.
+Total prompt tokens: 318303 + 2576
+Total completion tokens: 6242 + 771
+
